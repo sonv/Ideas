@@ -95,17 +95,6 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/amsaddr/amsaddr.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/amsaddr/amsaddr.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/amsaddr/amsaddr.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/amsaddr/amsaddr.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/amsaddr/amsaddr.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/amsaddr/amsaddr.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/amsaddr/amsaddr.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/amsaddr/amsaddr.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/amsaddr/amsaddr.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/amsaddr/amsaddr.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/amsaddr/amsaddr.sty
 INPUT ./marktext.sty
 INPUT ./marktext.sty
 INPUT marktext.sty
@@ -945,5 +934,6 @@ INPUT aux/hw1.run.xml
 OUTPUT aux/hw1.run.xml
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr9.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb
