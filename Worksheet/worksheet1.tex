@@ -1,0 +1,57 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsaddr}
+\usepackage{marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{lineno}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ MATH 102: Ideas  of Math }
+\author{ Worksheet 1 }
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{ Deductive reasoning }
+
+\begin{problem}
+    Give an example of an invalid inductive reasoning.
+\end{problem}
+
+\begin{problem}
+    Describe Sherlock's deduction to decide if the case is a murder or
+    a suicide in the following clip:
+    \url{https://www.youtube.com/watch?v=4PKr_BVo4hg}.
+
+    Make sure to re-write in the premises and conclusion form as in the slides. Make sure you're as clear as you can so that the reader can see right away what're the premises and conclusion.
+\end{problem}
+
+
+\section{ Logical connectives}
+
+\begin{problem}
+Analyze the form of the following statements.
+
+\begin{enumerate}
+    \item Either John went to the store, or we’re out of eggs.
+    \item  Joe is going to leave home and not come back.
+    \item Either Bill is at work and Jane isn’t, or Jane is at work and Bill isn’t.
+\end{enumerate}
+\end{problem}
+
+
+\printbibliography 
+%\bibliography{refs}
+%\bibliographystyle{halpha-abbrv}
+
+
+\end{document}
