@@ -1,0 +1,90 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsaddr}
+\usepackage{marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{lineno}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ MATH 102: Ideas  of Math }
+\author{ Worksheet 3 }
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Statement}
+\begin{problem}
+    Classify the following as statements or non-statemetns:
+    \begin{enumerate}
+        \item I had a hearty laugh at the joke!
+        \item He had a fever of $102^o$ but still completed his task.
+        \item Why would anyone want to do this?
+        \item If you go to the city, you will find what you are seeking.
+        \item I am so happy today!
+        \item $x > x-1.$
+        \item For all integers $x$, $x+2$ is even.
+    \end{enumerate}
+\end{problem}
+
+\begin{problem}
+    Classify whether the following statements are propositions.
+    \begin{enumerate}
+        \item The Sun is a star.
+        \item Every prime number is odd.
+        \item The Moon is a star.
+        \item Every even number
+        \item If 4 is a prime, then FUV is the best university in the world.
+        \item  ``$P \implies Q$'' has the same meaning as ``$\neg P \vee Q$''.
+    \end{enumerate}
+\end{problem}
+
+\section{Logical equivalence}
+
+\begin{definition}
+    Let $P$ and $Q$ be logical formulae.
+    We say that $P$ and $Q$ are logically equivalent and write $P\equiv Q$
+    if $Q$ can be derived from $P$ and $P$ can be derived from $Q$.
+\end{definition}
+
+\begin{problem}
+    Show that
+        $$ P \wedge (Q \vee R) \equiv (P \wedge Q)\vee (P \wedge R) \,,$$
+        where $P, Q, R$ are propositional variables.
+\end{problem}
+
+It turns out that the following is true.
+\begin{theorem}
+    Two propositional formulae are logically equivalent if and only if their truth values
+are the same under any assignment of truth values to their constituent propositional
+variables.
+\end{theorem}
+Even though the proof of this theorem is beyond the scope of this class, we can use
+this to our advantage to check whether $P$ and $Q$ are logically equivalent by
+just looking at their truth tables.
+
+
+\begin{theorem}
+    Two propositional formulae are logically equivalent if and only if they have the 
+    same truth table.
+\end{theorem}
+
+\begin{problem}
+    Check the theorem above by redo Problem 1.2.6 and Problem 2.2
+\end{problem}
+
+
+\printbibliography 
+%\bibliography{refs}
+%\bibliographystyle{halpha-abbrv}
+
+
+\end{document}
