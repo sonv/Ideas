@@ -1,0 +1,107 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsaddr}
+\usepackage{marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{lineno}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ MATH 102: Ideas  of Math }
+\author{ Worksheet 4 }
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+
+\section{Logical equivalence}
+
+\begin{definition}
+    Let $P$ and $Q$ be logical formulae.
+    We say that $P$ and $Q$ are logically equivalent and write $P\equiv Q$
+    if $Q$ can be derived from $P$ and $P$ can be derived from $Q$.
+\end{definition}
+
+\begin{problem}
+    Show that
+        $$ P \wedge (Q \vee R) \equiv (P \wedge Q)\vee (P \wedge R) \,,$$
+        where $P, Q, R$ are propositional variables.
+\end{problem}
+
+It turns out that the following is true.
+\begin{theorem}
+    Two propositional formulae are logically equivalent if and only if their truth values
+are the same under any assignment of truth values to their constituent propositional
+variables.
+\end{theorem}
+
+\section{Truth table}
+
+
+\begin{theorem}[De Morgan's laws for logical operators]
+   Let $P, Q$ be propositional variables. Then,
+   \begin{enumerate}
+       \item $\neg (P \vee Q) \equiv (\neg P) \wedge (\neg Q) $,
+       \item $\neg (P \wedge Q) \equiv (\neg P) \vee (\neg Q) $ .
+   \end{enumerate}
+\end{theorem}
+
+\begin{theorem}[Distributive laws]
+    Let $P, Q, R$ be propositional variables. Then,
+    \begin{enumerate}
+        \item $P\wedge (Q\vee R) \equiv (P \wedge Q) \vee (P \wedge R)$,
+        \item $P \vee (Q\wedge R) \equiv (P \vee Q) \wedge (P \vee R)$.
+    \end{enumerate}
+\end{theorem}
+
+\begin{theorem}[Absorption laws]
+   Let $P, Q$ be propositional variables. Then,
+    \begin{enumerate}
+        \item $P \vee (P \wedge Q) \equiv P$,
+        \item $P \wedge (P \vee Q) \equiv P$.
+    \end{enumerate}
+\end{theorem}
+
+
+\begin{problem}
+    Prove the theorems above by truth tables.
+\end{problem}
+
+There are a few other laws that are useful to know.
+\begin{theorem}[Tautology laws]
+    \begin{enumerate}
+        \item $P \wedge$ a tautology $\equiv P$
+        \item $P \vee$ a tautology $\equiv$ tautology
+        \item $\neg$ (a tautology) is a contradiction.
+    \end{enumerate}
+\end{theorem}
+
+\begin{theorem}[Contradiction laws]
+    \begin{enumerate}
+        \item $P \wedge$ contradiction  $\equiv$ contradiction.
+        \item $P \vee$ contradiction  $\equiv P$ 
+        \item $\neg$ (a contradiction) is a tautology.
+    \end{enumerate}
+\end{theorem}
+\begin{problem}[Problem 9 in section 1.2]
+    Use truth table to determine which of these statements are tautologies,
+which are contradictions, and which are neither:
+\begin{enumerate}
+    \item $(P \vee Q)\wedge (\neg P \vee \neg Q)$
+    \item $(P \vee Q) \wedge (\neg P \wedge \neg Q)$
+    \item $(P \vee Q) \vee (\neg P \vee \neg Q)$
+    \item $[P \wedge (Q \vee \neg R)] \vee (\neg P \vee R)$.
+\end{enumerate}
+\end{problem}
+
+
+
+\end{document}
