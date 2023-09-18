@@ -1,0 +1,75 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsaddr}
+\usepackage{marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{lineno}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ MATH 102: Ideas  of Math }
+\author{ Worksheet 5 }
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{definition}
+    A \emph{set} is a collection of objects.
+\end{definition}
+Set of objects $x$ satisfying some property $P(x)$ is denoted by
+\begin{equation}
+    \label{e:set}
+\set[\big]{ x  \st P(x)} \,.
+\end{equation}
+
+Denote
+\begin{enumerate}
+    \item The set of all integers to be $\Z$
+    \item The set of all natural numbers to be $\N$
+    \item the set of all rational numbers to be $\Q$
+\end{enumerate}
+
+\begin{problem}
+    From high school knowledge, try to describe $\Q$ in terms of $\Z$ using set notation~\eqref{e:set}.
+\end{problem}
+
+\begin{problem}
+    What's the difference between a logical formula and a propositional formula?
+\end{problem}
+
+\begin{problem}
+    We short hand the phrase ``$x$ belongs to set $X$'' by $x\in X$.
+\end{problem}
+
+\begin{problem}
+    Represent the following sentences in logical formula form. 
+    Some sentences need to be rephrased so that things are clear to identify variables and predicates.
+    \begin{enumerate}
+        \item $x-y$ is rational.
+        \item Every even natural number $n\geq 2$ is divisible by $k$.
+        \item There is an integer that is divisible by every integer.
+        \item There is no greatest odd integer.
+        \item Between any two distinct rational numbers is a third distinct rational number.
+        \item If any integer has a rational square root, then that root is an integer.
+    \end{enumerate}
+\end{problem}
+
+\begin{problem}
+    Translate the following into English.
+    \begin{equation*}
+        \forall a \in \R, (a \geq 0 \implies \exists b \in \R, a=b^2) \,.
+    \end{equation*}
+\end{problem}
+
+
+
+
+\end{document}
