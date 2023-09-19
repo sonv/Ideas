@@ -1,4 +1,3 @@
-\ProvidesPackage{svmacro}
 % Misc. macros for Truong-Son Van (courtesy by Gautam Iyer).
 % 2019-05-02 00:12
 
@@ -142,14 +141,14 @@
   \newtheorem*{corollary*}{Corollary}
 
   \theoremstyle{definition}
-  \newtheorem{definition}[theorem]{Definition}
+  \newtheorem{definition}{Definition}
 
   \theoremstyle{remark}
   \newtheorem{remark}[theorem]{Remark}
   \newtheorem*{remark*}{Remark}
   \newtheorem{example}[theorem]{Example}
 
-  \ifSV@exam\else\newtheorem{problem}{Problem}[section]\fi
+  \ifSV@exam\else\newtheorem{problem}{Problem}\fi
 \fi
 
 % Misc. theorems. (Uses optional argument as name.)
