@@ -21,6 +21,8 @@
 
 \maketitle
 
+\section{Set}
+
 \begin{definition}
     A \emph{set} is a collection of objects.
 \end{definition}
@@ -37,17 +39,60 @@ Denote
     \item the set of all rational numbers to be $\Q$
 \end{enumerate}
 
+
 \begin{problem}
     From high school knowledge, try to describe $\Q$ in terms of $\Z$ using set notation~\eqref{e:set}.
 \end{problem}
+
 
 \begin{problem}
     What's the difference between a logical formula and a propositional formula?
 \end{problem}
 
+\begin{definition}[Notations]
+    The following are standard notations
+    \begin{enumerate}
+        \item   $x\in X$ represents ``$x$ belongs to set $X$''.
+        \item $x\not\in X$ represents ``$x$ does not belong to set $X$''.
+    \end{enumerate}
+\end{definition}
+
+Typically, a set is written by a capitalized letter, unless it is 
+a special set such as $\Z, \N, \Q$.
+
+
+\section{Logical formula}
+ 
+Last time, we talked briefly about universal quantifier and existential quantifier.
+
+\begin{definition}[\bf The universal quantifier $\forall$]
+    If $p(x)$ is a logical formula with free variable with free variable $x$ with domain $X$,
+    then $\forall x\in X, p(x)$ is the logical formula defined according to the following rules:
+    \begin{itemize}
+        \item If $p(x)$ can be derrived from the assumption that $x$ is an arbitrary element of $X$,
+            then $\forall x\in X, p(x)$ is true;
+        \item If $a\in X$ and  $\forall x \in X, p(x)$ is true, then $p(a)$ is true.
+    \end{itemize}
+\end{definition}
+
+\begin{definition}[\bf The existential quantifier $\exists$]
+    If $p(x)$ is a logical formula with free variable $x$ with domain $X$, then 
+    $\exists x\in X, p(x)$ is the logical formula defined according to the following rules:
+    \begin{itemize}
+        \item If $a\in X$ and $p(a)$ is true, then $\exists x \in X, p(x)$ is true;
+        \item If $\exists x\in X, p(x)$ is true, and $q$ can be derived from the assumption
+            that $p(a)$ is true for some fixed $a \in X$, then $q$ is true.
+    \end{itemize}
+\end{definition}
+
+
 \begin{problem}
-    We short hand the phrase ``$x$ belongs to set $X$'' by $x\in X$.
+    In your own words, re-interpret the definitions of the quantifiers.
 \end{problem}
+
+
+
+
 
 \begin{problem}
     Represent the following sentences in logical formula form. 
@@ -69,7 +114,39 @@ Denote
     \end{equation*}
 \end{problem}
 
+\begin{problem}
+    Let $P$ be the set of all prime numbers.
+    \begin{enumerate}
+        \item Translate the following logical formulas into English.
+   \begin{enumerate}
+       \item $\forall n \in P, (n> 2 \implies (\exists k \in \Z, n = 2k+ 1))$.
+       \item $\neg \exists n \in P, (n> 2 \wedge ( \exists k \in \Z, n = 2k))$.
+   \end{enumerate}
+\item Are they true? How would you go on to prove them?
+\item Are both statements talk about the same thing?
+    \end{enumerate}
+\end{problem}
 
+\begin{problem}
+    From the previous problem,
+    find equivalent statements to the following
+    \begin{equation*}
+       \neg (\exists x \in X, P(x)) \,,
+    \end{equation*}
+and
+    \begin{equation*}
+       \neg ( \forall x \in X, P(x)) \,.
+    \end{equation*}
+\end{problem}
+
+Hint: re-call the following from Worksheet 4
+\begin{theorem}[De Morgan's laws for logical operators]
+   Let $P, Q$ be propositional variables. Then,
+   \begin{enumerate}
+       \item $\neg (P \vee Q) \equiv (\neg P) \wedge (\neg Q) $,
+       \item $\neg (P \wedge Q) \equiv (\neg P) \vee (\neg Q) $ .
+   \end{enumerate}
+\end{theorem}
 
 
 \end{document}
