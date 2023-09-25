@@ -1,0 +1,57 @@
+\documentclass[12pt]{amsart}
+\usepackage{marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{lineno}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ MATH 102: Homework 4}
+\author{Due date: Tuesday, Oct 3}
+
+%\author{Co-author}
+%\address{  }
+%\email {  }
+%
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+Note that you need to turn in \LaTeX version of this homework.
+
+We briefly mentioned truth sets in class.
+Here's the definition from the textbook.
+\begin{definition}
+    The truth set of a statement $P(x)$ is the set of all values of $x$
+that make the statement $P(x)$ true. In other words, it is the set defined by using
+the statement $P(x)$ as an elementhood test:
+Truth set of $P(x) = {x | P(x)}$.
+\end{definition}
+
+In Velleman:
+
+Section 1.3: 4, 5, 6, 8.
+
+Section 2.1: 3, 4, 6.
+
+(For the problems in Section 2.1 ``Universe of discourse'' is the same with ``Domain of disclosure'' mentioned in class)
+
+
+
+
+
+
+
+\printbibliography 
+%\bibliography{refs}
+%\bibliographystyle{halpha-abbrv}
+
+
+\end{document}
