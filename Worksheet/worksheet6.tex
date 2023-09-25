@@ -1,0 +1,47 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsaddr}
+\usepackage{marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{lineno}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ MATH 102: Ideas  of Math }
+\author{ Worksheet 6 }
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+
+\begin{problem}
+    \begin{enumerate}
+        \item Prove that $\Q\subseteq \R$.
+        \item Prove that $\R \not\subseteq \Q$.
+    \end{enumerate}
+\end{problem}
+
+\begin{problem}
+    Prove that, 
+   \begin{equation*}
+   \set[\big]{ x \in \R \st x^2 \leq 1 } = [-1,1] \,.
+   \end{equation*}
+\end{problem}
+
+\begin{problem}
+    Prove that for any two sets $X$ and $Y$, 
+    \begin{equation*}
+        X\cap Y \subseteq X \cup Y \,.
+    \end{equation*}
+\end{problem}
+
+
+\end{document}
