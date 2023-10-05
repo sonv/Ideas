@@ -1,0 +1,83 @@
+\documentclass[12pt]{amsart}
+\usepackage{lineno}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+%% commentary bubble
+
+%% Title 
+\title{ MATH 102: Ideas  of Math }
+\author{ Worksheet 6 live session }
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{proof}[Problem 2]
+    Prove that 
+    \begin{equation*}
+        \left\{ x \in \mathbb{R} | x^2 \leq 1  \right\}
+        = 
+        [-1,1]\,.
+    \end{equation*}
+
+    We want to show that
+    \begin{equation*}
+        \left\{ x \in \mathbb{R} | x^2 \leq 1  \right\}
+        \subseteq 
+        [-1,1]\,,
+    \end{equation*}
+    and
+    \begin{equation*}
+        \left\{ x \in \mathbb{R} | x^2 \leq 1  \right\}
+        \supseteq 
+        [-1,1]\,.
+    \end{equation*}
+
+    $(\subseteq)$. First, to show  $
+        \left\{ x \in \mathbb{R} | x^2 \leq 1  \right\}
+        \subseteq 
+        [-1,1]$, let $a$ be arbitrary in 
+        $\left\{ x \in \mathbb{R} | x^2 \leq 1  \right\}$.
+        By definition, $a^2 \leq 1$, which means
+        $a^2 - 1 \leq 0 \,.$
+        Rewriting the left hand side, we have
+        $(a-1)(a+1) \leq 1$.
+        Then it must be the case that $a-1$ and $a+1$ have opposite signs.
+        There are two cases for this to happen.
+        \begin{enumerate}
+            \item $a-1 \leq 0$ and $a+1 \geq 0$.
+                This means, $a\leq 1$ and $a\geq -1$. By definition,
+                $a\in [-1,1]$.
+            \item $a-1 \geq 0$ and $a+1 \leq 0$. This means, $a\geq 1$ and $a\leq -1$, which is a contradiction.
+        \end{enumerate}
+        Therefore, $a\in [-1,1]$. Because, $a$ is arbitrary, 
+$ \left\{ x \in \mathbb{R} | x^2 \leq 1  \right\}
+        \subseteq 
+        [-1,1]$.
+
+
+        $(\supseteq).$ Secondly, to show 
+        $ \left\{ x \in \mathbb{R} | x^2 \leq 1  \right\} \supseteq 
+        [-1,1]$, let $a$ be arbitrary in $[-1,1]$.
+        By definition, $a\leq 1$ and $a\geq -1$, which means $|a| \leq 1$.
+        This implies, $a^2 \leq 1$.
+        Sine $a$ is arbitrary, 
+        $ \left\{ x \in \mathbb{R} | x^2 \leq 1  \right\} \supseteq 
+        [-1,1]$.
+\end{proof}
+
+
+\begin{proof}[Problem 3]
+    Let $a$ be arbitrary in $X\cap Y$. That means, $a \in X \wedge a \in Y$.
+    This means, $a\in X$, which implies that $a\in X \vee a\in Y$. 
+    Therefore, $a\in X\cup Y$.
+    Since $a$ is arbitrary, $X\cap Y \subseteq X\cup Y$.
+\end{proof}
+
+
+
+
+\end{document}
