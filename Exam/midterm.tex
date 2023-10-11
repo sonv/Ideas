@@ -1,0 +1,131 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsaddr}
+\usepackage{marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ MATH 102: MIDTERM }
+\author{Good Luck!}
+
+%\author{Co-author}
+%\address{  }
+%\email {  }
+%
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+
+There are five questions. Make sure you justify all your work for complete credit.
+
+\section*{Rules}
+
+\begin{itemize}[leftmargin=*]
+    \item You have 90  minutes to complete your work..
+    \item Closed books.
+    \item No use of internet, textbooks, computer algebra systems, calculators. 
+    \item No collaboration.
+    \item 1 person per bathroom break. When you go to the bathroom, turn in your cellphone and exam until return.
+\end{itemize}
+
+\newpage
+
+\section*{Questions}
+
+\begin{enumerate}[label=\arabic*.,itemsep=10pt, leftmargin=*]
+    \item
+        \begin{enumerate}
+            \item \textit{[10 points.]} Use the truth table to show that
+        \begin{equation*}
+            P\implies Q \equiv (\neg P) \vee  Q \,.
+        \end{equation*}
+    \item \textit{[10 points.]} Find an equivalent expression of 
+        \begin{equation*}
+            \neg( P \implies Q) 
+        \end{equation*}
+        and use the truth table to check it.
+        \end{enumerate}
+\newpage
+    \item 
+        The symmetric difference of two sets $A$ and $B$ is defined as follows
+        \begin{equation*}
+            A \triangle B = (A\setminus B) \cup (B\setminus A) \,.
+        \end{equation*}
+        \begin{enumerate}
+            \item \textit{[10 points.]}
+                Use the Venn diagram to represent $A \triangle B$.
+            \item \textit{[10 points.]}
+                Let $A = \set{1,2,3,4,5,6,7}$ and $B = \set{2,4,6}$. What is $A\triangle B$?
+        \end{enumerate}
+        \newpage
+        \item \textit{[20 points.]} For any sets $A$ and $B$, prove that
+                \begin{equation*}
+                    A \triangle B \subseteq A \cup B \,.
+                \end{equation*}
+                Hint: Start with ``Let $x$...'' and use definitions of the operations.
+
+                \newpage
+                \item\textit{[20 points.]}
+                Analyze the logical forms of the following statements. The universe of discourse is $\mathbb{R}.$ What are the free variables in each statement?
+\begin{enumerate}
+    \item Every number that is larger than $x$ is larger than $y$. \\
+    \item For every number $a$, the equation $ax^2+4x-2=0$ has at least one solution if $a\ge -2.$\\
+    \item All solutions of the inequality $x^3-3x<3$ are smaller than $10.$\\
+    \item If there is a number $x$ such that $x^2+5x=w$ and there is a number $y$ such that $4-y^2=w$, then $w$ is between $-10$ and $10.$\\
+\end{enumerate}
+
+\newpage
+    \item 
+        \begin{enumerate}
+            \item 
+        \textit{[10 points.]}
+            Translate the following statement into a logical formula with predicates and quantifiers.
+                
+                ``If all humans are heroes all the time then no humans are heroes anytime.''
+                
+                Hint: Define $X$ to be set of humans and $T$ set of time.
+            Suggested variables: $x$ for humans, 
+            $t$ for time.
+            Suggested predicate: 
+            $P(x,t)=$``$x$ is a hero in time $t$''.
+            
+
+            \item 
+        \textit{[5 points.]}
+        \textit{
+        A logical formula is said to be simplest if the negation signs (if there is any) 
+        are right in front of the predicate and NOT in front of quantifiers. For example,
+        ``$ \neg (\forall x \in X, P(x))$'' is NOT simplest, 
+    but ``$\exists x \in X, \neg P(x)$'' is simplest.}
+
+            Find the simplest logical formulae 
+                to express the negation of the statement in (a).  
+                
+                Hint: Use Question 1 recall  $\neg (\forall x\in X, P(x)) \equiv \exists x\in X, \neg P(x)$
+                and
+                $\neg (\exists x\in X, P(x)) \equiv \forall x\in X, \neg P(x)$.
+            \item
+        \textit{[5 points.]}
+            Translate the resulting formula in (b) back into English. 
+
+        \end{enumerate}
+\end{enumerate}
+
+
+
+\printbibliography 
+%\bibliography{refs}
+%\bibliographystyle{halpha-abbrv}
+
+
+\end{document}
