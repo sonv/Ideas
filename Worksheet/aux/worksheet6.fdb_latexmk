@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber aux/worksheet6"] 1695655067 "aux/worksheet6.bcf" "aux/worksheet6.bbl" "aux/worksheet6" 1696435554 0
+["biber aux/worksheet6"] 1695655067 "aux/worksheet6.bcf" "aux/worksheet6.bbl" "aux/worksheet6" 1697469377 0
   "./bibliography.bib" 1693833396 494123 c55468f33388c1a8ba1d4df75770e3e1 ""
-  "aux/worksheet6.bcf" 1696435554 107452 677bdc3cbeb1e063528ef039aeca71a3 "pdflatex"
+  "aux/worksheet6.bcf" 1697469377 107452 677bdc3cbeb1e063528ef039aeca71a3 "pdflatex"
   (generated)
   "aux/worksheet6.bbl"
   "aux/worksheet6.blg"
   (rewritten before read)
-["pdflatex"] 1696435553 "worksheet6.tex" "worksheet6.pdf" "worksheet6" 1696435554 0
+["pdflatex"] 1697469376 "worksheet6.tex" "worksheet6.pdf" "worksheet6" 1697469377 0
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1202520719 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1202520719 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
@@ -172,13 +172,13 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1686223737 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1686223718 7883462 1a8fb0f02fac2fe5f797dc5da193bacd ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "aux/worksheet6.aux" 1696435554 800 b4afc3b83766d4fd2bce4cc907a4ccce "pdflatex"
+  "aux/worksheet6.aux" 1697469377 800 b4afc3b83766d4fd2bce4cc907a4ccce "pdflatex"
   "aux/worksheet6.bbl" 1695655070 466 ee04f40f768daeed26442158e95aba61 "biber aux/worksheet6"
-  "aux/worksheet6.out" 1696435554 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "aux/worksheet6.run.xml" 1696435554 2355 b6b2acaa4785e5ba17f9043817727a41 "pdflatex"
+  "aux/worksheet6.out" 1697469376 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "aux/worksheet6.run.xml" 1697469377 2355 b6b2acaa4785e5ba17f9043817727a41 "pdflatex"
   "marktext.sty" 1693833396 6164 fc189a847afe57b4afab4fd3a388a28c ""
   "svmacro.sty" 1695083362 11086 7f9fe13244e7a0475d168700082bfeb7 ""
-  "worksheet6.tex" 1696435552 2513 23c6bcb005e7bb30500faed65f528910 ""
+  "worksheet6.tex" 1697469375 3052 6c9eb1690703188ee436b4db34707900 ""
   (generated)
   "aux/worksheet6.aux"
   "aux/worksheet6.bcf"
