@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber aux/worksheet9"] 1699286733 "aux/worksheet9.bcf" "aux/worksheet9.bbl" "aux/worksheet9" 1699288922 0
+["biber aux/worksheet9"] 1699286733 "aux/worksheet9.bcf" "aux/worksheet9.bbl" "aux/worksheet9" 1699314825 0
   "./bibliography.bib" 1693833396 494123 c55468f33388c1a8ba1d4df75770e3e1 ""
-  "aux/worksheet9.bcf" 1699288922 107452 677bdc3cbeb1e063528ef039aeca71a3 "pdflatex"
+  "aux/worksheet9.bcf" 1699314825 107452 677bdc3cbeb1e063528ef039aeca71a3 "pdflatex"
   (generated)
   "aux/worksheet9.bbl"
   "aux/worksheet9.blg"
   (rewritten before read)
-["pdflatex"] 1699288921 "worksheet9.tex" "worksheet9.pdf" "worksheet9" 1699288922 0
+["pdflatex"] 1699314824 "worksheet9.tex" "worksheet9.pdf" "worksheet9" 1699314825 0
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1202520719 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1202520719 2840 216e6e45ad352e2456e1149f28885bee ""
@@ -169,14 +169,14 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1686223737 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1686223718 7883462 1a8fb0f02fac2fe5f797dc5da193bacd ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "aux/worksheet9.aux" 1699288922 1025 7585770606c1004d88a21049ceab9751 "pdflatex"
+  "aux/worksheet9.aux" 1699314825 1025 7585770606c1004d88a21049ceab9751 "pdflatex"
   "aux/worksheet9.bbl" 1699286759 466 ee04f40f768daeed26442158e95aba61 "biber aux/worksheet9"
-  "aux/worksheet9.out" 1699288922 202 956aafad510acd7adf7cd1ea0c2e3320 "pdflatex"
-  "aux/worksheet9.run.xml" 1699288922 2355 29a4b54fd966839a1903c4d3c49029eb "pdflatex"
+  "aux/worksheet9.out" 1699314825 202 956aafad510acd7adf7cd1ea0c2e3320 "pdflatex"
+  "aux/worksheet9.run.xml" 1699314825 2355 29a4b54fd966839a1903c4d3c49029eb "pdflatex"
   "graph.png" 1698707933 67104 9738a5b8c63b04128e54062ca12564d1 ""
   "marktext.sty" 1693833396 6164 fc189a847afe57b4afab4fd3a388a28c ""
   "svmacro.sty" 1698709271 11180 3b0f193c89944553e4d0af1d0b8bab97 ""
-  "worksheet9.tex" 1699288919 3510 b1b958deab829b9a7fb69b2579c81ea5 ""
+  "worksheet9.tex" 1699314820 3510 521f406f8a2be10ac3b45a99279f7c2a ""
   (generated)
   "aux/worksheet9.aux"
   "aux/worksheet9.bcf"
