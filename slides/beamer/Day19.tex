@@ -1,0 +1,51 @@
+\documentclass[aspectratio=169]{beamer}
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage[draft]{svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{verbatim}
+%Information to be included in the title page:
+\title{MATH 102: Ideas of Math}
+\author{Day 19}
+\date{Nov 8, 2023}
+
+\begin{document}
+
+\frame{\titlepage}
+\begin{frame}
+    \frametitle{ Functions again }
+    \begin{definition}[Injective functions]
+        Let $f:A\to B$ be a function.
+        $f$ is said to be \emph{injective} (or \emph{one-to-one})
+        if 
+        \begin{equation*}
+            \forall a_1, a_2 \in A, f(a_1) = f(a_2) \implies a_1 = a_2 \,.
+        \end{equation*}
+        An injective function is called an \emph{injection}.
+    \end{definition}
+
+\end{frame}
+
+\begin{frame}
+    \begin{definition}[Surjective functions]
+        Let $f:A\to B$ be a function.
+        $f$ is said to be \emph{surjective} (or \emph{onto}) if
+        \begin{equation*}
+            \forall b\in B \exists a \in A, f(a) = b \,.
+        \end{equation*}
+        A surjective function is called a \emph{surjection}.
+    \end{definition}
+\end{frame}
+
+\begin{frame}
+    \begin{definition}[Bijective function]
+        A function $f$ is \emph{bijective} if 
+        it is both injective and surjective.
+
+        A bijective function is called a \emph{bijection}.
+    \end{definition}
+\end{frame}
+
+
+
+
+\end{document}
