@@ -1,0 +1,45 @@
+\documentclass[aspectratio=169]{beamer}
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage[draft]{svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{verbatim}
+
+%Information to be included in the title page:
+\title{MATH 102: Ideas of Math}
+\author{Day 16}
+\date{Oct 19, 2023}
+
+\begin{document}
+
+\frame{\titlepage}
+
+
+\begin{frame}
+    \frametitle{Uniqueness}
+    Uniqueness is typically coupled with existential quantifier.
+    \begin{definition}
+        The \emph{unique existential quantifier} is the quantifier $\exists!$, defined such that
+        $\exists! x\in X, p(x)$ is short hand for
+        \begin{equation*}
+            (\exists x \in X, p(x)) \wedge (\forall a\in X, \forall b\in X, [(p(a)\wedge p(b)) \implies a = b] \,.
+        \end{equation*}
+    \end{definition}
+\end{frame}
+\begin{frame}
+    \frametitle{ Function }
+
+    \begin{definition}
+    A function $f$ from a set $X$ to a set $Y$ is a specification of elements 
+    $f(x) \in Y$ for $x\in X$ such that
+    \begin{equation*}
+        \forall x \in X, \exists! y \in Y, y = f(x) \,.
+    \end{equation*}
+    Given $x\in X$, the unique element $f(x)\in Y$ is called the value of $f$ at $x$.
+
+    $X$ is called the \emph{domain} of $f$, and $Y$ is called the \emph{codomain}.
+
+    We write $f:X\to Y$ to denote the assertion that $f$ is a function with domain $X$ and codomain $Y$.
+    \end{definition}
+\end{frame}
+
+\end{document}

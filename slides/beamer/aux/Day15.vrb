@@ -1,0 +1,10 @@
+\frametitle{ Power set }
+    \begin{definition}
+        Let $X$ be a set. The power set of $X$, written $\mathcal{P}()$ is the set of all subsets of $X$.
+
+        Code:
+        \begin{verbatim}
+        \mathcal{P}(X)
+        \end{verbatim}
+
+    \end{definition}

@@ -1,0 +1,61 @@
+\documentclass[aspectratio=169]{beamer}
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage[draft]{svmacro}
+\usepackage[utf8]{inputenc}
+%Information to be included in the title page:
+\title{MATH 102: Ideas of Math}
+\author{Day 9}
+\date{Sep 26, 2023}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+\frametitle{More about sets}
+\begin{gather*}
+[a,b] = \set[\big]{x \in \R \st a \leq x \leq b } \,,\\
+[a,b) = \set[\big]{x \in \R \st a \leq x <  b } \,, \\
+(a,b] = \set[\big]{x \in \R \st a < x \leq  b } \,, \\
+(a,b) = \set[\big]{x \in \R \st a < x <  b } \,.
+\end{gather*}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Set comparisons}
+\begin{definition}
+    Let $X$ be a set. A \emph{subset} of $X$ is a set $U$ such that 
+    \begin{equation*}
+        \forall a, ( a \in U \implies a \in X) \,.
+    \end{equation*}
+    We write $U \subseteq X$ for the assertion that $U$ is a subset of $X$.
+
+    The notation $U \subsetneqq X$ means that $U$ is a \emph{proper subset} of $X$, 
+    that is a subset of $X$ that is not equal to $X$.
+
+    The notation $U \not\subseteq X$ means that $U$ is NOT a subset of $X$.
+\end{definition}
+
+In order to prove that $U$ is a subset of $X$, it is sufficient to take an 
+arbitrary element $a\in U$ and prove that $a \in X$.
+\end{frame}
+
+\begin{frame}
+    \frametitle{Axiom of extentionality}
+   Let $X$ and $Y$ be sets. Then $X = Y$ if and only if $X \subseteq Y$ and $Y\subseteq X$. 
+\end{frame}
+
+\begin{frame}
+    \frametitle{Empty sets}
+    \begin{definition}
+    A set is~\emph{non-empty} if it contains at least one element.
+    Otherwise, it is~\emph{empty}.
+\end{definition}
+\end{frame}
+
+\begin{frame}
+    Question: How many empty sets are there?
+\end{frame}
+
+
+\end{document}

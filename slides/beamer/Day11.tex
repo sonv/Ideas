@@ -1,0 +1,71 @@
+\documentclass[aspectratio=169]{beamer}
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage[draft]{svmacro}
+\usepackage[utf8]{inputenc}
+%Information to be included in the title page:
+\title{MATH 102: Ideas of Math}
+\author{Day 11}
+\date{Oct 2, 2023}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+    \frametitle{ Some proof strategies }
+    \begin{enumerate}
+        \item Direct proof
+        \item Contradiction
+        \item Contrapositive (new)
+        \item Proofs with quantifiers
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \frametitle{ Direct proof }
+    Based on definitions only.
+    \begin{example}
+        Prove that for $a,b>0$,  $a<b \implies a^2 < b^2$.
+    \end{example}
+\end{frame}
+
+\begin{frame}
+    \frametitle{ Proof by contradiction }
+    To prove that $P$ is true, suppose $P$ is false then derive a contradiction.
+    \begin{example}
+        Prove that if $a$ is irrational and $r$ is rational, then $a+r$ is irrational.
+    \end{example}
+\end{frame}
+
+\begin{frame}
+    \frametitle{ Proof by contrapositive}
+    In order to prove $P\implies Q$, it is equivalent to prove $\neg Q \implies \neg P$.
+    \begin{example}
+        Let $m,n \in \N$. Prove that if $mn > 64$, then either $m>8$ or $n>8$.
+    \end{example}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Proof with quantifiers}
+    To prove $\forall x \in X, P(x)$, pick an arbitrary $x \in X$ and try to 
+    deduce that $P(x)$ is true.
+    That is, just use the properties of $x$ that are described in the description of $X$ to deduce
+    that $P(x)$ is true.
+    \begin{example}
+        Prove that the square of every odd integer is odd.
+    \end{example}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Proof with quantifiers (cont.)}
+    To prove  $\exists x\in X, P(x)$, it is enough to find a particular $x_0\in X$
+    so that $P(x_0)$ is true.
+    \begin{example}
+        Prove that there is a natural number that is a perfect square and is one more than a
+perfect cube.
+    \end{example}
+
+\end{frame}
+
+
+\end{document}

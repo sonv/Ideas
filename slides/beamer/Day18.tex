@@ -1,0 +1,119 @@
+\documentclass[aspectratio=169]{beamer}
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage[draft]{svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{verbatim}
+%Information to be included in the title page:
+\title{MATH 102: Ideas of Math}
+\author{Day 18}
+\date{Nov 6, 2023}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+    \frametitle{ Agenda }
+    \begin{enumerate}
+        \item Final, project discussion
+        \item This week: function and relation
+            \begin{enumerate}
+                \item Velleman chapters 4, 5
+                \item Newstead chapter 3
+            \end{enumerate}
+        \item Next week: induction
+    \end{enumerate}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{ Function }
+
+    The best use of sets is to define functions.
+     \pause
+
+     \begin{definition}[Newstead, Chapter 4]
+    A function $f$ from a set $X$ to a set $Y$ is a specification of elements 
+    $f(x) \in Y$ for $x\in X$ such that
+    \begin{equation*}
+        \forall x \in X, \exists! y \in Y, y = f(x) \,.
+    \end{equation*}
+    Given $x\in X$, the unique element $f(x)\in Y$ is called the value of $f$ at $x$.
+
+    $X$ is called the \emph{domain} of $f$, and $Y$ is called the \emph{codomain}.
+
+    We denote the \emph{range} of $f$ is
+    \begin{equation*}
+        f(X) = \set{ f(x) \st x \in X} \,.
+    \end{equation*}
+
+    We write $f:X\to Y$ to denote the assertion that $f$ is a function with domain $X$ and codomain $Y$.
+
+    We sometimes write $\Dom(f)$ to mean domain of $f$
+    and $\Ran(f)$ to mean the range of $f$.
+    \end{definition}
+\end{frame}
+
+\begin{frame}
+    \frametitle{ Cartesian Product }
+    \begin{definition}
+    Let $X, Y$ be sets. The \emph{cartesian product} of $X$ and $Y$ is the set $X\times Y$, defined by 
+    \begin{equation*}
+        X\times Y = \left\{ (a,b) \vert a\in X \wedge b \in Y  \right\} \,.
+    \end{equation*}
+    The elements $(a,b) \in X\times Y$ are called \emph{ordered pairs}, whose defining property is that
+    \begin{equation*}
+        \forall x\in X, \forall y \in Y, (a,b) = (x,y) \iff a = x \wedge b = y \,.
+    \end{equation*}
+    \end{definition}
+\end{frame}
+
+\begin{frame}
+    \frametitle{ Graph of a function }
+    \begin{definition}
+    Let $f: X\to Y$ be a function. 
+    The \emph{graph} of $f$ is the subset $\Gr(f) \subseteq X \times Y$ defined by
+    \begin{equation*}
+        \Gr(f) = \set{ (x,f(x)) | x \in X   }
+        = 
+        \set{ (x,y) \in X \times Y | y = f(x)} \,.
+    \end{equation*}
+    \end{definition}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{ Relation }
+    \begin{definition}
+        Let $A, B$ be sets. Then the set $R \subseteq A \times B$ is called a relation from $A$ to $B$.
+
+        We also define the domain and range of a relation $R$.
+
+        \begin{gather*}
+            \Dom(R) = \set{a \in A \st \exists b \in B, (a,b) \in R}  \\
+            \Ran(R) = \set{ b\in B \st \exists a \in A, (a,b) \in R } \,.
+        \end{gather*}
+
+        If $(x,y) \in R$, then we say that $x$ is related to $y$ by $R$ and write $x R y$.
+    \end{definition}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Examples}
+    \begin{enumerate}
+        \item $R = \set{ (x,y) \in \R\times \R | x >y }$ is
+        the relation from $\R$ to $\R$.
+        $x R y$ here means $x > y$.
+        \pause
+    \item Let $P$ be the set of all people at FUV, and $C$ be the set of all courses at FUV.
+        Let $E = \set{ (p,c) \in P\times C \st \text{ $p$ is enrolled in course $c$}  }$.
+        Then $E$ is a relation from $P$ to $C$.
+        $ x E y $ means $x$ is enrolled in $y$.
+    \end{enumerate}
+\end{frame}
+
+
+
+
+\end{document}
