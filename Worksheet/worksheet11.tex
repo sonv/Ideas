@@ -24,20 +24,61 @@
 \section{Concepts}
 
 \begin{definition}
-    Let \( f: X \rightarrow Y \) be a function. A left inverse (or post-inverse) for \( f \) is a function \( g: Y \rightarrow X \) such that \( g \circ f = \text{id}_X \).
+    Let \( f: X \rightarrow Y \) be a function. A \emph{left inverse} for \( f \) is a function \( g: Y \rightarrow X \) such that \( g \circ f = \text{id}_X \).
 \end{definition}
 
 \begin{definition}
-    Let \( f: X \rightarrow Y \) be a function. A right inverse (or pre-inverse) for \( f \) is a function \( g: Y \rightarrow X \) such that \( f \circ g = \text{id}_Y \).
+    Let \( f: X \rightarrow Y \) be a function. A \emph{right inverse}  for \( f \) is a function \( g: Y \rightarrow X \) such that \( f \circ g = \text{id}_Y \).
 \end{definition}
+
+\begin{definition}
+    Let $f: x\rightarrow Y$ be a function.
+    An \emph{inverse} (or two-sided inverse) of $f$ is a function $g: Y\to X$ that is both left and right inverse.
+\end{definition}
+
+\begin{theorem}[Fundatmental theorem of arithmetic]
+    Let $a \in \mathbb{N}$ be a nonzero number that is bigger than 1. There exist primes $p_1, \ldots, p_k \in \mathbb{N}$ such that
+\[ a = p_1 \cdot \ldots \cdot p_k \]
+Moreover, this expression is essentially unique: if $a = q_1 \cdot \ldots \cdot q_l$ is another expression of $a$ as a product of primes, then $k = l$ and, re-ordering the $q_i$ if necessary, for each $i$,  $q_i = p_i$.
+\end{theorem}
 
 
 \section{Problems}
 
+
+\begin{problem}
+    \begin{enumerate}
+        \item Suppose $X$ is non-empty. Show that function $f:X\to Y$ has a left inverse if and only if it is injective.
+        \item Show that a function $f:X \to Y$ has a right inverse if and only if it is surjective.
+    \end{enumerate}
+\end{problem}
+
+\begin{problem}
+    Let $e:\N \times \N \to \N$ be a function defined by
+    \begin{equation*}
+        e(m,n) = 2^m 3^n \,.
+    \end{equation*}
+    \begin{enumerate}
+        \item Show that $e$ is injective.
+        \item Find a left inverse for $e$.
+    \end{enumerate}
+\end{problem}
+
+\begin{problem}
+    Let $f:\R \to [0,\infty)$ be a function defined by 
+    \begin{equation*}
+        f(x) = x^2 \,.
+    \end{equation*}
+    \begin{enumerate}
+        \item Show that $f$ is surjective.
+        \item Find a right inverse for $f$.
+    \end{enumerate}
+\end{problem}
+
 \begin{problem}
     Let $D \subseteq \Q$ be the set of \emph{dyadic rational numbers}, that is
     \begin{equation*}
-        D =\left\{x \in \Q | \exists a \in \Z, \exists n\in \N, x = \frac{a}{2^n} \right\} \,.
+        D =\left\{x \in \Q \vert \exists a \in \Z, \exists n\in \N \cup \{ 0 \}, x = \frac{a}{2^n} \right\} \,.
     \end{equation*}
     Let $k \in \N$ and define $f:D\to D$ by
     \begin{equation*}
@@ -46,15 +87,8 @@
     Show that $f$ is bijective.
 \end{problem}
 
-\begin{problem}
-    \begin{enumerate}
-        \item Are left and right inverses the same?
-        \item When can a function have right inverse?
-        \item When can a function have left inverse?
-    \end{enumerate}
 
 
 
-\end{problem}
 
 \end{document}
