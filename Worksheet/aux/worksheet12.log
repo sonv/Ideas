@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.8)  20 NOV 2023 21:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.8)  20 NOV 2023 21:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -762,58 +762,35 @@ Package biblatex Info: ... file 'worksheet12.bbl' found.
 Package biblatex Info: Reference section=0 on input line 20.
 Package biblatex Info: Reference segment=0 on input line 20.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 29.
+(Font)              <12> on input line 28.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 29.
+(Font)              <8> on input line 28.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 29.
+(Font)              <6> on input line 28.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-
-./worksheet12.tex:70: LaTeX Error: \begin{definition} on input line 26 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.70 \end{document}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}
-pdfTeX warning (ext4): destination with the same identifier (name{theorem.1.1}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.70 \end{document}
-                   {/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] (aux/worksheet12.aux)
+) [1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] [2] (aux/worksheet12.aux)
 Package rerunfilecheck Info: File `worksheet12.out' has not changed.
 (rerunfilecheck)             Checksum: 956AAFAD510ACD7ADF7CD1EA0C2E3320;202.
 Package logreq Info: Writing requests to 'worksheet12.run.xml'.
 \openout1 = `worksheet12.run.xml'.
 
- )
-(\end occurred inside a group at level 1)
-
-### semi simple group (level 1) entered at line 26 (\begingroup)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
- 21579 strings out of 476025
- 371072 string characters out of 5790018
+ 21582 strings out of 476025
+ 371096 string characters out of 5790018
  1862388 words of memory out of 5000000
  41490 multiletter control sequences out of 15000+600000
  588806 words of font info for 126 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  90i,6n,90p,1008b,801s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on aux/worksheet12.pdf (1 page, 171930 bytes).
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on aux/worksheet12.pdf (2 pages, 188169 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
- 70 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 500000)
+ 113 PDF objects out of 1000 (max. 8388607)
+ 81 compressed objects within 1 object stream
+ 16 named destinations out of 1000 (max. 500000)
  28689 words of extra memory for PDF output out of 29859 (max. 10000000)
 
