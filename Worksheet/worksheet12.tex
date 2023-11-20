@@ -1,0 +1,70 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsaddr}
+\usepackage{marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{lineno}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ MATH 102: Ideas  of Math }
+\author{ Worksheet 12 }
+
+\date{Nov 204, 2023}
+
+\begin{document}
+
+\maketitle
+
+\section{Concepts}
+
+\begin{definition}
+
+\begin{theorem}[The Induction Principle]
+Suppose that we have a sequence of statements $P(n)$ labeled by the natural numbers $1,2,\dots$ such that we know that 
+\begin{enumerate}
+    \item $P(1)$ is true, and
+    \item $\big( P(1) \wedge P(2) \wedge \cdots \wedge P(n) \big) \Rightarrow P(n+1)$.
+\end{enumerate}
+  Then all the statements $P(1), P(2), \dots$ are true.
+\end{theorem}
+We will not discuss the proof of this theorem. However, curious minds can find the proof
+in Section 4.2 of Newstead.
+
+\begin{proof}[Structure of induction proof]
+    Induction proofs typically have the following structure:
+\begin{enumerate}
+\item Identify the statements $P(n)$.
+\item Step 2 is also called \emph{base of induction}: prove $P(0)$ or $P(1)$ (sometimes it doesn't make sense to talk about $P(0)$).
+\item Assume that all $P(k)$ with $k\leq n$ are true -- this is called the \emph{induction hypothesis}. Now perform the \emph{step of induction}: prove that $P(n+1)$ is true.
+\item Finally, conclude by the Principle of Induction that all $P(n)$ are true.
+\end{enumerate}
+\end{proof}
+
+
+\section{Problems}
+
+\begin{problem}
+    Prove that 
+    \begin{equation*}
+        1+2+\dots + n = \frac{n(n+1)}{2} \,.
+    \end{equation*}
+\end{problem}
+
+\begin{problem}
+    Prove that
+    for all natural number $n$,
+    $n^3 - n$ is divisible by 3.
+\end{problem}
+
+
+
+
+
+
+\end{document}
