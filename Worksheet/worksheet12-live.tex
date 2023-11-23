@@ -1,0 +1,163 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsaddr}
+\usepackage{marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{lineno}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ MATH 102: Ideas  of Math }
+\author{ Worksheet 12 }
+
+\date{Nov 24, 2023}
+
+\begin{document}
+
+\maketitle
+
+\section{Concepts}
+
+
+\begin{theorem}[The Induction Principle]
+Suppose that we have a sequence of statements $P(n)$ labeled by the natural numbers $1,2,\dots$ such that we know that 
+\begin{enumerate}
+    \item $P(1)$ is true, and
+    \item $\big( P(1) \wedge P(2) \wedge \cdots \wedge P(n) \big) \Rightarrow P(n+1)$.
+\end{enumerate}
+  Then all the statements $P(1), P(2), \dots$ are true.
+\end{theorem}
+We will not discuss the proof of this theorem. However, curious minds can find the proof
+in Section 4.2 of Newstead.
+
+\begin{proof}[Structure of induction proof]
+    Induction proofs typically have the following structure:
+\begin{enumerate}
+\item Identify the statements $P(n)$.
+\item Step 2 is also called \emph{base of induction}: prove $P(0)$ or $P(1)$ (sometimes it doesn't make sense to talk about $P(0)$).
+\item Assume that all $P(k)$ with $k\leq n$ are true -- this is called the \emph{induction hypothesis}. Now perform the \emph{step of induction}: prove that $P(n+1)$ is true.
+\item Finally, conclude by the Principle of Induction that all $P(n)$ are true.
+\end{enumerate}
+\end{proof}
+
+
+\section{Problems}
+
+\begin{problem}
+    Prove that 
+    \begin{equation*}
+        1+2+\dots + n = \frac{n(n+1)}{2} \,.
+    \end{equation*}
+\end{problem}
+
+\begin{proof}
+    Done.
+\end{proof}
+
+\begin{problem}
+    Prove that
+    for all natural number $n$,
+    $n^3 - n$ is divisible by 3.
+\end{problem}
+
+\begin{proof}
+    Step 1. $P(n) =$ ``$n^3 - n$ is divisible by 3.''
+   
+    Step 2. Base case: For $n=1$,
+    \begin{equation*}
+        1^3 - 1 = 0, 
+    \end{equation*}
+    which is divisible by 3.
+
+    Step 3. (Induction hypothesis) Assume now that $P(k)$ is true for some $k\in \N$, i.e.,
+    \begin{equation*}
+        k^3 - k = 3 m
+    \end{equation*}
+    for some $m\in \N$.
+
+    We want to show that $P(k+1)$ is true. To see this, consider
+    \begin{align*}
+        (k+1)^3 - (k+1) &= k^3 + 3k^2 + 3k + 1 - k - 1 \\
+                        &= k^3 - k + 3k^2 + 3k\\
+                        &= 3m + 3k^2 + 3k = 3( m + k^2 + k) = 3 l \,,
+    \end{align*}
+    where $l = m + k^2 + k \in \N$. By definition of divisibility,
+    \begin{equation*}
+        3 | (k+1)^3 - (k+1) \,.
+    \end{equation*}
+    So, $P(k+1)$ is true.
+
+    Step 4. By induction, $P(n)$ is true for all $n\in \N$.
+\end{proof}
+
+\begin{problem}
+    Prove by induction that
+    for all $n \in \N$,
+    \begin{equation*}
+        2^0 + 2^1 + 2^2 + \dots+ 2^n = 2^{n+1}-1 \,.
+    \end{equation*}
+\end{problem}
+
+\begin{proof}
+    Step 1. $P(n) =$ ``$2^0 + 2^1 + 2^2 + \dots+ 2^n = 2^{n+1}-1$'' 
+
+    Step 2. Base case. For $n =1$, we have
+    \begin{equation*}
+        2^0 + 2^1 = 3 = 2^{1+1} - 1 \,.
+    \end{equation*}
+    So $P(1)$ is true.
+
+
+    Step 3. Suppose that $P(k)$ is true for some $k\in \N$, i.e.,
+    \begin{equation*}
+        2^0 + 2^1 + 2^2 + \dots+ 2^k = 2^{k+1}-1 \,.
+    \end{equation*}
+
+    We want to show that $P(k+1)$ is true. To do this, consider
+    \begin{equation*}
+        2^0 + 2^1 + 2^2 + \dots+ 2^k + 2^{k+1} = 2^{k+1} - 1 + 2^{k+1} = 2\cdot  2^{k+1} - 1 = 2^{k+2} - 1\,.
+    \end{equation*}
+    So, $P(k+1)$ is true.
+
+    Step 4. By induction, $P(n)$ is true for all $n\in \N$.
+\end{proof}
+
+
+\begin{problem}
+    For all $n \geq 4$, we have $3n < 2^n$.
+\end{problem}
+
+\begin{proof}
+    Step 1. $P(n) =$ ``$3n < 2^n$''. 
+
+    Step 2. Base case. For $n =4$, we have
+        \begin{equation*}
+            3\cdot 4 = 12 < 16 = 2^4 \,.
+        \end{equation*}
+    So $P(4)$ is true.
+
+
+    Step 3. Suppose that $P(k)$ is true for some $k\in \N$ and $k\geq 4$, i.e.,
+    \begin{equation*}
+        3 k < 2^k \,.
+    \end{equation*}
+
+    We want to show that $P(k+1)$ is true. To do this, consider
+        \begin{align*}
+            3(k+1) = 3k + 3 < 2^k + 3 < 2^k + 2^k  = 2^{k+1}
+        \end{align*}
+        because $k\geq 4$.
+    So, $P(k+1)$ is true.
+
+    Step 4. By induction, $P(n)$ is true for all $n\in \N$ and $n\geq 4$.
+\end{proof}
+
+
+
+
+\end{document}
