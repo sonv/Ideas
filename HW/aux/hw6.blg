@@ -1,0 +1,9 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'aux/hw6.blg'
+[33] biber-darwin:340> INFO - === Sun Nov 26, 2023, 22:44:42
+[48] Biber.pm:419> INFO - Reading 'aux/hw6.bcf'
+[80] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[88] bbl.pm:660> INFO - Writing 'aux/hw6.bbl' with encoding 'UTF-8'
+[88] bbl.pm:763> INFO - Output to aux/hw6.bbl
+[88] Biber.pm:131> WARN - The file 'aux/hw6.bcf' does not contain any citations!
+[88] Biber.pm:133> INFO - WARNINGS: 1
