@@ -1,0 +1,39 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsaddr}
+\usepackage{marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{lineno}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ MATH 102: Ideas  of Math }
+\author{ Worksheet 13 }
+
+\date{Nov 27, 2023}
+
+\begin{document}
+
+\maketitle
+
+\section{ Problems }
+\begin{problem}
+    Prove that the minimum number of moves in the problem of tower of
+    Hanoi is 
+    \begin{equation*}
+        2^n - 1 \,.
+    \end{equation*}
+\end{problem}
+
+\begin{problem}
+  Given $n$ lines, what is the maximum number of regions can the lines divide into? 
+  
+  Prove the formula that you have using induction.
+\end{problem}
+
+\end{document}
