@@ -919,10 +919,10 @@ INPUT aux/worksheet13.out
 INPUT aux/worksheet13.out
 INPUT aux/worksheet13.out
 INPUT aux/worksheet13.out
-OUTPUT aux/worksheet13.pdf
 INPUT aux/worksheet13.out
 INPUT aux/worksheet13.out
 OUTPUT aux/worksheet13.out
+OUTPUT aux/worksheet13.pdf
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/biblatex/lbx/english.lbx
@@ -935,8 +935,6 @@ INPUT aux/worksheet13.bbl
 INPUT aux/worksheet13.bbl
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmr12.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmri12.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/rm-lmr12.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/rm-lmr8.tfm
