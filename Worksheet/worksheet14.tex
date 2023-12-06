@@ -1,0 +1,45 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsaddr}
+\usepackage{marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{lineno}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ MATH 102: Ideas  of Math }
+\author{ Worksheet 14 }
+
+\date{dec 6, 2023}
+
+\begin{document}
+
+\maketitle
+Player 1 begins by writing a sequence of $X$'s and $O$'s in the top row of the grid below. Player 2 then writes either an $X$ or an $O$ in the first box on the bottom. Player 1 then writes a sequence of $X$'s and $O$'s in the second row of the grid. Player 2 writes an $X$ or $O$ in the second bottom box. The players continue until all boxes are filled. Player 1 wins if the sequence on the bottom exactly matches any of the sequences Player 1 has written in the grid. Player 2 wins otherwise.
+
+There is a grid below. Play the game a few times, then answer the following question:
+ which player has a winning strategy, and why?
+
+\vspace{.1in}
+\Huge \noindent
+\begin{tabular}{|c|c|c|c|c|}\hline
+\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ \\ \hline
+\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ \\ \hline
+\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ \\ \hline
+\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ \\ \hline
+\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ \\ \hline
+\end{tabular}
+\vspace{.25in}
+
+\noindent
+\begin{tabular}{|c|c|c|c|c|}\hline
+\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ \\ \hline
+\end{tabular}
+\normalsize
+
+\end{document}
