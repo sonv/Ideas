@@ -1,0 +1,195 @@
+\documentclass[12pt]{amsart}
+\usepackage{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{../svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{lineno}
+%\usepackage{authblk}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\usepackage{enumitem}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ MATH 170: Homework 3 }
+%\author[1]{Co-author}
+\author{Due: September 27, 2021}
+%\affil[1]{Institute}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+
+\noindent{\bf Graded for accuracy:}
+2, 3.
+\\
+\noindent{\bf Graded for completion:}
+1.
+\\
+\noindent{\bf Instructions:}
+Problems that are graded for accuracy must be correct to get points.
+Problems that are graded for completion must show some trying effort.
+
+\centerline
+
+\hrule
+
+\centerline
+
+\begin{enumerate}[label=\arabic*.,itemsep=10pt, leftmargin=*]
+\item  A practice in inductive logic.
+    \begin{enumerate}[label=\alph*.,itemsep=5pt, leftmargin=*]
+    \item Give an argument that supports the statement ``Having a pet is good''.
+    \item Give an argument that supports the statement
+    ``Having a pet is bad''.
+    \item Which of your arguments do you find stronger than another?
+    \item Is the statement from part (a) a \emph{mathematical statement}? Why / why not?
+    \end{enumerate}
+
+    \begin{proof}[One possible answer]
+    \begin{enumerate}
+        \item My mother has a pet (me) and she is happy. 
+            My grandfather has a pet (my father) and he is happy. 
+            My sister has a cat and she is happy. 
+            Therefore, having a pet is good.
+
+        \item My father is always stressed about his pet (me).
+            My niece was bitten by a dog.
+            My friend Jake has to clean up for his cat everyweek and it seems torturing.
+            Therefore, having a pet is bad.
+
+        \item (b) seems stronger to me.
+        \item The statement in part (a) is not a mathematical statement because
+            it depends on the background theory of each person.
+            There is no abstract principle that one can go to deduce the truth value
+            of this statement.
+    \end{enumerate}
+        
+    \end{proof}
+
+\item  For each of the following plain English statements, translate
+    it into a symbolic logic propositional formula.
+    Propositional variables in your formulae should represent
+    the simplest propositions that they can.
+
+    (Note that each statement doesn't need to be true. Your job is 
+    just to translate to symbolic logic.)
+
+    \begin{enumerate}[label=\alph*.,itemsep=5pt, leftmargin=*]
+    \item Guinea pigs are quiet, but they are loud when they are hungry.
+    \item $\sqrt{2}$ can't be an integer because it is a rational number.
+    \end{enumerate}
+    \begin{proof}[Answer]
+       \begin{enumerate}
+           \item Let $P = $ ``Guinea pigs are quiet'', 
+               and $R =$ ``guinea pigs are hungry''.
+               Then the propositional formula is
+               \begin{equation*}
+                   P \vee (R \implies \neg P) \,.
+               \end{equation*}
+            
+            \item Let $P = $ ``$\sqrt{2}$ is an integer'', 
+                $Q = $ ``$\sqrt{2}$ is a rational number''.
+                Then the propositional formular is 
+                \begin{equation*}
+                    Q \implies \neg P \,.
+                \end{equation*}
+       \end{enumerate} 
+    \end{proof}
+
+
+\item  
+    For fixed $n\in \N$, let $P$ represent the proposition 
+    `$n$ is even', $Q$ represent the proposition `$n$ is prime' and
+    $R$ represent the proposition `$n = 2$'. 
+    For each of the following propositional formulae, translate
+    it into plain English and determine whether it is true for all 
+    $n\in \N$, true for some values of $n$ and false for some values 
+    of $n$, or false for all $n\in \N$.
+    \begin{enumerate}[label=\alph*.,itemsep=5pt, leftmargin=*]
+        \item $(P \wedge Q) \implies R$
+        \item $ Q \wedge (\neg R) \implies (\neg P)$
+        \item $ ((\neg P) \vee (\neg Q)) \vee (\neg R)$
+        \item $ (Q \wedge P) \vee (\neg R)$
+    \end{enumerate}
+    \begin{proof}[Answer]
+        \begin{enumerate}
+            \item This is true for all $n$.
+                To see this, we need to plug in all $n$ into the following statement
+                to see if it is true.
+                
+                ``If $n$ is even and $n$ is prime then $n = 2$.''
+
+                There are two cases to consider:
+
+                Case 1: $n=2$. In this case, $P$ is true and $Q$ is true. Therefore
+                $P \wedge Q$ is true. Of course, $2=2$, so $R$ is true.
+                As the premise and conclusion are both true, this statement is true.
+
+                Case 2: $n\not= 2$. There are two sub-cases here. 
+                If $n$ is even, then $n$ is not a prime, so $Q$ is false, 
+                which makes
+                $P \wedge Q$ false. Thus, the premise is false, making the whole statement
+                true.
+
+                If $n$ is odd, then $P$ is false, 
+                which makes
+                $P \wedge Q$ false. Thus, the premise is false, making the whole statement
+                true.
+
+            \item English translation:
+
+                ``If $n$ is prime and $n$ is not $2$ then $n$ is odd.''
+
+                This statement is true for all $n$.
+                Again, there are two cases.
+
+                Case 1: $n=2$. This makes $\neg R$ false and therefore
+                $Q \wedge (\neg R)$ is false, making the premise false.
+                Therefore, the whole statement is true.
+
+                Case 2: $n\not= 2$. There are two sub-cases as well. 
+                If $n$ is prime (thus $Q$ is true), 
+                then $n$ is odd (thus $\neg P$ is true).
+                Both premise and conclusion are true, which means the statement is true.
+
+                If $n$ is not prime then $Q$ is false, making the premise false.
+                Therefore, the whole statement is true.
+
+            \item English translation:
+
+                ``$n$ is odd or $n$ is not a prime or $n$ is not $2$.''
+
+                This statement is false for $n=2$ but true for $n=25$.
+                Therefore, it is true for some $n$ and true for some $n$.
+
+            \item English translation:
+
+                ``$n$ is an even prime or $n$ is not $2$.''
+
+                This statement is true for all $n$.
+
+                Again, there are two cases.
+
+                Case 1: $n = 2$. This makes $P$ and  $Q$ both  true; therefore,
+                $P \wedge Q$ is true by the rule of conjunction.
+                Therefore, by the rule of disjunction, the statement is true.
+
+                Case 2: $n \not = 2$. This makes $\neg R$ true. By the rule
+                of disjunction, the whole statement is true.
+                
+        \end{enumerate}
+        
+    \end{proof}
+
+
+
+
+\end{enumerate}
+
+
+
+\end{document}

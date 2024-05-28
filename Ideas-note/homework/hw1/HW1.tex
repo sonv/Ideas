@@ -1,0 +1,88 @@
+\documentclass[12pt]{amsart}
+\usepackage{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{../svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{lineno}
+%\usepackage{authblk}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\usepackage{enumitem}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ MATH 170: Homework 1 }
+%\author[1]{Co-author}
+\author{Due: September 10, 2021}
+%\affil[1]{Institute}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+%Instructions:
+%\begin{itemize}
+%    \item Graded for accuracy: 1,2
+%    \item Graded for completion: 3,4,5
+%\end{itemize}
+
+\noindent{\bf Graded for accuracy:}
+1, 2.
+\\
+\noindent{\bf Graded for completion:}
+3, 4, 5.
+\\
+\noindent{\bf Instructions:}
+Problems that are graded for accuracy must be correct to get points.
+Problems that are graded for completion must show some trying effort.
+
+\centerline
+
+\hrule
+
+\centerline
+
+\begin{enumerate}[label=\arabic*.,itemsep=10pt, leftmargin=*]
+    \item  $15$ children participate in an Easter Egg hunt. If they bring back a total of $100$ eggs, must two of them bring back the same number of eggs?
+\\
+\textit{Warning: some kids might not find any Easter eggs.}
+    
+    \item  Suppose we pick $n+1$ numbers from the set $\set{1, 2,\dots, 2n}$ where $n\geq 1$. 
+Let $j \geq 1$ be a divisor of $n$.
+Is it true or false that there are always two numbers have a difference of $j$ 
+apart from each other?
+Why?
+
+\item
+ Show that if you select $6$ numbers from the set $\{1,2,\dots,10\}$, one must be a multiple of another.
+\\
+\textit{Hint: label pigeonholes by pairs of numbers.}
+
+ \item 
+ The Earth has more than 7 billion people and almost no one lives 100 years. Suppose this longevity fact remains true. How do you know that some year soon, more than 50 million people will die? 
+ \\
+\textit{Hint: ``soon'' means within 100 years.}
+
+ \item  You have 10 pairs of socks, five black and five rainbow, 
+but they are all mixed up in a drawer. 
+It's 5 a.m. in the morning, and you don't want to turn on the lights in your dark room. 
+How many socks must you pull out to guarantee that you have a pair of one color? How many must you pull out to have two good pairs (one black pair and one rainbow pair is okay)?
+
+\end{enumerate}
+
+%2.  Let $a,b,c \in \Z$ and let $d = \gcd(a,b)$. 
+%Is it true or false that if there exists two numbers, $z,y \in \Z$
+%such that
+%\begin{equation*}
+%    ax + by = c \,,
+%\end{equation*}
+%then $d \st c$?
+%Why?
+
+
+
+
+
+\end{document}

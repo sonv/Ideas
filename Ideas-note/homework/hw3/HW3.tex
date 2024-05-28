@@ -1,0 +1,88 @@
+\documentclass[12pt]{amsart}
+\usepackage{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{../svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{lineno}
+%\usepackage{authblk}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\usepackage{enumitem}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ MATH 170: Homework 3 }
+%\author[1]{Co-author}
+\author{Due: September 27, 2021}
+%\affil[1]{Institute}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+
+\noindent{\bf Graded for accuracy:}
+2, 3.
+\\
+\noindent{\bf Graded for completion:}
+1.
+\\
+\noindent{\bf Instructions:}
+Problems that are graded for accuracy must be correct to get points.
+Problems that are graded for completion must show some trying effort.
+
+\centerline
+
+\hrule
+
+\centerline
+
+\begin{enumerate}[label=\arabic*.,itemsep=10pt, leftmargin=*]
+\item  A practice in inductive logic.
+    \begin{enumerate}[label=\alph*.,itemsep=5pt, leftmargin=*]
+    \item Give an argument that supports the statement ``Having a pet is good''.
+    \item Give an argument that supports the statement
+    ``Having a pet is bad''.
+    \item Which of your arguments do you find stronger than another?
+    \item Is the statement from part (a) a \emph{mathematical statement}? Why / why not?
+    \end{enumerate}
+
+\item  For each of the following plain English statements, translate
+    it into a symbolic logic propositional formula.
+    Propositional variables in your formulae should represent
+    the simplest propositions that they can.
+
+    (Note that each statement doesn't need to be true. Your job is 
+    just to translate to symbolic logic.)
+
+    \begin{enumerate}[label=\alph*.,itemsep=5pt, leftmargin=*]
+    \item Guinea pigs are quiet, but they are loud when they are hungry.
+    \item $\sqrt{2}$ can't be an integer because it is a rational number.
+    \end{enumerate}
+
+
+\item  
+    For fixed $n\in \N$, let $P$ represent the proposition 
+    `$n$ is even', $Q$ represent the proposition `$n$ is prime' and
+    $R$ represent the proposition `$n = 2$'. 
+    For each of the following propositional formulae, translate
+    it into plain English and determine whether it is true for all 
+    $n\in \N$, true for some values of $n$ and false for some values 
+    of $n$, or false for all $n\in \N$.
+    \begin{enumerate}[label=\alph*.,itemsep=5pt, leftmargin=*]
+        \item $(P \wedge Q) \implies R$
+        \item $ Q \wedge (\neg R) \implies (\neg P)$
+        \item $ ((\neg P) \vee (\neg Q)) \vee (\neg R)$
+        \item $ (Q \wedge P) \vee (\neg R)$
+    \end{enumerate}
+
+
+
+
+\end{enumerate}
+
+
+
+\end{document}

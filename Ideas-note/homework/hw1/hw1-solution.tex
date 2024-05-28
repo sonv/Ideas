@@ -1,0 +1,224 @@
+\documentclass[12pt]{amsart}
+\usepackage{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{../svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{lineno}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+\usepackage{enumitem}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ MATH 170: Homework 1 Solutions }
+%\author[1]{Co-author}
+\author{Teaching team}
+%\affil[1]{Institute}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}[label=\arabic*.,itemsep=10pt, leftmargin=*]
+    \item  $15$ children participate in an Easter Egg hunt. If they bring back a total of $100$ eggs, must two of them bring back the same number of eggs?
+
+\begin{proof}[Solution]
+   There are various ways to do this problem. 
+   
+   \emph{Solution 1.}
+   Suppose all of the children bring back different
+   number of eggs.
+   Say, some bring back, 1, some bring back 10, etc.
+
+   Let us be pessimistic about the children's abilities to find eggs so they will
+   find the minimum number of eggs possible.
+   So, the possible numbers of eggs would be
+   \begin{equation*}
+       0, 1, 2, \dots, 14\,.
+   \end{equation*}
+   Already, one can see that this is impossible because
+   \begin{equation*}
+       1+2+\dots+14 = 105\,,
+   \end{equation*}
+   which is bigger than $100$.
+   So there must be two children who have the same number of eggs.
+
+   \emph{Solution 2.} If you insist to use pigeonhole principle, here is a way.
+   First, list the children according to the number of eggs they find, from 
+   littlest to largest.
+   Let $n_i$ be the number of eggs that the $i^{th}$ child finds.
+   We have the following list
+   \begin{equation*}
+       \set {n_1, n_2, \dots, n_{15} } \,.
+   \end{equation*}
+   where $0 \leq n_1 \leq n_2 \leq \dots \leq n_{15}$.
+   We note that it CANNOT be the case that $n_i \geq i$ for all $i=1, \dots, 15$
+   just because $1+2+\dots+ 15 = 120 > 100$.
+   So, there must be a number $i > 1$ where $n_i < i$.
+   So, the number of children up to that point is $i$ and the number of maximum eggs
+   that children $\set{1,2,...,i}$ must have is $n_i < i$.
+   Now, by pigeonhole principle (pigeons are children, pigeonholes are numbers of eggs),
+   there must be two children who have the same number of eggs.
+
+   Note: this solution is a bit more satisfying as we don't have to be pessimistic about
+   the abilities of the children to find eggs.
+\end{proof}
+    
+    \item  Suppose we pick $n+1$ numbers from the set $\set{1, 2,\dots, 2n}$ where $n\geq 1$. 
+Let $j \geq 1$ be a divisor of $n$.
+Is it true or false that there are always two numbers have a difference of $j$ 
+apart from each other?
+Why?
+\begin{proof}[Solution]
+    True.
+    
+    Step 0. Simple case $j = 1$.
+    Let the numbers be the pigeons. 
+    
+    Let the pigeonholes be as follows.
+    \begin{equation*}
+        \set{1,2}, \set{3,4}, \dots,
+        \set{2n-1, 2n}\,.
+    \end{equation*}
+    Assigning rule: the pigeons are assigned to the holes that contain the corresponding label.
+    
+    There are $n+1$ pigeons assigning to $n$ holes so by pigeonhole principle, 
+    there must be one hole with  2 pigeons.
+    By definition of the holes, the two numbers in that hole needs to have the difference of $1$.
+    
+    Step 1.
+    From now on $j\geq 2$.
+    By definition of divisor, there exists $q$ such that 
+    \begin{equation*}
+        n = qj\,.
+    \end{equation*}
+    Let the pigeons be the numbers that got picked ($n+1$ of them).
+
+    Let the pigeonholes be the set of numbers that have the same remainder when
+    it gets divided by $j$.
+    So, for example, all the numbers that looks like $kj + r$ with the same $r$ but different
+    $k$ would belong to the same pigeonhole.
+    Listing them all out
+    \begin{gather*}
+        S_0 = \set{ kj + 0 \st k\in \N }\,,\\
+        S_1 = \set{ kj + 1 \st k \in \N }\,,\\
+        \dots\\
+        S_{j-1} = \set{ kj + j-1\st k \in \N }\,,
+    \end{gather*}
+    There are $j$ pigeonholes.
+    
+    Assigning rule: put the number to the set that contain the corresponding label.
+
+    Because $n = qj$, in each of the sets above, $k \leq 2q \leq n$ (since $ j \geq 2$ and $n = jq$).
+    So, as we picked $n+1$ numbers, using the generalized pigeonhole principle, 
+    one of the pigeonholes, say $S_r$, above must have $q+1$ numbers (from the selected numbers).
+
+    Step 2.
+    Now, in $S_r$, there are $q+1$ members, which we will make to be pigeons.
+
+    Recall each number in $S_r$ looks like
+    \begin{equation*}
+        kj + r\,.
+    \end{equation*}
+    
+    In the set $S_1$ the possible $k$'s are
+    \begin{equation*}
+        k = 1,\dots, 2q \,.
+    \end{equation*}
+    
+    For $S_r$ where $r=2,\dots, j-1$
+    the possible $k$'s are
+    \begin{equation*}
+        k = 0,1, \dots, 2q-1 \,.
+    \end{equation*}
+
+    Now, we make the possible $k$'s to be the pigeons (remember, we only have $q+1$ of them but don't know which ones).
+
+    The pigeonholes will be
+    \begin{equation*}
+        \set{1,2}, \set{3,4}, \dots, \set{2q - 1, 2q} 
+    \end{equation*}
+    if $r =1$,
+    or 
+    \begin{equation*}
+        \set{0,1}, \set{2,3}, \dots, \set{2q - 2, 2q-1} 
+    \end{equation*}
+    if $r \geq 2$.
+    
+    In each case, there are $q$ of the pigeonholes and $q+1$ pigeons.
+    By the pigeonhole principle once again, there exists a hole with two numbers that are consecutive to each other. 
+    But these are the posibilities for $k$'s.
+    We want to translate back to the original numbers in the set $S_r$, which will look like
+    $mj + r$ and $(m+1)j + r$.
+    These two numbers have the difference of $j$.
+\end{proof}
+
+\item
+ Show that if you select $6$ numbers from the set $\{1,2,\dots,10\}$, one must be a multiple of another.
+
+\begin{proof}[Solution]
+    Let the numbers be the pigeons.
+
+    The pigeonholes are designed as follows.
+    \begin{equation*}
+        \set{1,2,6}, \set{3,9}, \set{4,8}, \set{5,10}, \set{7}\,.
+    \end{equation*}
+
+    Assigning rule: put the number to the set that contain the corresponding label.
+
+   We have then picked $6$ pigeons for $5$ pigeonholes.
+
+
+   By the pigeonhole principle, one hole must have 2 members. That hole cannot be
+   $\set{7}$ as it only has 1 member.
+   The other holes contain the property that given two numbers belonging to the set,
+    one must be a multiple of the other.
+\end{proof}
+
+ \item 
+ The Earth has more than 7 billion people and almost no one lives 100 years. Suppose this longevity fact remains true. How do you know that some year soon, more than 50 million people will die? 
+
+\begin{proof}[Solution]
+   Let people be pigeons. 
+
+   Let each of the number of years from 1 to 100 be the pigeonholes. 
+    So each hole is labeled according to the number of years lived.
+
+    Currently, there are more than 7 billion people on the earth. If most people
+    die within 100 years, in 2121, most of the 7 billion people who are currently alive
+    will die.
+
+    By the pigeonhole principle, there must be one year in the next 100 years when
+    more than 50 million people will die in the same year.
+\end{proof}
+
+
+ \item  You have 10 pairs of socks, five black and five rainbow, 
+but they are all mixed up in a drawer. 
+It's 5 a.m. in the morning, and you don't want to turn on the lights in your dark room. 
+How many socks must you pull out to guarantee that you have a pair of one color? How many must you pull out to have two good pairs (one black pair and one rainbow pair is okay)?
+
+\begin{proof}[Solution]
+    I will only give the answer, you have to give the justification.
+
+    1. 3 socks must be pulled out to have a pair of one color.
+
+    2. 5 socks must be pulled  out to have two good pairs.
+\end{proof}
+
+
+
+\end{enumerate}
+
+
+
+
+%\printbibliography 
+%\bibliography{refs}
+%\bibliographystyle{halpha-abbrv}
+
+
+\end{document}

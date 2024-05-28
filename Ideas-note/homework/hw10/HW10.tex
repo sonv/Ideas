@@ -1,0 +1,121 @@
+\documentclass[12pt]{amsart}
+\usepackage{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{../svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{lineno}
+%\usepackage{authblk}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\usepackage{enumitem}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ MATH 170: Homework 10 }
+%\author[1]{Co-author}
+\author{Due: Dec 10, 2021}
+%\affil[1]{Institute}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+
+\noindent{\bf Graded for accuracy:}
+1, 2.
+\\
+\noindent{\bf Graded for completion:} 3, 4.
+
+\noindent{\bf Instructions:}
+Problems that are graded for accuracy must be correct to get points.
+Problems that are graded for completion must show some trying effort.
+
+\centerline
+
+\hrule
+
+\centerline
+
+\begin{enumerate}[label=\arabic*.,itemsep=10pt, leftmargin=*]
+    \item Two students A and B are both registered for a certain course. Assume that student A attends class 80 percent of the time, student B attends class 60 percent of the time, and the absences of the two students are independent.
+        \begin{enumerate}
+            \item  What is the probability that at least one of the two students will be in class on a given day?
+                \item  If at least one of the two students is in class on a given day, 
+                    what is the probability that A is in class that day?
+        \end{enumerate}
+      
+        
+\item Suppose that a box contains five coins, labeled 1, 2, 3, 4, 5, and that for each coin $i$ there is a different probability $p_i$ that a head will be obtained when the coin is tossed. The probabilities are $p_1 = 0$, 
+$p_2 = 1/4$, $p_3=1/2$, $p_4=3/4$,
+$p_5 = 1$.
+Suppose that one coin is selected at random from the box and when it is tossed once, a head is obtained. What is the posterior probability that the $i$th coin was selected (for each $i = 1, \dots , 5$)?
+
+    \item You will calculate your own grades.
+       The formula for expected value for a probability space with $n$ outcomes
+       $(\set{x_1, \dots, x_n}, \P)$ is
+        \begin{equation*}
+            E = x_1 \P(\set{x_1}) + \dots x_n \P(\set{x_n}).
+        \end{equation*}
+        Your average is an expected value with the probability space
+        $$\paren[\Big]{\set[\big]{\frac{\text{ your homework score}}{\text{possible total homework score}}, 
+                \frac{\text{Your total exam score}}{\text{possible total exam score }}}, \P} \,.$$
+                The function $\P$ is defined as 
+                \begin{equation*}
+                    \P\paren[\Big]{ \set[\Big]{\frac{\text{ your homework score}}{\text{possible total homework score}} } }= 0.7 \,,
+                \end{equation*}
+                and 
+                \begin{equation*}
+                   \P \paren[\Big]{\set[\Big]{  \frac{\text{Your total exam score}}{\text{possible total exam score }} }}  = 0.3 \,.
+                \end{equation*}
+                Assuming you get zero in this homework.
+                Take into account all the dropped homeworks and exams (according to the syllabus). 
+                What is the least score for you in the final, up to this point of the class, to pass this course? To get an A? (Don't think about $+-$ for this problem.)
+                
+                
+                
+                
+\item 
+In this problem, you will curve your grade. Remember that it is NOT the grade that you will get for the course! Feel free to use calculators for this problem.
+
+In all three sections of Math 170, there are 133 students in total. The average current score is $a = 87.26$. Standard deviation is $s = 14.75$. In a normal distribution, $68\%$ of the population lies within one standard deviation of the mean (average), and $95\%$ lies within two standard deviations. The distribution of the scores is not normal, but we will still apply this model for curving.
+
+\begin{enumerate}
+    \item Calculate how many standard deviations from the mean your score is. That is, find the absolute value of $x$, where \textit{your score} $= a + xs$.
+    \item The curved grade is decided by the following rule:
+    \begin{itemize}
+        \item top $3\%$ get A$+$;
+        \item next $13\%$ get A or A$-$;
+        \item next $34\%$ get B$\pm$;
+        \item next $34\%$ get C$\pm$;
+        \item next $13\%$ get D$\pm$;
+        \item lowest $3\%$ fail.
+    \end{itemize}
+    Determine what your grade on the curve is. The distribution of the grades is given in  Table 1: left column says how many students are in the ``bin'', and second column says which scores these students have.
+\begin{table}[]
+\begin{tabular}{|l|l|}
+\hline
+4  & 99.51-100   \\ \hline
+18 & 97.66-99.50 \\ \hline
+15 & 96.02-97.65 \\ \hline
+15 & 94.77-96.01 \\ \hline
+15 & 92.71-94.76 \\ \hline
+15 & 90.11-91.70 \\ \hline
+15 & 87.64-90.10 \\ \hline
+15 & 81.63-87.63 \\ \hline
+18 & 49.81-81.62 \\ \hline
+3  & 0-49.80     \\ \hline
+\end{tabular}
+\caption{Distribution of grades.}
+\end{table}   
+\item Compare your curved grade to the grade with the course's cutoffs. What do you think are advantages and drawbacks of curving?
+
+\end{enumerate}
+
+
+\end{enumerate}
+
+
+
+\end{document}

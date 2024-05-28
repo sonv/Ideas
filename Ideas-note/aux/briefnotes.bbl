@@ -1,0 +1,52 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{anyt/global//global/global}
+    \entry{Newstead}{book}{}
+      \name{author}{1}{}{%
+        {{hash=6ca93324f425e3f1407fd9e9e4ce59d8}{%
+           family={Newstead},
+           familyi={N\bibinitperiod},
+           given={Clive},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{6ca93324f425e3f1407fd9e9e4ce59d8}
+      \strng{fullhash}{6ca93324f425e3f1407fd9e9e4ce59d8}
+      \strng{bibnamehash}{6ca93324f425e3f1407fd9e9e4ce59d8}
+      \strng{authorbibnamehash}{6ca93324f425e3f1407fd9e9e4ce59d8}
+      \strng{authornamehash}{6ca93324f425e3f1407fd9e9e4ce59d8}
+      \strng{authorfullhash}{6ca93324f425e3f1407fd9e9e4ce59d8}
+      \field{labelalpha}{New}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Infinite Descent}
+      \verb{urlraw}
+      \verb https://infinitedescent.xyz/dl/infdesc.pdf
+      \endverb
+      \verb{url}
+      \verb https://infinitedescent.xyz/dl/infdesc.pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

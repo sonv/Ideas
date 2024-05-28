@@ -1,0 +1,107 @@
+\documentclass[12pt]{amsart}
+\usepackage{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{../svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{lineno}
+%\usepackage{authblk}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\usepackage{enumitem}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ MATH 170: Homework 5 }
+%\author[1]{Co-author}
+\author{Due: October 20, 2021}
+%\affil[1]{Institute}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+
+\noindent{\bf Graded for accuracy:}
+1, 4.
+\\
+\noindent{\bf Graded for completion:}
+2, 3.
+\\
+\noindent{\bf Instructions:}
+Problems that are graded for accuracy must be correct to get points.
+Problems that are graded for completion must show some trying effort.
+
+\centerline
+
+\hrule
+
+\centerline
+
+\begin{enumerate}[label=\arabic*.,itemsep=10pt, leftmargin=*]
+
+    \item 
+        Let $X, Y, Z$ be sets.
+        Use the Venn diagram to determine if the following are true.
+        \begin{enumerate}
+            \item $X\setminus (X\setminus Y) = X \cap Y$.
+            \item If $ Z = X \setminus Y$ and $Y\subseteq Z$, then $ X = Y\cup Z$.
+        \end{enumerate}
+
+    \item Imagine that you are helping a freshman pick their courses for their first semester. 
+    \begin{enumerate}
+        \item 
+        Pick three most important criteria that they should follow, e.g. you can choose some of these: \textit{interesting}, \textit{you are good at it}, \textit{current professor is chill}, \textit{it's a graduation requirement}, \textit{easy}, or come up with your own.
+        \item 
+        Draw a Venn diagram with three circles, each labeled by a criterion that you chose.
+        \item 
+        Based on your experience of being or having been a freshman, populate the diagram with these course numbers:
+        \begin{itemize}
+            \item Math 170 (Ideas in Mathematics)
+            \item Math 104 (Calculus I)
+            \item Math 724 (Topics in Algebraic Geometry)
+            \item Jpan 001 (Introduction to Spoken Japanese I)
+            \item Jpan 021 (Intensive Beginning Japanese I)
+            \item Hist 076 (Africa Since 1800)
+            \item ESE 301 (Engineering Probability)
+            \item A couple of other courses of your choice so that all possible intersections have an example.
+        \end{itemize}
+        \item Explain how to use the diagram to pick and prioritize courses. Can you come up with names for double and triple intersections? Note that different circles may have different impact on your choice.
+        \item
+        Would you include a similar activity in a freshman orientation booklet if you were to design it? Why / why not?
+    \end{enumerate}
+
+    \item The symmetric difference of $X$ and $Y$ is defined by
+        \begin{equation*}
+            X \triangle Y = \set{ a \st a \in X \text{ or } a \in Y \text{ but not both}}
+        \end{equation*}
+        Is it true that
+        \begin{enumerate}
+            \item $X\triangle Y = (X\setminus Y) \cup (Y\setminus X)$?
+            \item $X \triangle Y = (X\cup Y) \setminus (X\cap Y)$?
+        \end{enumerate}
+        Demonstrate your answers by Venn diagrams.
+
+    \item Determine whether or not $G$ is the graph of a function from $X$ to $Y$.
+        If it is, write down the function in terms of $f(x)$.
+        \begin{enumerate}
+            \item $X = \R$, $Y= \R$, $G = \set{(a,a^2) \st a\in \R}$ 
+            \item $X = \R$, $Y= \R$, $G = \set{(a^2,a) \st a\in \R}$ 
+            \item $X = \Q\setminus\set{0}$, $Y= \Q$, $G = \set{(x,y) \st  x\in \Q\setminus \set{0} \,, y \in \Q \,, xy = 1}$ 
+        \end{enumerate}
+
+%    \item 
+%        Let $f:\R \to \R$, $f(x) = x^2$, $g: [0,\infty) \to \R$, $g(x) = \sqrt{x}$
+%        Determine the formulas for the following compositions of functions.
+%        \begin{enumerate}
+%            \item $f\circ g$
+%            \item $g\circ f$
+%            \item $g\circ g$
+%            \item $f \circ g\circ g$
+%        \end{enumerate}
+\end{enumerate}
+
+
+
+\end{document}

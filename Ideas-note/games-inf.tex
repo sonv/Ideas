@@ -1,0 +1,70 @@
+%%%
+%%%
+\chapter{Playing games with infinity}
+%%%
+%%%
+
+
+
+%%%
+\section{Games}
+%%%
+
+Consider the following two-player game, which we will call Cantor's Game.
+
+Player 1 begins by writing a sequence of $X$'s and $O$'s in the top row of the grid below. Player 2 then writes either an $X$ or an $O$ in the first box on the bottom. Player 1 then writes a sequence of $X$'s and $O$'s in the second row of the grid. Player 2 writes an $X$ or $O$ in the second bottom box. The players continue until all boxes are filled. Player 1 wins if the sequence on the bottom exactly matches any of the sequences Player 1 has written in the grid. Player 2 wins otherwise.
+
+There is a grid below. Play the game a few times, then answer the following question:
+ which player has a winning strategy, and why?
+
+\vspace{.1in}
+\Huge \noindent
+\begin{tabular}{|c|c|c|c|c|}\hline
+\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ \\ \hline
+\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ \\ \hline
+\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ \\ \hline
+\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ \\ \hline
+\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ \\ \hline
+\end{tabular}
+\vspace{.25in}
+
+\noindent
+\begin{tabular}{|c|c|c|c|c|}\hline
+\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ \\ \hline
+\end{tabular}
+\normalsize
+
+
+
+%%%
+\section{Infinity}
+%%%
+
+\begin{definition}[Countable sets]
+    A set $X$ is \emph{countably infinite} if there exists a bijection $f: \N \to X$.
+    The bijection $f$ is called an \emph{enumeration} of $X$.
+    We say $X$ is \emph{countable} if it is finite or countably infinite.
+    If there is no such bijection and the set is not finite, then $X$ is said to be
+    \emph{uncountably infinite}.
+\end{definition}
+
+\begin{example}
+   The set of even natural numbers, denoted by $E$, is countably infinite. 
+   To see this, we consider the function $f:\N \to E$.
+   \begin{equation*}
+       f(n) = 2n \,.
+   \end{equation*}
+\end{example}
+
+A more interesting example is the following.
+
+\begin{example}
+    The set of non-negative rational numbers is countably infinite.
+    We see this by the snake argument.
+\end{example}
+
+\begin{theorem}
+   $\R$ is uncountably infinite. 
+\end{theorem}
+
+

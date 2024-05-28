@@ -1,0 +1,65 @@
+\documentclass[11pt,openan,dvipsnamesk,twocolumn]{amsbook}
+%% remove twocolumn option for normal view
+%% add tablet option for tablet-compatible version
+
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{marktext} 
+\usepackage{svmacro}
+
+\usepackage{nicematrix,colortbl}
+
+\renewcommand{\baselinestretch}{1.2} 
+
+\usepackage[utf8]{inputenc}
+\usepackage{lineno}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\usepackage{ulem}
+\addbibresource{bibliography.bib}
+\usepackage{csquotes}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=blue!10]{\textbf{SV\xspace #1:} #2}}
+\newcommand{\murmuno}[2][]{\sidenote[colback=green!10]{\textbf{Sveta\xspace #1:} #2}}
+%% Title 
+\title{ Math 170: Brief notes }
+%\author[1]{Co-author}
+\author{Svetlana Makarova}
+\author{Truong-Son Van}
+\date{\today}
+
+\let\cleardoublepage=\clearpage
+
+% Prelude %
+%\include{prelude}
+
+\begin{document}
+
+%\linenumbers
+\maketitle
+
+\tableofcontents
+
+\include{intro}
+\include{warm-up}
+\include{logical-structure}
+\include{set-function}
+\include{induction}
+\include{games-inf}
+\include{graph}
+
+%%%
+%%%
+%\chapter{Way after}
+%%%
+%%%
+%\section{Art gallery theorem}
+%%%
+
+\include{probability}
+
+\printbibliography 
+%\bibliography{refs}
+%\bibliographystyle{halpha-abbrv}
+
+
+\end{document}

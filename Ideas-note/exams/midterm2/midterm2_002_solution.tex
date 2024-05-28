@@ -1,0 +1,121 @@
+\documentclass[12pt]{amsart}
+\usepackage{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{../svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{lineno}
+%\usepackage{authblk}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\usepackage{enumitem}
+\usepackage[margin=1in]{geometry}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ MATH 170: Midterm 2 }
+%\author[1]{Co-author}
+\author{Good luck!}
+%\affil[1]{Institute}
+\date{}
+
+\begin{document}
+
+
+\maketitle
+
+There are three questions. Make sure you justify all your work for complete credit.
+
+\section*{Rules}
+
+\begin{itemize}[leftmargin=*]
+    \item You have 50 minutes to complete your work and 10 minutes to upload your work.
+    \item Open notes (you can use your notes freely).
+    \item No use of internet, textbooks, computer algebra systems, calculators. 
+    \item No collaboration.
+\end{itemize}
+
+\section*{Questions}
+
+\begin{enumerate}[label=\arabic*.,itemsep=10pt, leftmargin=*]
+    \item 
+    Let $A, B$ be sets.
+    Recall that the symmetric difference of two sets $A$ and $B$ is 
+    \begin{equation*}
+        A\triangle B = \set{ x \st x \in A \text{ or } x \in B \text{ but not both}} \,.
+    \end{equation*}
+    Determine whether the following are true or false via the Venn diagram.
+    \begin{equation*}
+         A = A \cup ((A\cup B) \setminus (A \triangle B)) \,.
+    \end{equation*}
+    \begin{proof}[Solution]
+        True.
+    \end{proof}
+
+    \item 
+    \begin{enumerate}
+        \item Give an example of a function $f$ from $X= \N$ to $Y=\N$ that is injective but not surjective.
+        \item Let $Z = \set{ y \in Y \st f(x) = y}$.
+        Now consider the function $f$ above but a new codomain $Z$,i.e., $f: \N \to Z$. 
+        Is this new function a bijection?
+        Explain your reasoning.
+    \end{enumerate}
+    \begin{proof}[Solution]
+        a. 
+        There are numerous functions. Two common ones are
+        \begin{equation*}
+            f(n) =  2n 
+        \end{equation*}
+        and 
+        \begin{equation*}
+            f(n) = n^2\,.
+        \end{equation*}
+
+        b. It is a bijection. In words, the set $Z$ is the set of natural numbers so that every element in $Z$
+        gets mapped to by an element in $X$, i.e, pick  a $y\in Z$, then $y = f(x)$ for some $x\in X$.
+        So this function $f: \N \to Z$ is surjective. It was injective by design. So it is bijective.
+    \end{proof}
+
+    \item Prove by induction that $\forall n \in \N$,
+    \begin{equation*}
+       1 + 2^2 + \dots + n^2 = \frac{n(n+1)(2n+1)}{6}\,.
+    \end{equation*}
+    \begin{proof}[Solution]
+       1. Determine $P(n)$, which says
+    \begin{equation*}
+       1 + 2^2 + \dots + n^2 = \frac{n(n+1)(2n+1)}{6}\,.
+    \end{equation*}
+
+    2. Base case: $P(0)$ says 
+        \begin{equation*}
+            0 = 0 \,,
+        \end{equation*}
+        which is true.
+
+    3. Suppose $P(0) \wedge \dots \wedge P(k)$ is true.
+    In particular, it is true that 
+    \begin{equation*}
+       1 + 2^2 + \dots + k^2 = \frac{k(k+1)(2k+1)}{6}\,.
+    \end{equation*}
+    We want to show that $P(k+1)$ is true. In particular, we want to show the following is true
+    \begin{equation*}
+       1 + 2^2 + \dots + k^2 + (k+1)^2 = \frac{(k+1)(k+2)(2k+3)}{6}\,.
+    \end{equation*}
+    To do this, consider
+    \begin{align*}
+       1 + 2^2 + \dots + k^2 + (k+1)^2 & = 
+            \frac{k(k+1)(2k+1)}{6} + (k+1)^2 \\
+           & =  \frac{k(k+1)(2k+1) + 6 (k+1)^2}{6}  \\
+           & =  \frac{(k+1)(k(2k+1) + 6k + 6) }{6}  \\
+           & =  \frac{(k+1)(2k^2+ k+ 6k + 6) }{6}  \\
+           & =  \frac{(k+1)(2k^2+ 3k+ 4k + 6) }{6}  \\
+           &= \frac{(k+1)(k+2)(2k+3)}{6}\,.
+    \end{align*}
+This shows that $P(k+1)$ is true.
+
+4. By induction theorem, $P(n)$ is true for all $n\in \N$.
+    \end{proof}
+
+\end{enumerate}
+
+\end{document}

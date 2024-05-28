@@ -1,0 +1,114 @@
+\documentclass[12pt]{amsart}
+\usepackage{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{../svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{lineno}
+%\usepackage{authblk}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\usepackage{enumitem}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ MATH 170: Midterm 1 }
+%\author[1]{Co-author}
+\author{Good luck!}
+%\affil[1]{Institute}
+\date{}
+
+\begin{document}
+
+
+\maketitle
+
+There are three questions. Make sure you justify all your work for complete credit.
+
+\section*{Rules}
+
+\begin{itemize}[leftmargin=*]
+    \item You have 50 minutes to complete your work and 10 minutes to upload your work.
+    \item Open notes (you can use your notes freely).
+    \item No use of internet, textbooks, computer algebra systems, calculators. 
+    \item No collaboration.
+\end{itemize}
+
+\section*{Questions}
+
+\begin{enumerate}[label=\arabic*.,itemsep=10pt, leftmargin=*]
+    \item 
+        Consider the following statements:
+        \begin{itemize}
+            \item $P=$ ``$2$ divides $1234$''
+            \item $Q =$ ``$3$ divides $124$''
+            \item $R=$ ``$5$ divides $1250$''
+        \end{itemize}
+        \begin{enumerate}
+        \item
+        \textit{[10 points.]}
+        Use criteria of divisibility to check if $P$, $Q$, $R$ are correct.
+        \item
+        \textit{[5 points.]}
+        Divide $124$ by $3$ with remainder.
+        \item
+        \textit{[5 points.]}
+        Find $\gcd(124,12)$.
+        \end{enumerate}
+    \item 
+        There is a cafe that exclusively delivers bubble tea.
+        At the moment, they have 150 customers, all of them are UPenn students.
+        The students are happy if they have at least 10 bubble teas a week.
+        The survival goal of the company is to keep at least one customer happy per week.
+        Being a small cafe, they have only three delivery workers who only work 40 hour per week each.
+        Assume the productivity of the workers are the same (i.e., they deliver the same number of bubble teas per hour).
+        Assume also that the restaurant doesn't know who they're delivering to.
+        How many orders does each delivery worker have to deliver per hour to keep the restaurant alive? 
+        
+        You may follow the provided steps to solve the problem. Any other correct approach will give points too.
+        
+        \begin{enumerate}
+            \item
+        \textit{[5 points.]}
+            Write out the formulation of the generalized pigeonhole principle.
+        
+            \item 
+        \textit{[5 points.]}
+            Identify the pigeons.
+
+            \item 
+        \textit{[5 points.]}
+            Identify the pigeonholes. 
+
+            \item 
+        \textit{[5 points.]}
+            Apply the generalized pigeonhole principle.
+        \end{enumerate}
+
+
+    \item 
+        \begin{enumerate}
+            \item 
+        \textit{[10 points.]}
+            Translate the following statement into a logical formula.
+                
+                ``If all pandas eat bamboo, then there is no panda that is carnivorous.''
+                
+            Suggested use of variables: $p\in P$ for pandas, $B(p)$ for ``$p$ eats bamboo'', $C(p)$ for  ``$p$ is carnivorous''.
+
+            \item 
+        \textit{[5 points.]}
+            Find the simplest logical formula
+                to express the negation of the above statement. 
+            (Recall that negation means that you add the logical operator $\neg$ in front of the whole formula.)
+
+            \item 
+        \textit{[5 points.]}
+            Translate the resulting formula in 3b back into English. 
+        \end{enumerate}
+\end{enumerate}
+
+
+
+
+\end{document}

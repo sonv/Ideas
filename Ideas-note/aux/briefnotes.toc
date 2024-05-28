@@ -1,0 +1,17 @@
+\contentsline {chapter}{\tocchapter {Chapter}{}{Introduction}}{4}{chapter*.1}%
+\contentsline {chapter}{\tocchapter {Chapter}{1}{Warm-up: pigeonhole and numbers}}{6}{chapter.1}%
+\contentsline {section}{\tocsection {}{1}{Pigeonhole principle}}{6}{section.1.1}%
+\contentsline {section}{\tocsection {}{2}{Proving things with the pigeonhole principle}}{8}{section.1.2}%
+\contentsline {section}{\tocsection {}{3}{Divisibility}}{9}{section.1.3}%
+\contentsline {section}{\tocsection {}{4}{Criteria of divisibility}}{11}{section.1.4}%
+\contentsline {section}{\tocsection {}{5}{Prime numbers}}{13}{section.1.5}%
+\contentsline {section}{\tocsection {}{6}{Greatest common divisor}}{15}{section.1.6}%
+\contentsline {chapter}{\tocchapter {Chapter}{2}{Discrete probability}}{18}{chapter.2}%
+\contentsline {section}{\tocsection {}{1}{The basics}}{18}{section.2.1}%
+\contentsline {section}{\tocsection {}{2}{Probability from counting }}{21}{section.2.2}%
+\contentsline {subsection}{\tocsubsection {}{2.1}{Counting}}{22}{subsection.2.2.1}%
+\contentsline {subsection}{\tocsubsection {}{2.2}{Generating probability from counting}}{24}{subsection.2.2.2}%
+\contentsline {section}{\tocsection {}{3}{Conditional probability}}{25}{section.2.3}%
+\contentsline {section}{\tocsection {}{4}{Independence}}{26}{section.2.4}%
+\contentsline {section}{\tocsection {}{5}{Random Variable and Expectation}}{28}{section.2.5}%
+\contentsline {chapter}{\tocchapter {Chapter}{}{Bibliography}}{30}{chapter*.2}%

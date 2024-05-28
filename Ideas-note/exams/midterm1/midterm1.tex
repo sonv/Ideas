@@ -1,0 +1,123 @@
+\documentclass[12pt]{amsart}
+\usepackage{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{../svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{lineno}
+%\usepackage{authblk}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\usepackage{enumitem}
+\usepackage[margin=1in]{geometry}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ MATH 170: Midterm 1 }
+%\author[1]{Co-author}
+\author{Good luck!}
+%\affil[1]{Institute}
+\date{}
+
+\begin{document}
+
+
+\maketitle
+
+There are three questions. Make sure you justify all your work for complete credit.
+
+\section*{Rules}
+
+\begin{itemize}[leftmargin=*]
+    \item You have 50 minutes to complete your work and 10 minutes to upload your work.
+    \item Open notes (you can use your notes freely).
+    \item No use of internet, textbooks, computer algebra systems, calculators. 
+    \item No collaboration.
+\end{itemize}
+
+\section*{Questions}
+
+\begin{enumerate}[label=\arabic*.,itemsep=10pt, leftmargin=*]
+    \item 
+        Let $P,Q,R$ be propositional variables
+        that represent the following:
+        \begin{itemize}
+            \item $P=$ ``$24540$ is divisible by $2$''
+            \item $Q =$ ``$3$ divides $24540$''
+            \item $R=$ ``$5$ divides $11111$''
+        \end{itemize}
+            
+        \begin{enumerate}
+        \item
+        \textit{[10 points.]}
+        Use criteria of divisibility to check if $P$, $Q$, $R$ are correct.
+        \item
+        \textit{[5 points.]}
+        Divide $11111$ by $3$ with remainder.
+        \item
+        \textit{[5 points.]}
+        Find $\gcd(123,9)$.
+        \end{enumerate}
+
+    \item 
+        There is a restaurant that exclusively delivers instant noodles.
+        At the moment, they have 100 customers, all of them are UPenn students.
+        The students are happy if they have 12 bowls of instant noodles per week.
+        The survival goal of the company is to keep at least one customer happy per week.
+        Being a small cafe, they have only three delivery workers who only work 40 hour per week each.
+        Assume the productivity of the workers is the same (i.e., they deliver the same number of bowls per hour).
+        Assume also that the restaurant doesn't know who they're delivering to.
+        How many bowls of instant noodles does each delivery worker have to deliver per hour
+        in order to keep the restaurant alive? 
+        
+
+        You may follow the provided steps to solve the problem. Any other correct approach will give points too.
+        
+        \begin{enumerate}
+            \item
+        \textit{[5 points.]}
+            Write out the formulation of the generalized pigeonhole principle.
+        
+            \item 
+        \textit{[5 points.]}
+            Identify the pigeons.
+
+            \item 
+        \textit{[5 points.]}
+            Identify the pigeonholes. 
+
+            \item 
+        \textit{[5 points.]}
+            Apply the generalized pigeonhole principle.
+        \end{enumerate}
+    \item 
+        \begin{enumerate}
+            \item 
+        \textit{[10 points.]}
+            Translate the following statement into a logical formula.
+                
+                ``If all humans are heroes all the time then no humans are heroes anytime.''
+                
+            Suggested variables: $x$ for humans, 
+            $t$ for time.
+            Suggested predicates: 
+            $P(x,t)=$``$x$ is a hero in time $t$'',
+            $Q(x,t)=$``$x$ is a hero in time $t$''.
+            
+
+            \item 
+        \textit{[5 points.]}
+            Find the simplest logical formulae 
+                to express the negation of the above statements. 
+                
+            \item
+        \textit{[5 points.]}
+            Translate the resulting formula in 3b back into English. 
+
+        \end{enumerate}
+\end{enumerate}
+
+
+
+
+\end{document}

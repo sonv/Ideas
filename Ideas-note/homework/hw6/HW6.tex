@@ -1,0 +1,87 @@
+\documentclass[12pt]{amsart}
+\usepackage{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{../svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{lineno}
+%\usepackage{authblk}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\usepackage{enumitem}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ MATH 170: Homework 6 }
+%\author[1]{Co-author}
+\author{Due: October 29, 2021}
+%\affil[1]{Institute}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+
+\noindent{\bf Graded for accuracy:}
+1,2, 4.
+\\
+\noindent{\bf Graded for completion:}
+3.
+\\
+\noindent{\bf Instructions:}
+Problems that are graded for accuracy must be correct to get points.
+Problems that are graded for completion must show some trying effort.
+
+\centerline
+
+\hrule
+
+\centerline
+
+\begin{enumerate}[label=\arabic*.,itemsep=10pt, leftmargin=*]
+
+
+    \item 
+        Let $f:\R \to \R$, $f(x) = x^2$, $g: [0,\infty) \to \R$, $g(x) = \sqrt{x}$
+        Determine the formulas for the following compositions of functions.
+        \begin{enumerate}
+            \item $f\circ g$
+            \item $g\circ f$
+            \item $g\circ g$
+            \item $f \circ g\circ g$
+        \end{enumerate}
+        
+    \item 
+        Let $f: X \to Y$ be a function between two sets.
+        \begin{enumerate}
+            \item Assume that $f$ is a bijection. Show that then you can define a function $g: Y \to X$ such that $f\circ g$ is the identity function of $Y$ and $g \circ f$ is the identity function of $X$.
+            \item Assume that $g: Y \to X$ is a function as in the previous part. Prove that then $f$ is necessarily a bijection. 
+        \end{enumerate}
+
+    \item Watch Vi Hart's videos about Fibonacci spirals in nature:
+    
+    Part 1: \url{https://www.youtube.com/watch?v=ahXIMUkSXX0}
+    
+    Part 2:
+    \url{https://www.youtube.com/watch?v=lOIP_Z_-0Hs}
+    
+    Part 3: \url{https://www.youtube.com/watch?v=14-NdQwKz9w}
+    
+        \begin{enumerate}
+            \item Create an angle $137.5^\circ$ and draw approximately $30$ petals, each $137.5^\circ$ from the previous one. 
+            \item When you are done with part (a), mark the spirals and count the number of them.
+            \item After watching the third part, in your own words explain why we almost always get a Fibonacci number of spirals in plants.
+        \end{enumerate}
+
+\item Prove by induction that for every $n\in \N$
+        \begin{equation*}
+            1 + 2 + 2^2 + \dots + 2^n = 2^{n+1} - 1 \,.
+        \end{equation*}
+
+    
+\end{enumerate}
+
+
+
+\end{document}

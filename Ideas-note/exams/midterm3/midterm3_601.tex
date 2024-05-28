@@ -1,0 +1,83 @@
+\documentclass[12pt]{amsart}
+\usepackage{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{../svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{lineno}
+%\usepackage{authblk}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\usepackage{enumitem}
+\usepackage[margin=1in]{geometry}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ MATH 170 -- 601: Midterm 3 }
+%\author[1]{Co-author}
+\author{Good luck!}
+%\affil[1]{Institute}
+\date{}
+
+\begin{document}
+
+
+\maketitle
+
+There are three questions. Make sure you justify all your work for complete credit.
+
+\section*{Rules}
+
+\begin{itemize}[leftmargin=*]
+    \item You have 50 minutes to complete your work and 10 minutes to upload your work.
+    \item Open notes (you can use your notes freely).
+    \item No use of internet, textbooks, computer algebra systems, calculators. 
+    \item No collaboration.
+\end{itemize}
+
+\section*{Questions}
+Each sub-problem (a,b) is worth 10 points.
+
+\begin{enumerate}[label=\arabic*.,itemsep=10pt, leftmargin=*]
+    \item
+    Consider the following graph
+   \begin{equation*}
+       \set[\Big]{\set{a,b,c,d,e,f,g,h,i,j,k,l}, \set{ab,ac,ad,bc,bd,cd,be,ef,eg,fg,gh,hi,hj,hk,hl,ij,ik,il,jk,jl,kl}}\,.
+   \end{equation*}
+   \begin{enumerate}
+    \item Draw the graph. 
+    \item Recall for a complete graph (all vertices are connected with each other by an edge) of $k$ vertices, $K_k$, $$P_{K_k}(n) = n(n-1)\dots(n-k+1)\,.$$ 
+    Use the deletion-contraction formula to determine how many ways there are to color the above graph using 10 colors.
+    \end{enumerate}
+    \item 
+        Consider a sample space of $7$ coin tosses.
+        \begin{enumerate}
+            \item What is the probability that the first and the last toss is the same?
+            \item What is the probability that the last toss is head, given that the
+                first toss is head?
+        \end{enumerate}
+
+
+    \item 
+        \begin{enumerate}
+            \item Compute the following:
+                \begin{gather*}
+                    \binom{1}{0} + \binom{1}{1} \,, \\
+                    \binom{2}{0} + \binom{2}{1} + \binom{2}{2} \,, \\
+                    \binom{3}{0} + \binom{3}{1} + \dots + \binom{3}{3} \,.
+                \end{gather*}
+    \item
+        What should be the formula for 
+        \begin{equation*}
+            \binom{n}{0} + \binom{n}{1} + \dots + \binom{n}{n} \,.
+        \end{equation*}
+
+    \item[Bonus (5pts):] Prove the formula you just guessed.
+        \end{enumerate}
+
+
+\end{enumerate}
+
+
+
+\end{document}

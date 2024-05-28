@@ -1,0 +1,71 @@
+\documentclass[11pt,openan,dvipsnames,table]{amsbook}
+
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage[draft]{marktext} 
+\usepackage[draft]{svmacro}
+
+
+\renewcommand{\baselinestretch}{1.2} 
+
+\usepackage[utf8]{inputenc}
+\usepackage{lineno}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\usepackage{ulem}
+\usepackage{csquotes}
+
+\usepackage{nicematrix}
+
+\addbibresource{bibliography.bib}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=blue!10]{\textbf{SV\xspace #1:} #2}}
+\newcommand{\murmuno}[2][]{\sidenote[colback=green!10]{\textbf{Sveta\xspace #1:} #2}}
+%% Title 
+\title{ Math 170: Brief notes }
+%\author[1]{Co-author}
+\author{Svetlana Makarova}
+\author{Truong-Son Van}
+\date{\today}
+
+\let\cleardoublepage=\clearpage
+
+% Prelude %
+%\include{prelude}
+
+\begin{document}
+
+%\linenumbers
+\maketitle
+
+\tableofcontents
+
+%\include{intro}
+%\include{warm-up}
+\include{logical-structure}
+\include{set-function}
+\include{induction}
+
+
+\include{games-inf}
+%%%
+%%%
+
+\include{graph}
+
+%\chapter{Way after}
+%%%
+%%%
+%\section{Art gallery theorem}
+%%%
+%\section{Graphs}
+%Graphs to describe relations. Chromatic number of a graph. Planar graphs -- start with the game of Brussels Sprouts. Corresponding video: https://www.youtube.com/watch?v=OAss481FfAQ
+%%%
+
+\include{probability}
+
+\printbibliography 
+%\bibliography{refs}
+%\bibliographystyle{halpha-abbrv}
+
+
+\end{document}

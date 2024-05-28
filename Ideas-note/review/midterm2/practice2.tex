@@ -1,0 +1,93 @@
+\documentclass[12pt]{amsart}
+\usepackage{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{../svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{lineno}
+%\usepackage{authblk}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\usepackage{enumitem}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ MATH 170: Practice problems for Midterm 1 }
+%\author[1]{Co-author}
+%\affil[1]{Institute}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+
+\noindent{\bf Not graded.}
+
+\centerline
+
+\hrule
+
+\centerline
+
+\begin{enumerate}[label=\arabic*.,itemsep=10pt, leftmargin=*]
+\item  
+Consider the following sets:
+\begin{itemize}
+    \item $A$ is the set of all animals;
+    \item $B$ is the set of animals that eat bamboo;
+    \item $P$ is the set of animals that eat plants;
+    \item $M$ is the set of animals that eat meat.
+\end{itemize}
+    \begin{enumerate}[label=\alph*.,itemsep=5pt, leftmargin=*]
+    \item Draw the Venn diagram that correctly represents the inclusions of the above four sets. Note that fish and insects are not meat.
+    \item Is $P \cup M$ a proper subset of $A$?
+    \item Is $B \cup M$ a proper subset of $B$?
+    \item Based on the previous parts, determine if the following proposition is true:
+    $$ \forall a \in A :
+    ``a \mbox{ eats plants''} \vee
+    ``a \mbox{ eats meat''}
+    .$$
+    \end{enumerate}
+
+\item  Consider a set $U$ and four of its subsets $X$, $Y$, $Z$ such that we know:
+$$ X \cap Y \subset Z
+.$$
+    \begin{enumerate}[label=\alph*.,itemsep=5pt, leftmargin=*]
+    \item Draw the Venn diagram that  represents the inclusions of the above four sets. Make sure that there is no region corresponding to $(X\cap Y) \setminus Z$, since it is the empty set by assumption.
+    \item Determine if this formula is necessarily true: $Z \cap Y \subset X$.
+    \item Determine if this formula is necessarily true: $Z \setminus (X \cap Y) = \varnothing$.
+    \item Determine if this formula is necessarily true: 
+    $$(X \Delta Y) \cap Z = (X\cap Z) \Delta (Y \cap Z)
+    .$$
+    \item For each formula above that was not correct, draw a new Venn diagram, for which the formula would be correct.
+\end{enumerate}
+
+
+
+\item  Consider the following function 
+$f : \mathbb{N} \to \mathbb{N}$ that takes $n>0$ to the number of its positive divisors, and let $f(0) = 0$. For example:
+$f(1) = 1$,
+$f(2) = 2$,
+$f(4) = 3$,
+$f(6) = 2$.
+    \begin{enumerate}[label=\alph*.,itemsep=5pt, leftmargin=*]
+    \item Calculate $f(3)$, $f(5)$, $f(7)$, $f(8)$, $f(9)$, $f(16)$.
+    \item Show that $p$ is a prime number if and only if $f(p)=2$.
+    \item Show that for every prime number $p$ and any $k\in \mathbb{N}$, we have $f(p^k) = k+1$.
+    \item Is $f$ injective, surjective, bijective? Why / why not?
+    \item Draw the graph of this function (enough to draw up to the value at 9).
+    \end{enumerate}
+
+\item Show that for every $n\in \N$
+\begin{equation*}
+    F_{n+2} F_n - F_{n+1}^2 = (-1)^{n+1}    
+\end{equation*}
+where $F_n$ is the Fibonacci sequence.
+
+
+\end{enumerate}
+
+
+
+\end{document}

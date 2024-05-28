@@ -1,0 +1,69 @@
+\documentclass[12pt]{amsart}
+\usepackage{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{../svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{lineno}
+%\usepackage{authblk}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\usepackage{enumitem}
+\usepackage[margin=1in]{geometry}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ MATH 170: Midterm 2 }
+%\author[1]{Co-author}
+\author{Good luck!}
+%\affil[1]{Institute}
+\date{}
+
+\begin{document}
+
+
+\maketitle
+
+There are three questions. Make sure you justify all your work for complete credit.
+
+\section*{Rules}
+
+\begin{itemize}[leftmargin=*]
+    \item You have 50 minutes to complete your work and 10 minutes to upload your work.
+    \item Open notes (you can use your notes freely).
+    \item No use of internet, textbooks, computer algebra systems, calculators. 
+    \item No collaboration.
+\end{itemize}
+
+\section*{Questions}
+
+\begin{enumerate}[label=\arabic*.,itemsep=10pt, leftmargin=*]
+    \item 
+    Let $A, B$ be sets.
+    Recall that the symmetric difference of two sets $A$ and $B$ is 
+    \begin{equation*}
+        A\triangle B = \set{ x \st x \in A \text{ or } x \in B \text{ but not both}} \,.
+    \end{equation*}
+    Determine whether the following are true or false via the Venn diagram.
+    \begin{equation*}
+         A = A \cap((A\cap B) \setminus (A \triangle B)) \,.
+    \end{equation*}
+
+
+    \item 
+    \begin{enumerate}
+        \item 
+            Give an example of a function $f$ from $X= \Z$ to $Y=\Z$ that is not the identity function so that $f\circ f = id_\N$.
+        \item What is $f\circ f \circ f \circ f$? 
+    \end{enumerate}
+
+    \item Prove by induction that $\forall n \in \N$,
+    \begin{equation*}
+        1\cdot 2 + 2 \cdot 3 + \dots + n(n+1) = \frac{n(n+1)(n+2)}{3}\,.
+    \end{equation*}
+
+\end{enumerate}
+
+
+
+\end{document}

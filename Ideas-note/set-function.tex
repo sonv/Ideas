@@ -1,0 +1,457 @@
+\chapter{Sets and functions}
+\section{Sets}
+
+The notion of a \emph{set} is extremely fundamental (as we already used it in 
+previous discussions) yet, if not defined carefully, could lead to paradoxes and
+break mathematics from its core.
+Perhaps the most infamous paradox in naive set theory  is the so-call Russell's paradox.
+However, for the sake of sanity in this course, let's stick with the naive notion 
+and trust that mathematicians already fixed this issue and unbroke mathematics...
+\begin{definition}
+   A set is a collection of objects. 
+   The objects in the sets are called \emph{elements} of the set.
+   If $x$ is an element in the set $X$ then we write $x\in X$.
+   We write $x\not\in X$ to mean $\neg (x\in X)$.
+\end{definition}
+
+The way that Bertrand Russell broke naive set theory is via the following chain of reasoning, taken directly from Wikipedia:
+
+\begin{displayquote}
+   Let $R$ be the set of all sets that are not members of themselves.
+   If $R$ is not a member of itself, then its definition entails that 
+   it is a member of itself; if it is a member of itself, 
+   then it is not a member of itself, since it is the set of 
+   all sets that are not members of themselves. 
+\end{displayquote}
+
+We will need to use the so-called \emph{set-builder notation} to
+describe sets in general.
+Given a set $X$, set set of elements of $X$ satisfying some property $P(x)$ is denoted by
+\begin{equation*}
+\set[\big]{ x \in X \st P(x)} \,.
+\end{equation*}
+
+
+From now on, we define the set of all rationals to be 
+\begin{equation*}
+    \Q = \set[\big]{ p / q \st p \in \Z, q\in \Z \text{ and } q\not= 0} \,,
+\end{equation*}
+and the set of real numbers to be
+\begin{equation*}
+\R = \set[\big]{ \text{rationals and irrational numbers}}\,.
+\end{equation*}
+We are cheating in the definition of real numbers above but that is too technical for the moment. Let's just go with what you imagine it to be from high school.
+We will also use the usual open and closed set notations.
+\begin{gather*}
+[a,b] = \set[\big]{x \in \R \st a \leq x \leq b } \,,\\
+[a,b) = \set[\big]{x \in \R \st a \leq x <  b } \,, \\
+(a,b] = \set[\big]{x \in \R \st a < x \leq  b } \,, \\
+(a,b) = \set[\big]{x \in \R \st a < x <  b } \,.
+\end{gather*}
+
+See Newstead~\cite{Newstead} (Chapter 2) for representations of intervals on the number line.
+
+\begin{definition}
+    Let $X$ be a set. A \emph{subset} of $X$ is a set $U$ such that 
+    \begin{equation*}
+        \forall a, ( a \in U \implies a \in X) \,.
+    \end{equation*}
+    We write $U \subseteq X$ for the assertion that $U$ is a subset of $X$.
+    The notation $\subsetneqq$ means that $U$ is a \emph{proper subset} of $X$, 
+    that is a subset of $X$ that is not equal to $X$.
+\end{definition}
+
+In order to prove that $U$ is a subset of $X$, it is sufficient to take an 
+arbitrary element $a\in U$ and prove that $a \in X$.
+
+\begin{example}
+    Prove that $\Z \subset \Q$.
+\end{example}
+
+We want to be able to say when two sets are the same (equal) with each other.
+There are different ways to go about this.
+One can say that two sets are equal if they have the exact same definition or
+there definition are somehow logically equivalent to each other.
+In real practice, these are not very useful.
+However, there are those who believe that ``we are what we are made of.''
+This sounds like a reasonable description and is a criteria to distinguish two different
+people. Surely, even though our bodies might be made of atoms
+but my atoms are different than your atoms.
+This inspires the following axiom about set equality.
+
+
+\begin{axiom}[Axiom of extentionality]
+   Let $X$ and $Y$ be sets. Then $X = Y$ if and only if $X \subseteq Y$ and $Y\subseteq X$. 
+\end{axiom}
+
+\begin{example}
+   Prove that, 
+   \begin{equation*}
+   \set[\big]{ x \in \R \st x^2 \leq 1 } = [-1,1] \,.
+   \end{equation*}
+\end{example}
+
+One question may arise when we define intevals.
+Consider, $(a,b)$, for example. Some people might object this definition because
+if $a >b$ we have a contradiction 
+\begin{equation*}
+    b< a < x < b \,.
+\end{equation*}
+How can this be?
+A careful look at this definition, we realized that it says, 
+if $x \in \R$ and $ a< x <b$, then we admit $x$ into the set.
+If the description itself does not make sense, we can't even start 
+to consider anything, let alone the admission.
+When this situation, the set $(a,b)$ simply does not contain any element, and we 
+call that an empty set.
+
+\begin{definition}
+    A set is~\emph{non-empty} if it contains at least one element.
+    Otherwise, it is~\emph{empty}.
+\end{definition}
+
+\begin{question}
+   How many empty sets are there? 
+\end{question}
+
+\begin{proof}[Answer]
+   There is only one empty set. That is if $E'$ and $E$ are both empty set, then
+   \begin{equation*}
+       E' = E \,.
+   \end{equation*}
+   To see this, we want to show $E\subseteq E'$ and $E' \subseteq E$ (axiom of extentionality).
+    By definition,
+    Let $a$ be an element in the universe that $E$ belongs to.
+    $a \in E $ is always false because $E$ is empty.
+    Therefore, the statement
+    \begin{equation*}
+        a\in E \implies a\in E'
+    \end{equation*}
+    is always true.
+    By definition of subsets, $E \subseteq E'$.
+    Likewise, $E' \subseteq E$, showing our claim.
+\end{proof}
+
+
+\subsection{Set operations}
+
+We will introduce some basic operations on sets. There are many more but
+the interested reader could find them in fuller details in Newstead's book.
+
+\begin{definition}[Pairwise intersection]
+    Let $X$ and $Y$ be sets. 
+    The \emph{pairwise intersection} of $X$ and $Y$, denoted $X \cap Y$
+    is defined by
+    \begin{equation*}
+        X \cap Y \defeq \set{ a \st a \in X \wedge a \in Y}\,.
+    \end{equation*}
+\end{definition}
+
+\begin{example}
+    Let $X = \set{1,2,3,4}$ and $Y = \set{2,4,7}$, then
+    \begin{equation*}
+        X \cap Y = \set{ 2,4} \,.
+    \end{equation*}
+\end{example}
+
+
+\begin{definition}[Pairwise union]
+    Let $X$ and $Y$ be sets. 
+    The \emph{pairwise union} of $X$ and $Y$, denoted $X \cup Y$
+    is defined by
+    \begin{equation*}
+        X \cup Y \defeq \set{ a \st a \in X \vee a \in Y}\,.
+    \end{equation*}
+\end{definition}
+
+\begin{example}
+    Let $X = \set{1,2,3,4}$ and $Y = \set{2,4,7}$, then
+    \begin{equation*}
+        X \cup Y = \set{ 1,2,3,4, 7} \,.
+    \end{equation*}
+\end{example}
+
+
+\begin{definition}[Relative complement]
+    Let $X$ and $Y$ be sets. 
+    The \emph{relative complement} of $Y$ and $X$, denoted $Y \setminus X$
+    is defined by
+    \begin{equation*}
+        Y \setminus X \defeq \set{ a \st a \in Y \wedge a \not\in X}\,.
+    \end{equation*}
+\end{definition}
+
+\begin{example}
+    Let $X = \set{1,2,3,4}$ and $Y = \set{2,4,7}$, then
+    \begin{gather*}
+        Y \setminus X  = \set{ 7} \,,\\
+        X \setminus Y  = \set{ 1, 3} \,.
+    \end{gather*}
+\end{example}
+
+
+\subsection{Venn diagram}
+For this part, please refer to in-class lecture. 
+
+
+You can prove the following using Venn diagram.
+\begin{theorem}[de Morgan's laws for sets]
+    Let $X,Y, Z$ be sets. We have
+    \begin{enumerate}
+        \item $X \setminus (Y\cup Z) = (X\setminus Y) \cap (X \setminus Z)$,
+        \item $X \setminus (Y\cap Z) = (X\setminus Y) \cup (X \setminus Z)$.
+    \end{enumerate}
+\end{theorem}
+
+\begin{definition}[Ordered pair]
+    For any two objects, $x$ and $y$, an ordered pair $(x,y)$ is the notation for the 
+    two objects being arranged in that particular order. 
+
+    Thus, $(x,y)\not = (y,x)$ unless $x=y$.
+\end{definition}
+\begin{definition}[Cartesian product]
+    Let $X$ and $Y$ be sets. The Cartesian product of $X$ and $Y$, denoted by $X\times Y$
+    is the set of all ordered pairs $(x,y)$ such that $x\in X$ and $y\in Y$.
+    In set-builder notation
+    \begin{equation*}
+        X\times Y \defeq \set{(x,y)\st x\in X, y\in Y}\,.
+    \end{equation*}
+    
+\end{definition}
+
+
+%%%
+\subsection{Application of set theory thinking to sudoku}
+
+\begin{theorem}[Phistomefel ring]
+In a completed sudoku grid, the set of numbers (with multiplicities) in the blue region is exactly the same as in the red region.
+
+\begin{center}
+\begin{tabular}{|c|c|c||c|c|c||c|c|c|}
+\hline
+\cellcolor{red!50}&\cellcolor{red!50}&&&&&&\cellcolor{red!50}&\cellcolor{red!50} \\
+\hline
+\cellcolor{red!50}&\cellcolor{red!50}&&&&&&\cellcolor{red!50}&\cellcolor{red!50} \\
+\hline
+&& \cellcolor{blue!50} & \cellcolor{blue!50} & \cellcolor{blue!50} & \cellcolor{blue!50} & \cellcolor{blue!50} && \\
+\hline
+\hline
+&& \cellcolor{blue!50} &&&& \cellcolor{blue!50} && \\
+\hline
+&& \cellcolor{blue!50} &&&& \cellcolor{blue!50} && \\
+\hline
+&& \cellcolor{blue!50} &&&& \cellcolor{blue!50} && \\
+\hline
+\hline
+&& \cellcolor{blue!50} & \cellcolor{blue!50} & \cellcolor{blue!50} & \cellcolor{blue!50} & \cellcolor{blue!50} && \\
+\cellcolor{red!50}&\cellcolor{red!50}&&&&&&\cellcolor{red!50}&\cellcolor{red!50} \\
+\hline
+\cellcolor{red!50}&\cellcolor{red!50}&&&&&&\cellcolor{red!50}&\cellcolor{red!50} \\
+\hline
+\end{tabular}
+\end{center}
+
+\end{theorem}
+
+
+%%%
+\section{Functions}
+%%%
+
+We all talk about functions.
+So much in math classes that we  almost think they are synonyms.
+Believe it or not, they are not synonyms and a function has its own definition.
+
+\begin{definition}[Function]
+    A \emph{function} $f$ from a set $X$ to a set $Y$ is a specification of elements
+    $f(x)\in Y$ for $x\in X$, such that
+    \begin{equation*}
+        \forall x \in X, \exists! y \in Y, y = f(x)\,.
+    \end{equation*}
+    The symbol $\exists !$ represents the phrase``there exists a \emph{unique}''. 
+    The unique element $f(x)\in Y$ is called the \emph{value} of $f$ at $x\in X$.
+
+    $X$ is called the \emph{domain} of $f$ and $Y$ is called the \emph{codomain} of $f$.
+\end{definition}
+
+We next discuss how to specify a function so that it satisfies the above definition.
+
+\begin{enumerate}
+    \item \emph{Totality.} A value $f(x)$ should be specified for each $x\in X$ -- 
+        this corresponds to the quantifier $\forall x$.
+    \item \emph{Existence.} For each $X$, the specified value $f(x)$ should exist, and should be an element in $Y$.
+    \item \emph{Uniqueness.} For each $x$ the specified value $f(x)$ should refer to only one 
+        element in $Y$.
+\end{enumerate}
+(2) and (3) correspond to the quantifier $\exists ! y$.
+
+\begin{example}
+    The following are functions:
+    \begin{enumerate}
+        \item $f: X\to X$, where $f(x) = x$ for any set $X$.
+            This function is called the \emph{identity function}.
+        \item $f:\emptyset \to X$ is called the \emph{empty function}.
+            It has no values since there is no element in its domain.
+        \item $f:\set{1,2,3} \to \set{ \text{red, yellow, green, blue}}$ 
+            where
+            $f(1)= red$, $f(2)= blue$, $f(3) = blue$.
+        \item $g: \R \to \R$, where  $g(x) = 2x$.
+    \end{enumerate}
+
+    The following are NOT functions:
+    \begin{enumerate}
+        \item $f:\set{1,2,3} \to \set{ \text{red, yellow, green, blue}}$ 
+            where
+            $f(1)= red$,  $f(3) = blue$.
+        \item $g: \R \to \R$, where 
+            \begin{equation*}
+                g(x) = \frac{1}{x} \,.
+            \end{equation*}
+    \end{enumerate}
+\end{example}
+
+\begin{definition}[Graph of a function]
+   Let $f:X \to Y$ be a functin. 
+   The \emph{graph} of $f$ is the subset $\mathrm{Gr}(f) \subseteq X\times Y$ defined by
+   \begin{equation*}
+       \mathrm{Gr}(f) \defeq \set{(x,f(x))\st x\in X} = \set{(x,y)\in X\times Y \st y = f(x)}\,.
+   \end{equation*}
+\end{definition}
+
+The graph of a function is perhaps the most important idea in modern mathematics as one can graphically draw functions
+on paper or turn graphs on papers into mathematical equations so that computations can be done.
+It is this idea that bridges geometry and calculus together.
+It is not an understatement to say science (and pseudo-science!) would not reach the its height today without this simple idea of Decartes.
+
+\begin{example}
+    Graph of the function $f: \R \to \R$, $f(x) = x/2$ is
+    \begin{equation*}
+\mathrm{Gr}(f) = \set[\Big]{ \paren[\Big]{x, \frac{x}{2}}\st x\in \R}\,.
+    \end{equation*}
+\end{example}
+    
+\begin{definition}[Composition of functions]
+    Given two functions $f: X\to Y$ and $g: Y \to Z$. Their \emph{composite} $g\circ f$ 
+    (read $g$ composed with $f$) is the function $g\circ f: X\to Z$, defined by
+    \begin{equation*}
+        (g\circ f)(x) = g(f(x)) \quad \text{ for all } x\in X\,.
+    \end{equation*}
+\end{definition}
+
+\begin{example}
+    Let $f:[0,\infty) \to [0,\infty)$ be that $f(x) = x^3$ and $g: [0,\infty) \to [0,\infty)$ be that
+    $g(x) = \frac{1}{1+ x}$.
+    Then, $f\circ g: [0,\infty) \to [0,1]$ is given by
+    \begin{equation*}
+        (f\circ g)(x) = f(g(x)) = (g(x))^3 = \frac{1}{(1+ x)^3}\,.
+    \end{equation*}
+
+    What happens if I keep the above formula and change
+    $f:\R \to \R$ and $g: \R\setminus\set{-1} \to [0,\infty)$?
+\end{example}
+
+\begin{example}
+    We can write the function $M: \Q \to \Q$, $M(x) = \frac{(2x+ 5)^2}{6}$ 
+    as a composition as follows.
+    \begin{equation*}
+        M = ((k\circ h) \circ g)\circ f \,,
+    \end{equation*}
+    where 
+    \begin{itemize}
+        \item $f:\Q \to \Q$ is defined by $f(x) = 2x$,
+        \item $g: \Q \to Q$ is defined by $g(x) = x + 5$,
+        \item $h: \Q \to \Q$ is defined by $h(x) = x^2$,
+        \item $k:\Q \to \Q$ is defined by $k(x) =  \frac{x}{6}$.
+    \end{itemize}
+\end{example}
+
+
+\subsection{Injections and surjections}
+
+The concepts of injections and surjections play very crucial roles in mathematics.
+Among other use, they are the tools for mathematicians to compare sizes of sets.
+It is with these concepts that one could talk about different sizes of infinities!
+We will just list definitions here, for a full reading, please read~\cite{Newstead}.
+He does a fantastic job there discussing the concepts so there's no need to copy
+his text to here.
+    
+\begin{definition}[Injection]
+    A function $f:X \to Y$ is \emph{injective} (or \emph{one-to-one}) if 
+    \begin{equation*}
+        \forall a \in X, \forall b \in X, f(a) = f(b) \Rightarrow a = b\,.
+    \end{equation*}
+    An injective function is said to be an \emph{injection}.
+\end{definition}
+
+\begin{example}
+    Let $f:\Z \to \Z$ be a function that $f(n) = 2n +1$.
+    We will show that $f$ is injective. 
+    Fix some $m,n \in \Z$ and suppose that $f(m) = f(n)$.
+    By definition, we have
+    \begin{equation*}
+        2m + 1= 2n + 1 \iff m = n \,.
+    \end{equation*}
+    Therefore,  $f$ is injective.
+\end{example}
+
+
+\begin{example}
+    Let $f:\R \to [0,\infty)$ be a function that $f(x) = x^2$.
+    $f$ is not injective since $f(-1)= f(1) = 1$, for example.
+
+    However, if we change the domain of $f$ so that
+    $f:[0,\infty) \to [0,\infty)$, it would be injective (why?).
+\end{example}
+
+\begin{proposition}
+    Let $f: X \to Y$ and $g:Y\to Z$ be functions. 
+    If $f$ and $g$ are injective, then $f\circ g$ is injective.
+\end{proposition}
+
+\begin{proof}
+    Let $a,b\in X$ and suppose that $(f\circ g)(a) = (f\circ g)(b)$. 
+    By definition of composition,
+    \begin{equation*}
+        f(g(a)) = f(g(b))\,.
+    \end{equation*}
+    Because $f$ is injective, $g(a) = g(b)$; and because $g$ is injective, $a=b$.
+    Because $a,b$ are arbitrary in $X$, $(f\circ g)$ is injective.
+\end{proof}
+
+\begin{definition}[Surjection]
+    A function $f:X \to Y$ is \emph{surjective} (or \emph{onto}) if 
+    \begin{equation*}
+        \forall y \in Y, \exists x \in X, f(x) = y \,.
+    \end{equation*}
+    An surjective function is said to be an \emph{surjection}.
+\end{definition}
+
+\begin{example}
+    Fix $n \in \N$ with $n >0$ and define a function 
+    $r: \Z \to \set{0, 1, \dots, n -1}$ by letting
+    $r(a)$ be the remainder of $a$ when divided by $n$.
+    This function is surjective since for each $k \in \set{0, 1, \dots, n-1}$,
+    we have $r(k) = k$.
+
+    This function is not injective, however (why?).
+\end{example}
+
+\begin{definition}[Bijection]
+    A function $f:X\to Y$ is bejective if it is both injective and surjective.
+    A bijective function is called a bijection.
+\end{definition}
+
+\begin{example}
+    Let $f: \Z \to \Z$ be a function that $f(n) = n +10$.
+    Then $f$ is a bijective.
+
+    When we change the domain of $f$ so that $f: \N \to \Z$, it is no longer
+    a bijective. Which fails -- injectivity or surjectivity?
+\end{example}
+
+
+
+
+
+
+

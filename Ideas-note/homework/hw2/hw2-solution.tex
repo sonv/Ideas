@@ -1,0 +1,161 @@
+\documentclass[12pt]{amsart}
+\usepackage{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{../svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{lineno}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+\usepackage{enumitem}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ MATH 170: Homework 1 Solutions }
+%\author[1]{Co-author}
+\author{Teaching team}
+%\affil[1]{Institute}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}[label=\arabic*.,itemsep=10pt, leftmargin=*]
+\item  Are these numbers divisible by 2, 3, 5? To get points, use the criteria of divisibility that we covered in class. Optional: check your answers with a calculator.
+    \begin{enumerate}[label=\alph*.,itemsep=5pt, leftmargin=*]
+    \item 12345;
+    \item 10101010.
+    \end{enumerate}
+    
+    \begin{proof}[Solution]
+       a. Divisible by 3 and 5 as the sums of the digits is 15 which is divisible by 3 and the last digit is 5.
+
+       b. divisible by 2 and 5 as the last digit is 0.
+    \end{proof}
+
+\item  
+    \begin{enumerate}[label=\alph*.,itemsep=5pt, leftmargin=*]
+    \item Let $a, b \in \mathbb Z$. Prove that $\gcd(a,b) = \gcd(a,-b)$.
+    \item Compute $\gcd(12,-30)$ using Euclid's algorithm.
+    \item Compute $\gcd(12\,345,11\,100)$ using Euclid's algorithm.
+    \item Optional: check your answers on \url{https://www.wolframalpha.com/}.
+    \\ \includegraphics[width=0.9\textwidth]{wolframalpha.png}
+    \end{enumerate}
+
+    \begin{proof}[Solution]
+        a. We have that $\gcd ( a,b ) \st b$. So there exists $q \in \Z$ such that
+        \begin{equation*}
+            b = q \gcd(a,b) \,.
+        \end{equation*}
+        This means,
+        \begin{equation*}
+            -b = (-q) \gcd(a,b) \,.
+        \end{equation*}
+        So $\gcd(a,b) \st -b$ and, therefore, $\gcd(a,b) \leq \gcd(a,-b)$.
+        Argue similarly, $\gcd(a,-b) \leq \gcd(a,b)$.
+        Thus, the equality holds.
+
+        b. By part (a), $\gcd(12, -30) = \gcd(12, 30)$. Therefore, we can apply 
+        Euclid's algorithm
+        \begin{gather*}
+            30 = 2 \cdot 12 + 6 \\
+            12 = 2\cdot 6 + 0 \,.
+        \end{gather*}
+        So $\gcd(12,-30) = 6$.
+
+        c. 
+        \begin{gather*}
+            12345 = 1\cdot 11100 + 1245 \\
+            11100 = 8\cdot 1245 + 1140 \\
+            1245 = 1\cdot 1140 + 105 \\
+            1140 = 10 \cdot 105 + 90 \\
+            105 = 1\cdot 90 + 15 \\
+            90 = 60\cdot 15 + 0 \,.
+        \end{gather*}
+        Thus, $\gcd(12345, 11100) = 15 $.
+    \end{proof}
+
+\item
+    \begin{enumerate}[label=\alph*.,itemsep=5pt, leftmargin=*]
+    \item Divide the following numbers by 10 with remainder: 1234, 2021. That is, write them in the form $10\cdot q + r$, where $0 \leq r < 10$. Compute $1234 + 2021$ and divide the result by 10 with remainder. Observe that the remainder you get is the sum of the first two remainders.
+    \item Compute the remainder of $1236$ and $2027$ when dividing by 10, then compute the remainder of their sum. Why is it no longer just the sum of remainders?
+    \item Rephrase the following rule in your own words: If you divide $a_1, a_2 \in \mathbb Z$ by $b>0$ with remainder, write the remainder of $a_1$ as $r_1$ and the remainder of $a_2$ as $r_2$. Then the remainder of $a_1 + a_2$ is $r_1 + r_2$ or $r_1 + r_2 - b$.
+    
+    \item[*]
+    Bonus: prove c.
+    \end{enumerate}
+    \begin{proof}[Solution]
+        a.
+        \begin{gather*}
+           1234 = 10\cdot 123 + 4  \,, \\
+           2021 = 10 \cdot 202 + 1  \,, \\
+           1234 + 2021 = 3255 = 10 \cdot 325 + 5 \,.
+        \end{gather*}
+
+        b. 
+        \begin{gather*}
+           1236 = 10\cdot 123 + 6  \,, \\
+           2027 = 10 \cdot 202 + 7  \,, \\
+           1236 + 2027 = 3263 = 10 \cdot 326 + 3 \,.
+        \end{gather*}
+
+        c. I will give a proof of this problem, not rephras it.
+
+        Let's rewriting $a_1$ and $a_2$ so we have a visual effect of what is 
+        going on.
+        \begin{gather*}
+            a_1 =  q_1 b + r_1 \\
+            a_2 = q_2 b + r_2 \,,
+        \end{gather*}
+        for some $q_1, q_2 \in \Z$.
+        We know that because $b>0$ and by the definition of remainders,  
+        \begin{equation*}
+            0\leq r_1, r_2 < b \,.
+        \end{equation*}
+        Note that there is no restriction for $r_1 + r_2$ as they are just another
+        natural number. So, there are 2 cases
+        \begin{enumerate}
+            \item When $r_1 + r_2 <b$. Then,
+                \begin{equation*}
+                    a_1 + a_2 = q_1 b + q_2 b + r_1 + r_2
+                    = (q_1 + q_2) b + (r_1 + r_2) \,.
+                \end{equation*}
+                This is the unique representation of $a_1 + a_2$ with its remainder 
+                (by the division theorem (look it up again)) as $0\leq r_1 + r_2 < b$.
+                In other words, we have found the unique $q$ 
+                and $r$ in the division theorem
+                so that $a_1 + a_2$ can be written in terms of $b$.
+                So, the remainder of $a_1 + a_2$ divided by $b$ in this case
+                is $r_1 + r_2$.
+
+            \item When $r_1 + r_2 >b$. Note that $r_1 + r_2 < 2b$ as each of them
+                is less than $b$. Therefore, $r_1 + r_2 - b < b$.
+                We want to find the unique $q$ and $r$ in the division theorem in 
+                this case as well. To do that, we write
+                \begin{align*}
+                    a_1 + a_2 &= q_1 b + q_2 b + r_1 + r_2 \\
+                              &= (q_1 + q_2) b + (r_1 + r_2 - b) + b  \\
+                              &= (q_1 + q_2 + 1) b + (r_1 + r_2 - b)  
+                    \,.
+                \end{align*}
+                As $r_1 + r_2 - b <b$, we just show that the remainder of 
+                $a_1+ a_2$ divided by $b$ in this case is $r_1 + r_2 - b$.
+        \end{enumerate}
+    \end{proof}
+
+
+
+
+\end{enumerate}
+
+
+
+
+%\printbibliography 
+%\bibliography{refs}
+%\bibliographystyle{halpha-abbrv}
+
+
+\end{document}

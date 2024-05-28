@@ -1,0 +1,106 @@
+\documentclass[12pt]{amsart}
+\usepackage{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{../svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{lineno}
+%\usepackage{authblk}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\usepackage{enumitem}
+\usepackage[margin=1in]{geometry}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ MATH 170: Midterm 3 \\
+\tiny{Section 001, December 9, 1:45pm}}
+%\author[1]{Co-author}
+\author{Good luck!}
+%\affil[1]{Institute}
+\date{}
+
+\begin{document}
+
+
+\maketitle
+
+There are three questions. Make sure you justify all your work for complete credit.
+
+\section*{Rules}
+
+\begin{itemize}[leftmargin=*]
+    \item You have 50 minutes to complete your work and 10 minutes to upload your work.
+    \item Open notes (you can use your notes freely).
+    \item No use of internet, textbooks, computer algebra systems, calculators. 
+    \item No collaboration.
+\end{itemize}
+
+\section*{Questions}
+
+\begin{enumerate}[label=\arabic*.,itemsep=10pt, leftmargin=*]
+    \item
+    Imagine that you are in charge of determining a schedule for courses in mathematics next semester, and you need to avoid time conflicts (so no student has to go to more than one place at once). Graduate students are taking the following advanced courses:
+    \begin{itemize}
+        \item[a --] algebraic geometry
+        \item[c --] commutative algebra
+        \item[e --] ergodic theory
+        \item[f --] functional analysis
+        \item[g --] game theory
+        \item[h --] homological algebra
+    \end{itemize}
+    Here is the complete information about who registered for which course:
+    \begin{itemize}
+        \item Student 1 is taking
+        c, e;
+        \item Student 2 is taking
+        a, c, h;
+        \item Student 3 is taking
+        h, g;
+        \item Student 4 is taking e, f, g.
+    \end{itemize}
+    \begin{enumerate}
+    \item Formulate the problem of finding a conflict-avoiding schedule in terms of coloring a certain graph $G$. Draw this graph.
+    \item Find the chromatic function $P_G(n)$ of this graph.
+    \item Find the chromatic number $\chi(G)$.
+    \item What is the minimal number of timeslots that you will need for the next semester? In how many ways you can create a schedule using this minimal number of timeslots?
+    \end{enumerate}
+    \item 
+        Consider a sample space of $2$ balanced die rolls, each roll gives a number from 1 to 6 with the same probability.
+        \begin{enumerate}
+            \item What is the probability that the first and the second roll are the same?
+            \item What is the probability that the second roll is even, given that the
+            first roll showed 2?
+        \end{enumerate}
+
+
+    \item 
+        \begin{enumerate}
+            \item Compute the following:
+                \begin{gather*}
+                    \binom{1}{0} - \binom{1}{1} \,, \\
+                    \binom{2}{0} - \binom{2}{1} + \binom{2}{2} \,, \\
+                    \binom{3}{0} - \binom{3}{1} + \binom{3}{2} - \binom{3}{3} \,,
+                \\
+\binom{4}{0} - \binom{4}{1} + \binom{4}{2} - \binom{4}{3} + \binom{4}{4} \,.
+                \end{gather*}
+    \item
+        What should be the formula for 
+        \begin{equation*}
+            \binom{n}{0} - \binom{n}{1} +
+            \binom{n}{2} -
+            \binom{n}{3} +
+            \dots \pm \binom{n}{n} \,?
+        \end{equation*}
+        Prove it when $n$ is odd.
+    \item
+    \textit{(Bonus 5 points. I recommend working on this problem only if you have extra time, because it gives few points, but is more complicated than others.)}
+    Prove the formula for $n$ even by induction. If you use the binomial theorem, you should prove it, because it was not covered in the course.
+        \end{enumerate}
+
+
+\end{enumerate}
+
+
+
+\end{document}

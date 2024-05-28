@@ -1,0 +1,701 @@
+\chapter{Logic}
+
+
+
+At its core, mathematics is a way of reasoning and is very similar to philosphy.
+The first part of this chapter wil reflect this basic observation.
+However, what sets apart mathematics from general philosophy is that 
+the language of mathematics requires precision. 
+There should be no ambiguity in a mathematical statement.
+%This is a blessing as well as a curse because the cost of being pricise
+%is to be terse and, sometimes, aesthetically unpleasant.
+%However, as for a lot of things in life, hidden beneath its scary-looking
+%appearance is a wealth of beautiful treasures that are the rewards for those
+%who steadfastly endure until the end.
+The main goal of this chapter 
+is to give the students a taste of what it is like to be mathematically
+precise.
+
+%%%
+\section{What can logic be about?}
+%%%
+We follow~\cite{Sainsbury1991} for this part.
+
+Most broadly, logic is about reasons and reasoning. There are reasons for
+\textit{acting}: you may avoid sugary desserts for the reason of wanting to keep thin or lose weight. There are reasons for 
+\textit{believing}: you may think that the potatoes are ready to eat for the reason that they have been boiling for twenty minutes. 
+Historically, logic has concerned itself with reasons for believing. 
+But even this question can be answered in various ways. For example, I asked an Indian friend of mine why she believes that she should not eat meat. Her answer was that this belief was instilled in her by her family at an early age. This explains the origin of this belief, but does not give a \emph{reason} for it. But then she continued her answer and said that now she doesn't like the smell of meat, and eating food that smells bad is usually a bad idea. This also justifies her belief. Some other people may say that killing anything is wrong, and eating meat requires killing, thus reasoning why they shouldn't eat meat. 
+
+The way it works is that one deduces the reasons for a certain belief by
+making it a consequence of a ``higher'', more abstract, belief.
+Logic as a discipline of ``good reasoning'' was first considered as early as the 6th century B.C. and independently in India, Greek and China.
+
+\begin{example}
+    Consider the following chain of sentences.
+
+    ``I believe that humans breath oxygen to live. I believe that I am a human.
+    Therefore, I believe that I breath oxygen to live.''
+
+    ``All humans breath oxygen'' is a higher, more abstract, fact than `` I breath
+    oxygen'', as I am just a particular member of the human race.
+\end{example}
+
+\begin{warning}
+   Not every belief has its reasons. Every logical system has its core ``beliefs''
+   (called \emph{axioms})
+   that are taken for granted,
+   and they have no further explanation.
+   These are the most abstract beliefs that are used to deduce every other belief in
+   the same logical system.
+   To have reasons, one needs to take a leap of faith at some point.
+\end{warning}
+
+
+Logic is a \emph{normative} discipline.
+It sets out standard for \emph{good} and \emph{bad} arguments.
+These are technical terms and should not be confused by subjective opinions.
+However, the these technical terms are somewhat inspired by daily
+commonsense distinction between good and bad reasons.
+In our daily conversation, to make good reasons for something is to create 
+premises so that the something \emph{follows}.
+
+\begin{example}
+    ``James is a banker and all bankers are rich'' is a good reason for
+    ``James is rich.''
+\end{example}
+
+\begin{question}
+    If James is not a banker, can we conclude that he is not rich?
+\end{question}
+
+\begin{example}
+    ``James likes expensive cars'' is not a good reason for ``James is rich.''
+\end{example}
+
+
+It is important to note that one can discern good and bad reasons without having to
+believe in the reasons themselves.
+In fact, Einstein himself did not believe in (even reject) 
+quantum physics while being one of the 
+founding fathers of the theory.
+A lot of modern mathematics revolves around physics and biology but a lot of mathematicians barely know any physics or biology (confession time).
+
+    
+\subsection{Inductive and deductive logic}
+The result of assembling premises and conclusions together is called an \emph{argument}.
+An argument is \emph{valid}, or \emph{true}, or \emph{good}, if the conclusions follow from the premises.
+The two most common forms of logic are inductive logic and deductive logic.
+
+An example of inductive logic is the following.
+\begin{example}
+    The sun has risen every morning so far; therefore it (probably) will rise tomorrow.
+\end{example}
+
+\begin{exercise}
+    Contrast the previous example with the following sentence:
+
+    `` The sun has risen every morning so far; therefore it (probably) will NOT rise tomorrow.''
+
+   Is one of these sentences more true than the other? How do you know?
+\end{exercise}
+
+An example of deductive logic is the following.
+\begin{example}
+   All men are mortal. Socrates is a man. Therefore, Socrates is mortal. 
+\end{example}
+
+Thus, a way to distinguish between inductive and deductive logic is:
+for deductive logic, it is impossible for the conclusion to be false if the premises are true.
+For inductive logic, this is not the case as the conclusion in this case may be false
+despite the premises being true.
+We can see that it is only in deductive logic, one can talk about the validity of an argument.
+In inductive logic, there are degrees in strength of an argument but inductive reasoning 
+can \emph{never be valid} by our definition of validity\footnote{Be careful here that
+    validity is a technical term and should not be confused with the daily use of 
+the word}.
+However, an inductive argument can be stronger than another inductive argument 
+(just make sure one is talking about the same thing -- comparing apples to apples and not to pears).
+
+Mathematics is all about deductive logic whereas science must involve both inductive
+and deductive logic.
+The combination of inductive and deductive logic in science gives birth to the need of probability and
+statistics (whose theories are all mathematical and deductive), and in modern day data science and machine learning that are based on statistics.
+
+\begin{warning}
+   Do not confuse inductive logic with the method of induction, which is a method
+   in deductive logic.
+   Although, there are resemblance between the two. The difference is that in the method
+   of induction,
+   one is given the super power in theory to transcend time to ``go off to infinity''
+   whereas inductive logic is limited by physical evidence, where 
+   time is a major road block...
+\end{warning}
+
+\begin{exercise}
+    Make a table of comparison between inductive and deductive logic.
+\end{exercise}
+
+Watch this lecture about inductive logic: \url{https://youtu.be/DRx-3jvC918}.
+
+\begin{exercise}
+   What's wrong with the following?
+    
+   Statement: You have horns.
+   
+    "Proof": What you haven't lost, you have. You haven't lost your horns. Therefore you have horns. 
+\end{exercise}
+
+\begin{exercise}
+   What's wrong with the following?
+    
+   Statement: You don't know your father.
+
+    "Proof": I show you a photo of someone, the photo is covered by a cloth. Do you know who's in the photo? You can't see, so you don't. But it's a photo of your father. Therefore you don't know your father.
+\end{exercise}
+
+%%%
+\section{Mathematical logic}
+%%%
+We follow~\cite{Newstead} for this part.
+
+Mathematical logic is the study of logic restricted to mathematics. 
+Its existence is to address the biggest problem in the foundation of mathematics: 
+are theories of mathematics consistent with each others?
+That said, many working mathematicians do not pay attention to the question of foundations, which might be a worrisome fact.
+I can only have my fingers crossed that mathematics will not fall apart one day 
+(which, it did for a period of time, when Georg Cantor discovered different infinities in the 19th century)...
+
+A {\bf mathematical statement} is a statement that  
+at least the statement maker has to be able
+to assign a {\bf truth value} (`true' or `false') to it.
+The truth assignment could be the result of an immediate observation or
+a long chain of difficult reasoning.
+To make the truth assignment valid, every single argument in the chain of reasoning
+must be valid.
+A {\bf proof} of a mathematical statement is a chain of valid arguments that make
+the mathematical statement \emph{true}.
+\murmuno{?}
+\SV[Aug 13]{ fixed- thanks}
+%with others.
+
+There are many names for a \emph{true} mathematical statement, depending on the use:
+\begin{itemize}
+    \item {\bf Theorem:} a particularly important mathematical statement 
+        given the context.
+    \item {\bf Proposition:} general term that can be used anytime.
+    \item {\bf Lemma:} a mathematical statement that will be used as a stepping
+        stone to prove a theorem.
+    \item {\bf Corollary:} a mathematical statement whose truth value could be deduced
+        from a theorem without much effort.
+\end{itemize}
+
+A statement that are believed to be verifiable but no human has seen or 
+discovered its proof yet is called a {\bf conjecture}.
+
+\subsection{Structure}
+Every mathematical statement has the following structure:
+
+\begin{center}
+    Assumptions + Goals
+\end{center}
+
+\begin{example}
+    Suppose Philadelphia is in Massachusetts and Penn is in Philadelphia, then Penn is in Massachusetts.
+\end{example}
+
+\begin{warning}
+    Assumptions themselves need not to be true. 
+    We will talk more about this later when we talk about truth table.
+\end{warning}
+
+\begin{exercise}
+    Find an example of a famous mathematical statement  that its assumptions are not yet verified.
+\end{exercise}
+\murmuno{What are your examples?}
+\SV[aug 13]{I have one example about the hypothesis that particles in a room behave as if they are independent identically distributed. This is the key assumption to derive the Boltzmann equation.
+Something that stem from Riemann hypothesis?}
+
+\begin{example}
+    For example, abc conjecture implies Fermat's last theorem. But as of now, the status of the abc conjecture is subject to debate. A Fields medalist Peter Scholze and Jakob Stix found a gap in Mochizuki's proof.
+    
+    Now a quote from Wikipedia: ``Scholze and Stix wrote a report asserting and explaining an error in the logic of the proof and claiming that the resulting gap was ``so severe that ... small modifications will not rescue the proof strategy''; Mochizuki claimed that they misunderstood vital aspects of the theory and made invalid simplifications.
+
+    On April 3, 2020, two Japanese mathematicians announced that Mochizuki's claimed proof would be published in Publications of the Research Institute for Mathematical Sciences (RIMS), a journal of which Mochizuki is chief editor. In March 2021, Mochizuki's proof was published in RIMS.''
+\end{example}
+
+We will end this section by discussing a few logical axioms that look obvious
+but people use all the time in mathematics without realizing it.
+
+   
+
+\section{Symbolic logic}
+One of the main goals of mathematics is to reduce complicated statements/observations
+to simple abstract structures that are more tractable to human minds and still
+keep the essential features of the things one would like to study.
+This is as much of an art as anything else because too much abstraction would
+lead to triviality, which may not be very interesting.
+
+{\bf Symbolic logic} is a system of logic that can be used to reduce a mathematical 
+statement into ``agreed'' formulas that are easier to determine its truth 
+value.\footnote{
+    Gottfried Leibniz (another inventor of Calculus) was among 
+    the first people to realize the importance of having a system
+of logic that is universal and calculatable but couldn't actualize this dream.
+The goal was to reduce confusions and disputes among philosophers and arguers.
+(Just turn on the Presidential debates and you will understand why we need
+such a system...)
+The first well-known work that successfully made symbolic logic a mathematical field
+was by George Boole in 1854~\cite{Boole2009}.
+One of the earliest work that started the 
+modern account of logic and foundation of mathematics was by Russel and 
+Whitehead~\cite{WhiteheadRussell1997} 
+(there is a comic book about it~\cite{DoxiadisPapadimitriou2009}!).
+}
+
+Let us consider a simple example from~\cite{Newstead}:
+\begin{example}
+    \label{ex:divides}
+    If $c$ divides $b$ and $b$ divides $a$, then $c$ divides $a$.
+\end{example}
+
+We see that each of the statements ``$c$ divides $b$'', ``$b$ divides $a$'',
+and ``$c$ divides $a$'' is a proposition if they stand alone by themselves.
+Thus, abstractly, each of them could be assigned a symbol 
+    \begin{itemize}
+        \item $P =$ $c$ divides $b$
+        \item $Q = $ $b$ divides $a$ 
+        \item $R = $ $c$ divides $a$ 
+    \end{itemize}
+
+Then you can write
+\begin{center}
+    If $P$ and $Q$, then $R$.
+\end{center}
+The above form of the statement looks easier to follow (at least to the 
+mind of a non-English speaker) since at least 
+we don't need to know what ``divides'' means.
+While it is not too useful in terms of conveying knowledge, it is 
+extremely useful when it comes to determining the validity of the statement itself.
+This leads us to the next question: \emph{What makes a statement true?}
+
+We will need a few new words.
+
+\begin{definition}
+    A {\bf propositional variable} is a symbol that represents a proposition.
+\end{definition}
+As we said earlier, propositions are just mathematical statements, which are
+required to have truth values (`true' or `false').
+
+\begin{definition}
+    A {\bf logical operator} is a symbol (or collection of words) that turn 
+    one or more propositional variables to a \emph{single} new statement.
+\end{definition}
+
+Basic logical operators are:
+\begin{itemize}
+    \item Conjuction (`and', $\wedge$)
+    \item Disjunction (`or', $\vee$)
+    \item Implication (`if...then...', $\implies$)
+    \item Negation (`not', $\neg$)
+\end{itemize}
+As simple as they look, these four operators build most of  mathematics
+and anything that require reasoning (philosophy, law, computer science, etc.).
+
+
+
+\begin{definition}
+    A {\bf propositional formula} is an expression that is either a propositional 
+    variable, or is built up from simpler propositional formulae using logical
+    operators.
+\end{definition}
+\begin{remark}
+    When I ask, ``What is the variable for the proposition?'', I am more
+    interested in what the symbol you give to the mathematical statement, not
+    so much the content of it.
+    Similarly, when I ask, ``What is the formula for the proposition?''
+    I am more interested in the way the proposition is written up, not so much
+    what the proposition conveys.
+\end{remark}
+    
+The simplest kind of propositions is one that only contains one single 
+propositional variable that already explicitly has the truth value  (`true' or `false')
+known (whether it is a \emph{proven statement}, \sout{a common knowledge} or an assumption).
+\SV[2021-08-17]{I emphasize that common knowledge may not be trusted always}
+\murmuno[08-26]{We can ask to give examples of ``common knowledge'' about some topic, e.g. time (less divisive), and find contradictions. * Time is money. * Life is a marathon, not a sprint. * The two most powerful warriors are patience and time. * Time waits for no one. * Better three hours too soon than a minute too late. * The key is in not spending time, but in investing it. * Punctuality is the thief of time. }
+From these atomic propositions, we could build more complicated kinds of propositions
+with more complicated propositional formula
+by obeying certain logical rules of the logical operators\footnote{Even though we call them rules, they follow an
+    intuitive model of our daily reasoning. 
+    The advantage of defining explicit rules is to make the 
+    reasoning more consistent by the abstraction.}.
+    This process is  entirely ``calculatable''.
+\SV[08-28]{Agreed.}
+Here are the rules for the basic logical operators listed above.
+
+{\bf Conjunction (`and', $\wedge$).}
+ The propositional formula for a proposition made by a conjuction has the following form
+\begin{equation*}
+    P \wedge Q \,.
+\end{equation*}
+\begin{rule*}
+The proposition $P \wedge Q$ (we say ``$P$ and $Q$'') is true if {\bf both} $P$ and $Q$ are true.
+Otherwise, if either (or both) $P$ or $Q$ is false, $P \wedge Q$ is false.
+\end{rule*}
+
+{\bf Disjunction (`or', $\vee$).}
+ The propositional formula for a proposition made by a disjunction has the following form
+\begin{equation*}
+    P \vee Q \,.
+\end{equation*}
+\begin{rule*}
+    The proposition $P \vee Q$ (we say ``$P$ or $Q$'') is true if { \bf either one} 
+    (or both) of $P$ or $Q$ is true.
+    $P \vee Q$ is flase if {\bf both} $P$ and $Q$ are false.
+\end{rule*}
+
+{\bf Implication (`if...then...', $\implies$).}
+ The propositional formula for a proposition made by a disjunction has the following form
+\begin{equation*}
+    P \implies Q \,.
+\end{equation*}
+\begin{rule*}
+    The proposition $P\implies Q$ (we say ``$P$ implies $Q$'') is true if one of
+    the following cases holds:
+    \begin{itemize}
+        \item $P$ is true and $Q$ is true.
+        \item $P$ is false.
+    \end{itemize}
+\end{rule*}
+
+\begin{exercise}
+   This is one of the most confusing rules in logic. 
+   Meditate on the rule of implication. 
+\end{exercise}
+
+
+{\bf Negation (`not', $\neg$).}
+ The propositional formula for a proposition made by a disjunction has the following form
+\begin{equation*}
+    \neg P \,.
+\end{equation*}
+\begin{rule*}
+    The proposition $\neg P$ (we say ``not $P$'') is true if $P$ is false.
+\end{rule*}
+
+
+
+\begin{exercise}
+    Mess with your friends/parents/siblings with `and', `or', `if not ... then...'
+\end{exercise}
+
+\begin{axiom}[Law of excluded middle]
+   Let $P$ be a propositional formula. 
+        Then $P \vee (\neg P)$ is true.
+        In plain English, this says that every proposition is either true or false.
+\end{axiom}
+
+\begin{axiom}[Principle of explosion]
+     If a contradiction is assumed, any consequence may be derived.  
+\end{axiom}
+ 
+ 
+\section{Variables and quantifiers}
+
+\subsection{Variables}
+
+It is nice to know basic rules of logic and how propositions work in sequences
+in order to produce proofs (arguments).
+It is unfortunate, however, that if we only work with propositions, our reasoning would 
+be fairly limited.
+Consider the following sentence:
+\begin{center}
+   ``$x$ is divisible by $7$.''
+\end{center}
+
+\begin{question}
+    Is this a proposition?
+\end{question}
+\begin{proof}[Answer]
+   This is not a proposition as one cannot assign a truth value to it-- 
+   we don't know what $x$ is.
+\end{proof}
+
+
+\murmuno[08-26]{We can include a topic on most common logical fallacies and advertise blog LessWrong and the long fanfic ``Harry Potter and the Methods of Rationality''.}
+
+\SV[08-28]{That sounds like fun.}
+
+If we know a specific value of $x$, we would be able to determine the truth value
+of the sentence above and it would become a proper proposition. For example, if $x = 49$,
+the sentence would be true and if $x = 42$, it would be false.
+If we suppose that $x$ should belong the set of natural number, $\N$, 
+then The symbol $x$ is called a \emph{free variable}
+the set $\N$.
+
+\begin{definition}
+    Let $x$ be a variable that is understood to refer to an element of a set $X$. 
+    In a statement involving $x$, we say it is \emph{free} if it makes sense to
+    substitute particular elements of $X$ in the sentence; otherwise we
+    say $x$ is \emph{bound}.
+\end{definition}
+
+So if the sentence in the above question is not a proposition, what do we call it?
+Glad you ask-- statements like those, which depend on free variables (hence abstract
+the notion of proposition) are called \emph{predicate}.
+More formally, we have the following definition.
+
+\begin{definition}
+    A \emph{predicate} is a symbol $P$ with a specified list of free variables $x_1, x_2, \dots, x_n$ and, for each variable $x_i$, a specification of a set $X_i$ (called the \emph{domain of disclosure} of $x_i$).
+
+    Notation: we will typically write $P(x_1,\dots, x_n)$ in order to make the variable
+    explicit.
+\end{definition}
+
+\begin{example}
+    We can represent the sentence `$x$ is divisible by $7$' by $P(x)$, where $x \in \N$.
+    $P(49)$ is true and $P(10)$ is false.
+\end{example}
+
+\begin{example}
+    \label{e:exists}
+   The sentence ``there exist integers $a,b$ such that $x = a^2 + b^2$'' has free
+   variable $x$ and bound variables $a^2+ b^2$, 
+   and can be represented by a predicate $R(x)$, where the domain of disclosure 
+   can be chosen to be $\Z$.
+\end{example}
+
+\begin{remark}
+    A predicate with no free variables is precisely a propositional variable.
+\end{remark}
+
+\begin{exercise}
+    How would you represent the sentence ``$x-y$ is rational'' as a predicate.
+\end{exercise}
+
+\begin{exercise}
+    \label{e:every}
+    How would you represent the sentence ``every even natural number $n\geq 2$ is
+    divisible by $k$''?
+\end{exercise}
+
+
+\subsection{Quantifiers}
+Looking back to Example~\ref{e:exists} and Exercise~\ref{e:every}, we notice that
+the bound variables come with either ``there exist'' or ``every''.
+Without those terms, those variables will be come free variables.
+
+Expressions that refer to \emph{how many} elements of a set make a statement true,
+such as ``there exists'' and ``every'' turn free variables into bound variables.
+We represent such expression using symbols called \emph{quantifiers}.
+
+In mathematics, there are two \emph{universal quantifiers}, 
+$\forall$ (every) and $\exists$ (there exists).
+
+\begin{example}
+    intuitively speaking,
+   \begin{itemize}
+       \item The expression ``$\exists x \in X$'' denotes ``there exists $x\in X$''.
+        \item The expression ``$\forall x\in X$'' denotes ``for every $x\in X$''.
+   \end{itemize} 
+\end{example}
+
+Just like we can build propositional formulae from propositions and logical operators, 
+we can build something out of predicates and logical operators.
+\begin{definition}[{\bf Logical formula}]
+    A \emph{logical formula} is an expression that is built from predicates using logical
+    operators and quantifiers; it may have both free and boundary variables.
+    The truth value of a logical formula depends on the free variables according 
+    to the rules for logical operators and quantifiers.
+\end{definition}
+It is an important skill to translate from human languages into purely symbolic logical formulae
+and vice versa.
+
+Formally, we have the following definitions of quantifiers.
+
+\begin{definition}[\bf The universal quantifier $\forall$]
+    If $p(x)$ is a logical formula with free variable with free variable $x$ with domain $X$,
+    then $\forall x\in X, p(x)$ is the logical formula defined according to the following rules:
+    \begin{itemize}
+        \item If $p(x)$ can be derrived from the assumption that $x$ is an arbitrary element of $X$,
+            then $\forall x\in X, p(x)$;
+        \item If $a\in X$ and  $\forall x \in X, p(x)$ is true, then $p(a)$ is true.
+    \end{itemize}
+\end{definition}
+
+\begin{definition}[\bf The universal quantifier $\exists$]
+    If $p(x)$ is a logical formula with free variable $x$ with domain $X$, then 
+    $\exists x\in X, p(x)$ is the logical formula defined according to the following rules:
+    \begin{itemize}
+        \item If $a\in X$ and $p(a)$ is true, then $\exists x \in X, p(x)$;
+        \item If $\exists x\in X, p(x)$ is true, and $q$ can be derived from the assumption
+            that $p(a)$ is true for some fixed $a \in X$, then $q$ is true.
+    \end{itemize}
+\end{definition}
+
+There are more quantifiers out there in the wild world of mathematics but they depend
+on specific fields of study. The above two quantifiers are used in every field of mathemtics, however.
+
+One can combine quantifiers in a logical formula and the order of the quantifiers matter.
+\begin{exercise}
+   Translate the following expressions and convince yourself that they are different. 
+   \begin{enumerate}
+       \item $\forall x \in \Z, \exists y \in \Z, \exists z \in \Z, x = y^2 + z^2$. 
+       \item $\exists y \in \Z, \exists z \in \Z, \forall x \in \Z, x = y^2 + z^2$. 
+       \item $\exists y \in \Z, \forall x \in \Z,\exists z \in \Z,  x = y^2 + z^2$. 
+   \end{enumerate}
+   Are those propositions?
+
+   Are the following statements different?
+    \begin{enumerate}
+       \item $\forall x \in \Z, \exists y \in \Z, \exists z \in \Z, x = y^2 + z^2$.
+       \item $\forall x \in \Z, \exists z \in \Z, \exists y \in \Z, x = y^2 + z^2$. 
+   \end{enumerate}
+\end{exercise}
+
+
+\subsection{Logical equivalence}
+
+We start out with a question
+\begin{question}
+    Let $P$ be the set of all prime numbers.
+   Are these two logical formulae the same?
+   \begin{enumerate}
+       \item $\forall n \in P, (n> 2 \implies (\exists k \in \Z, n = 2k+ 1))$.
+       \item $\neg \exists n \in P, (n> 2 \wedge ( \exists k \in \Z, n = 2k))$.
+   \end{enumerate}
+\end{question}
+In plain English, the two logical formulae read as follows.
+\begin{enumerate}
+    \item Every prime number greater than two is odd.
+    \item There does not exists an even prime number greater than two.
+\end{enumerate}
+
+Because of the way they are framed, one would go on  to prove these statements
+by using two completely different techniques.
+\begin{enumerate}
+    \item Fix a prime number $n$, assume that $n>2$, and then prove that $n = 2k+ 1$
+        for some $k\in \Z$.
+    \item Assume that there is some prime number $n$ such that $n>2$ and $n=2k$ for some
+        $k \in \Z$ and derive a contradiction.
+\end{enumerate}
+\begin{question}
+   Which strategy is easier to follow/prove?
+\end{question}
+
+One can see that knowing more ways to rephrase a statement gives us more ways to
+prove/disprove it.
+The notion of \emph{logical equivalence} tells us exactly when two statements 
+have the same logical meaning, hence gives us confidence to think about one
+statement in the form of a different statement
+without worrying about being led astray by irrelevant thoughts and discover
+later that all the work we have done was in vain (even though this happens all the time).
+
+\begin{definition}
+    Let $P$ and $Q$ be logical formulae.
+    We say that $P$ and $Q$ are logically equivalent and write $P\equiv Q$
+    if $Q$ can be derived from $P$ and $P$ can be derived from $Q$.
+\end{definition}
+
+\begin{example}
+    \label{ex:equiv1}
+   We claim that
+   \begin{equation*}
+       P \wedge (Q \vee R) \equiv (P \wedge Q) \vee (P \wedge R) \,,
+   \end{equation*}
+   where $P, Q, R$ are propositional variables.
+
+   \begin{proof}
+       First, assume that $P \wedge (Q \vee R)$ is true. 
+       Then $P$ is true and $Q\vee R$ is true by definition of conjunction.
+       By definition of disjunction, either $Q$ is true or $R$ is true. So, we divide
+       our reasoning into two cases:
+       \begin{itemize}
+           \item If $Q$ is true, then $P \wedge Q$ is true by definition of conjunction.
+           \item If $R$ is true, then $P \wedge R$ is true by definition of conjunction.
+       \end{itemize}
+       In both cases, we have that $(P \wedge Q) \vee (P \wedge R)$ is true by
+       definition of disjunction.
+
+       Second,
+       assume that $(P \wedge Q) \vee (P \wedge R) $ is true.
+       Then, either $P \wedge Q$ is true or $P \wedge R$ is true by definition of disjunction.
+       Again, we divide our reasoning into two cases:
+       \begin{itemize}
+           \item If $P \wedge Q$ is true, then $P$ is true and $Q$ is true by definition of conjunction.
+           \item If $P \wedge R$ is true, then $P$ is true and $R$ is true by definition of conjunction.
+       \end{itemize}
+       In both cases, we have $P$ is true and $Q \vee R$ is true by definition of disjunction.
+       Therefore,
+        $P \wedge (Q \vee R)$ is true.
+
+        Thus, we have derived that $(P \wedge Q) \vee (P \wedge R)$ is true from 
+        $P \wedge (Q \vee R)$ being true and vice versa.
+        This proves our claim by definition of logical equivalence.
+   \end{proof}
+   
+\end{example}
+
+Now we turn to everyone's favorite tool, the \emph{truth table}.
+
+\subsection{Truth table}
+
+\begin{definition}
+    The truth table of a propositional formula is the table with one row for each 
+    possible assignment of truth values to its constituent propositional variables, 
+    and one column for each sub-formula 
+    (incluidng the propositional variables and the propositional formula itself).
+    The entries of the truth table are the truth values of the 
+    sub-formulae.
+\end{definition}
+
+There are many ways that one could employ to prove the logical equivalences
+of propositional formulae. 
+The most fundamental way is to use the definition.
+Another way that is one of the all-time favorites is to use the truth table: 
+in order to prove that propositional formulae are logically equivalent, 
+it suffices to show that they have identical columns in a truth table.
+
+\begin{example}
+    We will prove the what's claimed in Example~\ref{ex:equiv1} using the truth table. 
+\end{example}
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c||c|c|c| } 
+\hline
+P & Q & R & $Q \vee R$ & $P \wedge (Q \vee R)$ & $P \wedge Q$ & $Q \wedge R$ & $(P\wedge Q) \vee (P \wedge R)$ \\
+\hline
+T& T & T &T & T & T & T & T\\ 
+T& T & F & T & T & T & F & T\\ 
+T& F & T & T & T & F & T & T\\ 
+T & F & F & F & F &F & F &F \\
+F & T& T & T & F&F & F &F\\
+F & T& F & T & F&F & F &F\\
+F & F& T &T & F&F & F &F\\
+F & F& F & F & F&F & F &F\\ 
+\hline
+\end{tabular}
+\end{center}
+
+\begin{example}
+   Use the truth table to show that
+   \begin{equation*}
+       P \implies Q \equiv (\neg\, P) \vee Q\,.
+   \end{equation*}
+\end{example}
+
+\begin{theorem}[De Morgan's laws for logical operators]
+   Let $P, Q$ be propositional variables. Then,
+   \begin{enumerate}
+       \item $\neg (P \vee Q) \equiv (\neg P) \wedge (\neg Q) $,
+       \item $\neg (P \wedge Q) \equiv (\neg P) \vee (\neg Q) $ .
+   \end{enumerate}
+\end{theorem}
+
+\begin{theorem}[De Morgan's laws for quantifiers]
+    Let $P(x)$ be a logical predicate and $X$ be a set. Then,
+   \begin{enumerate}
+       \item $\neg (\forall x \in X, P(x) ) \equiv \exists x\in X, \neg P(x) $,
+       \item $\neg (\exists x \in X, P(x)) \equiv \forall x\in X, \neg P(x) $ .
+   \end{enumerate}
+\end{theorem}

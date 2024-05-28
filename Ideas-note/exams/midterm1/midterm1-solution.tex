@@ -1,0 +1,172 @@
+\documentclass[12pt]{amsart}
+\usepackage{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{../svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{lineno}
+%\usepackage{authblk}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\usepackage{enumitem}
+\usepackage[margin=1in]{geometry}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ MATH 170--002, 601: Midterm 1 -- Solutions }
+%\author[1]{Co-author}
+\author{Good luck!}
+%\affil[1]{Institute}
+\date{}
+
+\begin{document}
+
+
+\maketitle
+
+There are three questions. Make sure you justify all your work for complete credit.
+
+\begin{enumerate}[label=\arabic*.,itemsep=10pt, leftmargin=*]
+    \item 
+        Let $P,Q,R$ be propositional variables
+        that represent the following:
+        \begin{itemize}
+            \item $P=$ ``$24540$ is divisible by $2$''
+            \item $Q =$ ``$3$ divides $24540$''
+            \item $R=$ ``$5$ divides $11111$''
+        \end{itemize}
+            
+        \begin{enumerate}
+        \item
+        \textit{[10 points.]}
+        Use criteria of divisibility to check if $P$, $Q$, $R$ are correct.
+        \item
+        \textit{[5 points.]}
+        Divide $11111$ by $3$ with remainder.
+        \item
+        \textit{[5 points.]}
+        Find $\gcd(123,9)$.
+        \end{enumerate}
+        \begin{proof}[Answer]
+            (a)
+           $P$ is correct because $2 \st 0$, $Q$ is correct because $3\st 15$,
+           $R$ is not correct because the number ends with $1$.
+
+           (b) 
+           $11111 = 3 \cdot 3703 + 2$.
+
+           (c) $123 = 9\cdot 13 + 6$, $9 = 6\cdot 1 + 3$, $6 = 3\cdot 2 + 0$.
+           By Euclid's algorithm, $\gcd(123,9) =3$.
+        \end{proof}
+
+    \item 
+        There is a restaurant that exclusively delivers instant noodles.
+        At the moment, they have 100 customers, all of them are UPenn students.
+        The students are happy if they have 12 bowls of instant noodles per week.
+        The survival goal of the company is to keep at least one customer happy per week.
+        Being a small cafe, they have only three delivery workers who only work 40 hour per week each.
+        Assume the productivity of the workers is the same (i.e., they deliver the same number of bowls per hour).
+        Assume also that the restaurant doesn't know who they're delivering to.
+        How many bowls of instant noodles does each delivery worker have to deliver per hour
+        in order to keep the restaurant alive? 
+        
+
+        You may follow the provided steps to solve the problem. Any other correct approach will give points too.
+        
+        \begin{enumerate}
+            \item
+        \textit{[5 points.]}
+            Write out the formulation of the generalized pigeonhole principle.
+        
+            \item 
+        \textit{[5 points.]}
+            Identify the pigeons.
+
+            \item 
+        \textit{[5 points.]}
+            Identify the pigeonholes. 
+
+            \item 
+        \textit{[5 points.]}
+            Apply the generalized pigeonhole principle.
+        \end{enumerate}
+        \begin{proof}[Answer]
+            (a) If there are $n$ pigeons and $k$ pigeonholes and that 
+            $n > mk$, then there is a pigeonhole with $m+1$ pigeons.
+
+            (b) Pigeons: bowls of noodles
+
+            (c) Pigeonholes: students ($k = 100$)
+        
+            (d) Let $n$ be the bowls of noodels that each worker delivers per hour.
+            In total, they deliver $40\cdot 3\cdot n = 120n$ bowls per week.
+            Each student is happy with $12$ bowls per week so $m + 1 = 12\implies m = 11$.
+            So, we want to find the smallest $n$ so that 
+            \begin{equation*}
+                120n > mk = 11\cdot 100 = 1100\,.
+            \end{equation*}
+            This makes $n = 10$.
+            So, each worker has to deliver $10$ bowls of noodles per hour to keep
+            the restaurant alive.
+    \end{proof}
+
+
+
+    \item 
+        \begin{enumerate}
+            \item 
+        \textit{[10 points.]}
+            Translate the following statement into a logical formula.
+                
+                ``If all humans are heroes all the time then no humans are heroes anytime.''
+                
+            Suggested variables: $x$ for humans, 
+            $t$ for time.
+            Suggested predicates: 
+            $P(x,t)=$``$x$ is a hero in time $t$'',
+            $Q(x,t)=$``$x$ is a hero in time $t$''.
+            
+
+            \item 
+        \textit{[5 points.]}
+            Find the simplest logical formulae 
+                to express the negation of the above statements. 
+                
+            \item
+        \textit{[5 points.]}
+            Translate the resulting formula in 3b back into English. 
+
+        \end{enumerate}
+
+        \begin{proof}[Answer]
+            $P$ and $Q$ are actually the same so we can just use one of them.
+            I will use both of them to emphasize that these are two different
+            sentences.
+            Let $X$ be the set of all humans and $T$ be the set of all time.
+
+        (a) $\paren[\Big]{ \forall x \in X, \forall t \in T, P(x,t) }  \implies
+    \paren[\Big]{ \neg ( \exists x\in X, \exists t\in T, Q(x,t))  }$
+
+        (b) 
+        Using the rule $A\implies B \equiv (\neg A) \vee B$, we get
+        $\neg (A \implies B) \equiv A \wedge (\neg B)$. Therefore, 
+        \begin{gather*}
+    \neg \paren[\Big]{\paren[\Big]{ \forall x \in X, \forall t \in T, P(x,t) }  \implies
+    \paren[\Big]{ \neg ( \exists x\in X, \exists t\in T, Q(x,t))  }} \\
+    \equiv \paren[\Big]{ \forall x \in X, \forall t \in T, P(x,t) }
+                \wedge 
+   \neg \paren[\Big]{ \neg ( \exists x\in X, \exists t\in T, Q(x,t))  } \\
+    \equiv \paren[\Big]{ \forall x \in X, \forall t \in T, P(x,t) }
+                \wedge 
+            \paren[\Big]{ \exists x\in X, \exists t\in T, Q(x,t) }  \,.
+\end{gather*}
+
+    (c) All humans are heroes all the time and there exists someone that is 
+    a hero sometimes.
+        \end{proof}
+\end{enumerate}
+
+
+
+
+\end{document}

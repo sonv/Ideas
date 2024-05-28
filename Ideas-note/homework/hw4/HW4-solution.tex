@@ -1,0 +1,170 @@
+\documentclass[12pt]{amsart}
+\usepackage{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{../svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{lineno}
+%\usepackage{authblk}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\usepackage{enumitem}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ MATH 170: Homework 4 solution }
+%\author[1]{Co-author}
+\author{Teaching team}
+%\affil[1]{Institute}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+
+\noindent{\bf Graded for accuracy:}
+1, 2.
+\\
+\noindent{\bf Graded for completion:}
+3, 4, 5.
+\\
+\noindent{\bf Not graded (practice problems):}
+6, 7, 8.
+\\
+\noindent{\bf Instructions:}
+Problems that are graded for accuracy must be correct to get points.
+Problems that are graded for completion must show some trying effort.
+
+\centerline
+
+\hrule
+
+\centerline
+
+\begin{enumerate}[label=\arabic*.,itemsep=10pt, leftmargin=*]
+
+\item Recall that the operator ``IF AND ONLY IF'' (``biconditional operator''), denoted $\Leftrightarrow$, is defined as follows:
+$$ P \Leftrightarrow Q
+\mbox{ by definition means the formula }
+(P\Rightarrow Q) \wedge (Q \Rightarrow P).
+$$
+Using this definition, write the truth table for this operator.
+
+\begin{proof}[Answer]
+    Therefore we will have the following truth table.
+
+   \begin{center}
+    \begin{tabular}{ |c|c|c|c|c|c|c|c| } 
+    \hline
+    $P$ & $Q$  &    $ P \implies Q$ & $Q \implies P$ & $ (P \implies Q) \wedge ( Q \implies P) $ \\
+    \hline
+    T & T & T & T &T \\
+    F & T & T &F & F \\
+    T & F & F &T & F \\
+    F & F & T &T & T \\
+    \hline
+    \end{tabular}
+\end{center} 
+\end{proof}
+
+\item  Using logical rules or truth tables, prove logical equivalences:
+    \begin{enumerate}[label=\alph*.,itemsep=5pt, leftmargin=*]
+    \item $(P \vee Q) \Rightarrow R \equiv (P \Rightarrow R) \wedge (Q \Rightarrow R)$.
+    \item $P \Leftrightarrow Q \equiv
+    (P \Rightarrow Q) \wedge ((\neg P) \Rightarrow (\neg Q))$ 
+    (use Problem 1 to recover the truth table for $\Leftrightarrow$). 
+\end{enumerate}
+
+\begin{proof}[Answer]
+    a. 
+   \begin{center}
+        \begin{tabular}{ |c|c|c|c|c|c|c|c| } 
+        \hline
+        $P$ & $Q$  &  $R$ & $P \vee Q$  & $(P \vee Q) \Rightarrow R$   & $P \Rightarrow R$ & $Q \Rightarrow R$ & $(P \Rightarrow R) \wedge (Q \Rightarrow R)$\\
+        \hline
+        T & T & T & T & T & T & T & T \\
+        T & T & F & T & F & F & F & F \\
+        T & F & T & T & T & T & T & T \\
+        T & F & F & T & F & F & T & F \\
+        F & T & T & T & T & T & T & T \\
+        F & T & F & F & F & T & F & F \\
+        F & F & T & T & T & T & T & T \\
+        F & F & F & F & T & T & T & T \\
+        \hline
+        \end{tabular}
+    \end{center} 
+
+    b. We don't need the truth table for this but you can use it if you insist. 
+    Note that $Q \Rightarrow P \equiv (\neg P) \Rightarrow (\neg Q)$.
+    From problem 1, we get 
+     $P \Leftrightarrow Q \equiv
+    (P \Rightarrow Q) \wedge ((\neg P) \Rightarrow (\neg Q))$ 
+\end{proof}
+
+\item  In plain English, explain the equivalence in 2a.
+    \begin{proof}[Answer]
+        If $P$ or $Q$ implies $R$ then $P$ implies $R$ and $Q$ implies $R$ and vice versa.
+    \end{proof}
+
+\item Let $P$ be the set of all people and
+     $E$ be the set of all even numbers.
+    Translate the following sentences into logical formulae.
+    \begin{enumerate}
+        \item Everyone loves someone.
+        \item Everyone is short or tall.
+        \item Everyone is short or everyone is tall.
+        \item Every even number is a multiple of 2 with some integer.
+    \end{enumerate}
+
+    \begin{proof}[Answer]
+        a. Let $P(x,y)$ be ``$x$ loves $y$'' and $S$ be teh set of all people. 
+        Then, $\forall x \in S, \exists y \in S, P(x,y)$.
+
+        b. Let $P(x)$ be ``$x$ is tall and $Q(x)$ be $x$ is short. 
+        Then, $\forall x\in S, P(x)\vee Q(x)$.
+
+        c. $(\forall x \in S, P(x) ) \vee (\forall x\in S, Q(x))$.
+
+        d. Let $S$ be the set of all even numbers.
+        Let $P(x,n)$ be   ``$x =  2n$''.
+        $\forall x\in S, \exists n\in \Z, P(x,n)$.
+    \end{proof}
+
+
+
+\item  
+    \begin{enumerate}[label=\alph*.,itemsep=5pt, leftmargin=*]
+    \item
+    Translate into purely logical formula the following (quite convoluted) plain English sentence:
+    \\
+    ``It is not true that for every cat you cannot find a dog such that under no circumstances them sharing a toy means that they go to walks together.''
+    \\
+    Suggested use of variables: $c$ for a cat, $d$ for a dog, $T(c,d)$ for ``$c$ and $d$ share a toy'', $W(c,d)$ for ``$c$ and $d$ go to walks together''.
+    \item 
+    Simplify the formula from 5a by moving the negations past the quantifiers so that each negation in the formula only appears right in front of $T(c,d)$ or $W(c,d)$. I.e. write a maximally negated logical formula that is logically equivalent to the formula from 5a.
+    \item
+    Now translate the formula from 5b into plain English without using any variables. Is it easier to read? If some time later you see a complicated sentence as in 5a, would you rather analyze it as a logical formula or try to come up with a simplified version without rewriting it with quantifiers and logical operators?
+    \end{enumerate}
+    
+   
+
+
+\end{enumerate}
+
+\begin{proof}[Answer]
+    a. 
+    Let $C$ be the set of all cats and $D$ be the set of all dogs.
+    $$\neg (\forall c\in C, \neg( \exists d\in D, \neg (T(c,d) \Rightarrow W(c,d))))\,.$$ 
+
+    b.
+    \begin{equation*}
+        \exists c \in C, \exists d\in D, T(c,d)\wedge (\neg W(c,d))\,.
+    \end{equation*}
+
+    c. There are a cat and a dog who share a toy and cannot walk together.
+\end{proof}
+
+
+
+\end{document}

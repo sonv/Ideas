@@ -1,0 +1,96 @@
+\documentclass[12pt]{amsart}
+\usepackage{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{../svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{lineno}
+%\usepackage{authblk}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\usepackage{enumitem}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ MATH 170: Practice problems for Midterm 3 }
+%\author[1]{Co-author}
+%\affil[1]{Institute}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+
+\noindent{\bf Not graded.}
+
+\centerline
+
+\hrule
+
+\centerline
+
+\begin{enumerate}[label=\arabic*.,itemsep=10pt, leftmargin=*]
+\item  
+    Consider the graph $G$ that has the following sets of vertices $V$ and edges $E$:
+    \begin{equation*}
+    \begin{split}
+    V &= \{ a, b, c, d, e \} , \\
+    E &= \{ ab, ab, ae, bc, bd, cd, de \} .
+    \end{split}
+    \end{equation*}
+    
+
+    \begin{enumerate}[label=\alph*.,itemsep=5pt, leftmargin=*]
+    \item Draw $G$.
+    \item Is $G$ connected? Does $G$ have an Eulerian path? An Eulerian cycle?
+    \item Use the deletion-contraction formula to compute the chromatic function $P_G(n)$.
+    \item Determine the chromatic number $\chi(G)$.
+    \end{enumerate}
+
+
+\item
+Imagine that you bought several new games and are throwing a board game party. You invite Alejandro, Bonnie, Corey, Dori, Elena, Felipe, Gleb and Harini. Some people in the group had conflicts, so you want them to play different games. On the other hand, you feel lazy about reading all the rules, so you want to minimize the number of games that people play simultaneously.
+
+These are the conflicts: Alejandro and Bonnie recently broke up; and Alejandro had an argument with Bonnie's brother Corey about it; also, Bonnie feels awkward that her brother knows about the breakup. Dori is your good friend, but he is bringing his new boyfriend Felipe whom neither you nor Elena like. In addition, Alejandro and Dori are huge football fans, while Harini and Gleb prefer soccer and call soccer ``the actual football''.
+
+    \begin{enumerate}[label=\alph*.,itemsep=5pt, leftmargin=*]
+    \item Explain how the question of finding the minimal number of board games can be formulated in terms of chromatic number of a certain graph $G$. Draw this $G$ (don't forget that there will be vertex $I$ corresponding to yourself).
+    \item Find the chromatic number $n = \chi(G)$ and thus answer the question.
+    \item In how many ways you can assign people to $n$ board games? Formulate this problem as computing chromatic function, solve it, and substitute $n=\chi(G)$ from the previous part. (For simplicity, assume that any number of people can play any of your games, including 1.)
+    \end{enumerate}
+
+
+
+
+\item  Let $K_v$ denote the graph with $v$ vertices, all which are connected to each other by exactly one edge, and there are no loops.
+    \begin{enumerate}[label=\alph*.,itemsep=5pt, leftmargin=*]
+    \item Draw $K_1$, $K_2$, $K_3$, $K_4$, $K_5$.
+    \item Compute their chromatic numbers and chromatic functions.
+    \item Guess formulas for $\chi(K_v)$ and $P_{K_v}(n)$ and prove them by induction.
+\end{enumerate}
+
+
+
+\item  
+\begin{enumerate}
+    \item 
+        If 12 balls are thrown at random into 20 boxes, what is the probability that no box will receive more than one ball?
+    \item 
+    A deck of 52 cards contains four aces. If the cards are shuffled and distributed in a random manner to four players so that each player receives 13 cards, what is the probability that all four aces will be received by the same player?
+\end{enumerate}
+
+\item Prove that
+\begin{equation*}
+    \binom{n}{k} + \binom{n}{k-1} = \binom{n+1}{k}\,.
+\end{equation*}
+
+
+\item 
+In a certain city, 30 percent of the people are Conservatives, 50 percent are Liberals, and 20 percent are Independents. Records show that in a particular election, 65 percent of the Conservatives voted, 82 percent of the Liberals voted, and 50 percent of the Independents voted. If a person in the city is selected at random and it is learned that she did not vote in the last election, what is the probability that she is a Liberal?
+
+\end{enumerate}
+
+
+
+\end{document}

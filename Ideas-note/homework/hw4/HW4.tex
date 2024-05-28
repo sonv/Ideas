@@ -1,0 +1,142 @@
+\documentclass[12pt]{amsart}
+\usepackage{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{../svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{lineno}
+%\usepackage{authblk}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\usepackage{enumitem}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ MATH 170: Homework 4 }
+%\author[1]{Co-author}
+\author{Due: October 8, 2021}
+%\affil[1]{Institute}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+
+\noindent{\bf Graded for accuracy:}
+1, 2.
+\\
+\noindent{\bf Graded for completion:}
+3, 4, 5.
+\\
+\noindent{\bf Not graded (practice problems):}
+6, 7, 8.
+\\
+\noindent{\bf Instructions:}
+Problems that are graded for accuracy must be correct to get points.
+Problems that are graded for completion must show some trying effort.
+
+\centerline
+
+\hrule
+
+\centerline
+
+\begin{enumerate}[label=\arabic*.,itemsep=10pt, leftmargin=*]
+
+\item Recall that the operator ``IF AND ONLY IF'' (``biconditional operator''), denoted $\Leftrightarrow$, is defined as follows:
+$$ P \Leftrightarrow Q
+\mbox{ by definition means the formula }
+(P\Rightarrow Q) \wedge (Q \Rightarrow P).
+$$
+Using this definition, write the truth table for this operator.
+
+\item  Using logical rules or truth tables, prove logical equivalences:
+    \begin{enumerate}[label=\alph*.,itemsep=5pt, leftmargin=*]
+    \item $(P \vee Q) \Rightarrow R \equiv (P \Rightarrow R) \wedge (Q \Rightarrow R)$.
+    \item $P \Leftrightarrow Q \equiv
+    (P \Rightarrow Q) \wedge ((\neg P) \Rightarrow (\neg Q))$ (use Problem 1 to recover the truth table for $\Leftrightarrow$). 
+\end{enumerate}
+
+\item  In plain English, explain the equivalence in 2a.
+
+\item Let $P$ be the set of all people and
+     $E$ be the set of all even numbers.
+    Translate the following sentences into logical formulae.
+    \begin{enumerate}
+        \item Everyone loves someone.
+        \item Everyone is short or tall.
+        \item Everyone is short or everyone is tall.
+        \item Every even number is a multiple of 2 with some integer.
+    \end{enumerate}
+
+
+
+\item  
+    \begin{enumerate}[label=\alph*.,itemsep=5pt, leftmargin=*]
+    \item
+    Translate into purely logical formula the following (quite convoluted) plain English sentence:
+    \\
+    ``It is not true that for every cat you cannot find a dog such that under no circumstances them sharing a toy means that they go to walks together.''
+    \\
+    Suggested use of variables: $c$ for a cat, $d$ for a dog, $T(c,d)$ for ``$c$ and $d$ share a toy'', $W(c,d)$ for ``$c$ and $d$ go to walks together''.
+    \item 
+    Simplify the formula from 5a by moving the negations past the quantifiers so that each negation in the formula only appears right in front of $T(c,d)$ or $W(c,d)$. I.e. write a maximally negated logical formula that is logically equivalent to the formula from 5a.
+    \item
+    Now translate the formula from 5b into plain English without using any variables. Is it easier to read? If some time later you see a complicated sentence as in 5a, would you rather analyze it as a logical formula or try to come up with a simplified version without rewriting it with quantifiers and logical operators?
+    \end{enumerate}
+    
+    
+\item
+    \textit{Review: pigeonhole principle.}
+    \begin{enumerate}
+        \item In a country in a far far away land, there is a run for President with 10 parties and only the candidates can vote for each other.
+        Assuming each party has one candidate
+        and that each candidate can vote $n$ times, each for a different person (and he/she is allowed to vote for his/herself) -- total count will determine the winner.
+        How many votes should each candidate have in order to make sure that at least one of them has at least 4 votes?
+        
+        \item I have 20 pairs of socks that have 4 different colors.
+        How many socks do I have to pull out without looking in order to make sure that I have 2 pairs of the same color?
+    \end{enumerate} 
+    
+
+
+
+\item
+    \textit{Review: divisibility and fundamental theorem of arithmetic.}
+    \begin{enumerate}
+        \item Determine whether the following numbers are divisible by $2,3,5$?
+        \begin{equation*}
+            181, 21505, 1990 \,.
+        \end{equation*}
+        
+        \item What are the prime factorizations of the following numbers?
+        \begin{equation*}
+            1990, 256, 134400 \,.
+        \end{equation*}
+        
+%        \item Without calculator, is the following number a prime?
+%        \begin{equation*}
+%            2*3*5*7+ 1 \,.
+%        \end{equation*}
+    \end{enumerate}
+    
+    
+    
+
+\item
+    \textit{Review: gcd and Euclid's algorithm.}
+    Find 
+    \begin{gather*}
+        \gcd(2501, 81)\\
+        \gcd(-15, 60)
+    \end{gather*}
+    
+    
+
+
+\end{enumerate}
+
+
+
+\end{document}

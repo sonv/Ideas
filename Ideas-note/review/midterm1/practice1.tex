@@ -1,0 +1,189 @@
+\documentclass[12pt]{amsart}
+\usepackage{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{../svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage{lineno}
+%\usepackage{authblk}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\usepackage{enumitem}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ MATH 170: Practice problems for Midterm 1 }
+%\author[1]{Co-author}
+%\affil[1]{Institute}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+
+\noindent{\bf Not graded.}
+
+\centerline
+
+\hrule
+
+\centerline
+
+\begin{enumerate}[label=\arabic*.,itemsep=10pt, leftmargin=*]
+\item  Let $A$ be the set of all animals. Translate the following into logical formulae:
+    \begin{enumerate}[label=\alph*.,itemsep=5pt, leftmargin=*]
+    \item All animals eat plants or other animals.
+    \\ \textit{Solution:} $\forall a\in A:$ (``$a$ eats plants'' $\vee$ ``$a$ eats other animals'').
+    \item All animals eat plants or all animals eat other animals.
+    \\ \textit{Solution:} ($\forall a\in A:$ ``$a$ eats plants'') $\vee$ ($\forall a\in A:$ ``$a$ eats other animals'').
+    \item It is not true that some animal has never eaten bamboo but ate penguins and kangaroos.
+    \\ \textit{Solution:} $\neg \exists a\in A:$ ($\neg$``$a$ ate bamboo'') $\wedge$ (``$a$ ate penguins'') $\wedge$ (``$a$ ate kangaroos'').
+
+    \end{enumerate}
+
+\item  Write a maximally negated formula that is equivalent to the formula from 1c.
+    \\ \textit{Solution:} $\forall a\in A:$ (``$a$ ate bamboo'') $\vee$ ($\neg$``$a$ ate penguins'') $\vee$ ($\neg$``$a$ ate kangaroos'').
+
+
+
+\item  
+Find which of the formulas below are logically equivalent.
+    \begin{enumerate}[label=\alph*.,itemsep=5pt, leftmargin=*]
+        \item $1$ (formula that is always true)
+        \item $ (\neg R) \Rightarrow \neg(P \Rightarrow \neg Q)$
+        \item $ (R \vee P) \wedge (R \vee Q)$
+        \item $P \Rightarrow (Q \Rightarrow P)$
+    \end{enumerate}
+
+\textit{Solution:} a$\equiv$d, b$\equiv$c.
+
+First use the logical equivalence $Q \Rightarrow P \equiv (\neg Q) \vee P$ twice to simplify formula in d:
+$$ P \Rightarrow (Q \Rightarrow P) \equiv
+P \Rightarrow ((\neg Q) \vee P) \equiv
+(\neg P) \vee (\neg Q) \vee P
+.$$
+Now notice that $(\neg P) \vee P$ is always true by the principle of excluded middle, so $(\neg P) \vee P \equiv 1$, and we get that d is logically equivalent to $$ (\neg P) \vee (\neg Q) \vee P \equiv
+1 \vee (\neg Q)
+.$$
+But now, disjunction with truth is always true, as we can see from Truth Table 1.
+\begin{table}[]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        $Q$ & $1$ & $\neg Q$ & $1 \vee (\neg Q)$ \\
+        \hline
+        0 & 1 & 1 & 1 \\
+        1 & 1 & 0 & 1 \\
+        \hline
+    \end{tabular}
+    \caption{$1 \vee (\neg Q)$}
+\end{table}
+
+So $1 \vee (\neg Q) \equiv 1$, and hence a$\equiv$d.
+
+To show b$\equiv$c, first simplify the formula in b using the logical equivalence for implication as above:
+$$ (\neg R) \Rightarrow \neg(P \Rightarrow \neg Q)
+\equiv
+R \vee \neg(( \neg P) \vee (\neg Q))
+.$$
+Now apply de Morgan's law to get the following formula that is logically equivalent to the previous one:
+$$ R \vee (P \wedge Q)
+.$$
+To finally show that $R \vee (P \wedge Q) \equiv (R \vee P) \wedge (R \vee Q)$, we will again use truth tables. Observe that the two columns corresponding to the LHS and RHS of the formula have equal values, so these formulas must be logically equivalent.
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{|c|c|c||c|c||c|c|c|}
+        \hline
+        $P$ & $Q$ & $R$ & $P\wedge Q$ & $R \vee (P \wedge Q)$
+        & $R \vee P$ & $R \vee Q$ & $(R \vee P) \wedge (R \vee Q)$ \\
+        \hline
+        0&0&0 & 0&0 & 0&0&0 \\
+        0&0&1 & 0&1 & 1&1&1 \\
+        0&1&0 & 0&0 & 0&1&0 \\
+        0&1&1 & 0&1 & 1&1&1 \\
+        1&0&0 & 0&0 & 1&0&0 \\
+        1&0&1 & 0&1 & 1&1&1 \\
+        1&1&0 & 1&1 & 1&1&1 \\
+        1&1&1 & 1&1 & 1&1&1 \\
+        \hline
+    \end{tabular}
+    \caption{For b$\equiv$c.}
+\end{table}
+
+
+\item
+    \textit{Review: pigeonhole principle.}
+    \begin{enumerate}
+        \item In a country in a far far away land, there is a run for President with 10 parties and only the candidates can vote for each other.
+        Assuming each party has one candidate
+        and that each candidate can vote $n$ times, each for a different person (and he/she is allowed to vote for his/herself) -- total count will determine the winner.
+        How many votes should each candidate have in order to make sure that at least one of them has at least 4 votes?
+    \\ \textit{Solution:} $n$ should be at least $4$. 
+    For any $n$, there will be $10n$ votes in the ballot box (each of the ten candidates casts $n$ ballots).
+    If $n=3$ or less, then it is possible to distribute $30$ ballots between the candidates so that each one has three votes. For $n=4$, we have $40$ pigeons (ballots) and distributed between ten pigeonholes (candidates), so since $40 > 3 \cdot 10$, one candidate will get at least $3+1=4$ votes. 
+        
+        \item I have 20 pairs of socks that have 4 different colors.
+        How many socks do I have to pull out without looking in order to make sure that I have 2 pairs of the same color?
+    \\ \textit{Solution:} Two pairs of the same color means that we need four socks of the same color. So let socks be the pigeons and colors be the pigeonholes. If $n$ is the number of socks we need, then by pigeonhole principle $n$ is the smallest number that satisfies
+    $$ n > 3\cdot 4 = 12 
+    .$$
+    So we need to pull out $n=13$ socks.
+    \end{enumerate} 
+    
+
+
+
+\item
+    \textit{Review: divisibility and fundamental theorem of arithmetic.}
+    \begin{enumerate}
+        \item Determine whether the following numbers are divisible by $2,3,5$?
+        \begin{equation*}
+            181, 21505, 1990 \,.
+        \end{equation*}
+    \\ \textit{Solution:} Only $1990$ is divisible by two because it's the only number whose last digit is even. None is divisible by $3$, because the sums of digits (10, 13, 19) are not divisible by $3$. Two numbers ($21505$ and $1990$) are divisible by $5$ because their last digits are $5$ and $0$, and $181$ is not divisible by $5$ because its last digit is neither $0$ nor $5$.
+        
+        \item What are the prime factorizations of the following numbers?
+        \begin{equation*}
+            1990, 256, 134400 \,.
+        \end{equation*}
+    \\ \textit{Solution:}
+    $$ 1990 = 2\cdot 5\cdot 199
+    .$$
+    We check that $199$ is a prime number: by criteria of divisibility, it is not divisible by 2, 3, 5. We calculate that $199 = 7 \cdot 28 + 3$, so it is not divisible by 7. Similarly, $199 = 11 \cdot 18 + 1$, $199 = 13\cdot 15 + 4$, so it is not divisible by 11 or 13 either. The next prime number is 17, but $17^2 > 199$, so if 199 was divisible by 17, then it would be divisible by a smaller number too, so 199 cannot be divisible by 17 or any larger prime number. So 199 is prime.
+    
+    $$ 256 = 2^8
+    .$$
+    
+    For large numbers like 134400, start dividing them by the smallest prime numbers first, in this case 2. Observe that by the criteria of divisibility, 134400 is divisible by 2, 3, 5, but not by 9 (the sum of digits is 12 -- not divisible by 9), so we know that there is one factor of 3. When you finish dividing by small primes, checking divisibility by larger primes will be easier.
+    $$ 134400 = 2^8 \cdot 3 \cdot 5^2 \cdot 7
+    .$$
+    \end{enumerate}
+    
+    
+    
+
+\item
+    \textit{Review: gcd and Euclid's algorithm.}
+    Find 
+    \begin{gather*}
+        \gcd(2501, 81)\\
+        \gcd(-15, 60)
+    \end{gather*}
+\\ \textit{Solution:}
+\begin{equation*}
+\begin{split}
+    \gcd(2501, 81) &= \gcd( 2501 - 30\cdot 81, 81) =
+    \gcd(71,81) =\\ &= \gcd(71,10) = 1.
+\end{split}
+\end{equation*}
+
+Note that 60 is divisible by 15, so
+$$ \gcd(-15, 60) = \gcd(15, 60) = 15 
+ .$$
+\end{enumerate}
+
+
+
+\end{document}
