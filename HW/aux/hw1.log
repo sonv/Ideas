@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.8)  31 AUG 2023 09:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.8)  26 AUG 2024 21:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -760,11 +760,21 @@ Package biblatex Info: ... file 'hw1.bbl' found.
  (aux/hw1.bbl)
 Package biblatex Info: Reference section=0 on input line 23.
 Package biblatex Info: Reference segment=0 on input line 23.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 29.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 29.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 29.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
 
+LaTeX Warning: Empty bibliography on input line 52.
 
-LaTeX Warning: Empty bibliography on input line 31.
-
-[1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}] (aux/hw1.aux)
+[1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] (aux/hw1.aux)
 Package rerunfilecheck Info: File `hw1.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'hw1.run.xml'.
@@ -772,18 +782,18 @@ Package logreq Info: Writing requests to 'hw1.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21350 strings out of 476025
- 367130 string characters out of 5790018
- 1852388 words of memory out of 5000000
- 41345 multiletter control sequences out of 15000+600000
- 553351 words of font info for 76 fonts, out of 8000000 for 9000
+ 21504 strings out of 476025
+ 369631 string characters out of 5790018
+ 1856388 words of memory out of 5000000
+ 41436 multiletter control sequences out of 15000+600000
+ 582304 words of font info for 119 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  90i,5n,90p,1000b,801s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb>
-Output written on aux/hw1.pdf (1 page, 101073 bytes).
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
+Output written on aux/hw1.pdf (1 page, 131496 bytes).
 PDF statistics:
- 39 PDF objects out of 1000 (max. 8388607)
- 25 compressed objects within 1 object stream
- 2 named destinations out of 1000 (max. 500000)
- 10241 words of extra memory for PDF output out of 12000 (max. 10000000)
+ 67 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
+ 7 named destinations out of 1000 (max. 500000)
+ 24577 words of extra memory for PDF output out of 24883 (max. 10000000)
 
