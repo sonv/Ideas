@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.8)  22 AUG 2024 06:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.8)  26 AUG 2024 21:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -773,12 +773,12 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) [1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
-Overfull \hbox (19.2978pt too wide) in paragraph at lines 74--75
+Overfull \hbox (19.2978pt too wide) in paragraph at lines 78--79
 []\T1/lmr/m/n/12 (-20) Board writ-ing is clear and large enough. (Same for di-a-grams/pictures
  []
 
 [2]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 110.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 114.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -788,28 +788,28 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 
 
-LaTeX Warning: Empty bibliography on input line 112.
+LaTeX Warning: Empty bibliography on input line 116.
 
 [3] (aux/project-description-ideas.aux)
 Package rerunfilecheck Info: File `project-description-ideas.out' has not changed.
-(rerunfilecheck)             Checksum: E2DFB000E3D289873CB91615E73A6B31;1830.
+(rerunfilecheck)             Checksum: 1F3CF3CA029028D4FC7460633298AE68;1983.
 Package logreq Info: Writing requests to 'project-description-ideas.run.xml'.
 \openout1 = `project-description-ideas.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21633 strings out of 476025
- 372228 string characters out of 5790018
- 1860388 words of memory out of 5000000
- 41531 multiletter control sequences out of 15000+600000
- 584839 words of font info for 127 fonts, out of 8000000 for 9000
+ 21637 strings out of 476025
+ 372268 string characters out of 5790018
+ 1861388 words of memory out of 5000000
+ 41532 multiletter control sequences out of 15000+600000
+ 584930 words of font info for 128 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 90i,7n,90p,1022b,801s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,6n,90p,1022b,801s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on aux/project-description-ideas.pdf (3 pages, 152507 bytes).
+Output written on aux/project-description-ideas.pdf (3 pages, 153986 bytes).
 PDF statistics:
- 117 PDF objects out of 1000 (max. 8388607)
- 97 compressed objects within 1 object stream
- 23 named destinations out of 1000 (max. 500000)
- 27225 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 122 PDF objects out of 1000 (max. 8388607)
+ 101 compressed objects within 2 object streams
+ 24 named destinations out of 1000 (max. 500000)
+ 27233 words of extra memory for PDF output out of 29859 (max. 10000000)
 
