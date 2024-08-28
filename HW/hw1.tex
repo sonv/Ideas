@@ -35,16 +35,70 @@ This is illegal because $x-y = 0$.
 	\item No. The number of squares on the board would be $m\times n$,
 	      which would be odd. However, to perfectly cover
 	      the board, one needs an even number of square.
-	\item Yes. An example of that would be to vertically tile the board.
+	\item It depends! Since the number of squares of $m\times n$ board
+	      is odd, we suppose that there is one white square more than black squares.
+
+		      {\bf Case 1.} If we remove a white square, then we can construct an example
+	      that you can fill in the box (give one!). Be careful that you can remove any white square
+	      on the board, not just from the corner. Your construction needs to take this into account.
+
+		      {\bf Case 2.} If we remove a black square, then there are two white squares more than
+	      black squares. This imbalance implies that we cannot perfectly cover the board.
 \end{enumerate}
 \end{problem}
 
 \begin{problem}[Exercise 1.15]
+(Quite a few people thought about this idea but couldn't pursue to the end or
+there are something unclear in the proofs.)
 
+First, we claim that any odd integer $m$ in $\set{1,2, \dots, 3n}$ can be written as $k 3^i$, for
+some odd number $k$ in $\set{1,2, \dots, 3n}$ not divisible by $3$ and some number $i$ in $\set{0, 1, \dots}$.
+To see this, we note that if $m$ is not divisible by $3$, then $m = m3^0 $.
+On the other hand, if $m$ is divisible by $3$, then $ m = 3 s$. Keep dividing $s$ by $3$ until
+you cannot do it anymore withouth resulting in non-integer.
+At the end of this process, we have $m = 3^ik$ for $i\geq 1$ and $k$ odd not divisible by $3$.
+
+For each odd number $k$ in $\set{1, 2, \dots, 3n}$ not divisible by $3$, we denote
+\begin{align*}
+	A_k = \set{k, 3k, 3^2 k, 3^3 k, \dots}\,.
+\end{align*}
+
+We claim that there are only at most $n$ such $k$ in $\set{1, 2, \dots, 3n}$ (odd and not divisible by $3$).
+To see this, we first divide the list into $n$ sublists
+\begin{align*}
+	B_1 & = \set{ 1,2,3}         \\
+	B_2 & = \set{4,5,6}          \\
+	    & \vdots                 \\
+	B_n & = \set{3n-2, 3n-1, 3n}
+\end{align*}
+Consider a set $B_i = \set{3i-2, 3i-1, 3i}$ among those sets.
+Note that, the only number in $B_i$ that is divisible by $3$ is $3i$.
+Remove $3i$ from it gives us $\set{3i-2, 3i-1}$, which contains only numbers
+that don't divide $3$. For any two consecutive numbers, one must be even and the
+other one must be odd. Remove the even number from $\set{3i-2 , 3i-1}$
+gives you a set $C_i$ that contains only odd number that is not divisible by $3$.
+
+Since each $B_i$ produces one $C_i$, there are $n$ $B_i$'s, there are $n$
+odd numbers that is not divisible by $3$.
+Hence, there are total $n$ sets $A_k$ defined above.
+By pigeonhole principle, if we pick $n+1$ odd numbers,
+at least two of them must belong to one of the $A_k$'s
+together.
+The larger number, say $M$, must be divisible by the smaller number, say $m$,
+$M = 3^i m$, where $i\geq 1$, by construction.
 \end{problem}
 
-\begin{problem}[Exercise 1.20]
+\begin{problem}[Exercise 1.20](This is taken from Khanh Linh's solution.)
 
+There are $n$ people at the party, so each person can be acquainted with $1$ to $n - 1$
+other people.
+Hence, there are $n - 1$ possible number of acquaintances. View each of these $n - 1$
+cases as a box.
+Since there are $n = (n - 1) + 1$ people and $n - 1$ boxes,
+there exists 1 box with
+at least 2 people.
+Thus, there are at least two people at this party who have the same number of
+acquaintances.
 \end{problem}
 
 
