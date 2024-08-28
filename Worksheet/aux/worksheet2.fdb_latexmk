@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber aux/worksheet2"] 1694011986 "aux/worksheet2.bcf" "aux/worksheet2.bbl" "aux/worksheet2" 1694013061 0
+["biber aux/worksheet2"] 1694011986 "aux/worksheet2.bcf" "aux/worksheet2.bbl" "aux/worksheet2" 1724861752 0
   "./bibliography.bib" 1693833396 494123 c55468f33388c1a8ba1d4df75770e3e1 ""
-  "aux/worksheet2.bcf" 1694013061 107804 d349672fc1a66a708cd6eeba3e6b72f9 "pdflatex"
+  "aux/worksheet2.bcf" 1724861752 107804 d349672fc1a66a708cd6eeba3e6b72f9 "pdflatex"
   (generated)
   "aux/worksheet2.bbl"
   "aux/worksheet2.blg"
   (rewritten before read)
-["pdflatex"] 1694013059 "worksheet2.tex" "worksheet2.pdf" "worksheet2" 1694013061 0
+["pdflatex"] 1724861750 "worksheet2.tex" "worksheet2.pdf" "worksheet2" 1724861752 0
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1202520719 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1202520719 2840 216e6e45ad352e2456e1149f28885bee ""
@@ -58,6 +58,7 @@
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm" 1229303445 688 37338d6ab346c2f1466b29e195316aa4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm" 1229303445 684 3a51bd4fd9600428d5264cf25f04bb9a ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/rsfs/rsfs7.tfm" 1229303445 692 1b6510779f0f05e9cbf03e0f6c8361e6 ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb" 1255129361 116908 1fca96723793882c2e0160350c192fc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi12.pfb" 1254269338 30696 2654571912f9cd384da9f7cb8a60c568 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb" 1255129361 119235 f35b44530a1d90eb90fe15d9cba67ea0 ""
@@ -166,13 +167,13 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1686223737 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1686223718 7883462 1a8fb0f02fac2fe5f797dc5da193bacd ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "aux/worksheet2.aux" 1694013061 928 b228492978066797c8cd04624b9b98df "pdflatex"
+  "aux/worksheet2.aux" 1724861752 807 00e4bcdaa0211b316e2000bf7d8f23fe "pdflatex"
   "aux/worksheet2.bbl" 1694011992 466 ee04f40f768daeed26442158e95aba61 "biber aux/worksheet2"
-  "aux/worksheet2.out" 1694013061 167 569761bbf8d0010ca48050c6571ef131 "pdflatex"
-  "aux/worksheet2.run.xml" 1694013061 2355 37da2f924c55c07e28e74a4ac98384a8 "pdflatex"
+  "aux/worksheet2.out" 1724861751 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "aux/worksheet2.run.xml" 1724861752 2355 37da2f924c55c07e28e74a4ac98384a8 "pdflatex"
   "marktext.sty" 1693833396 6164 fc189a847afe57b4afab4fd3a388a28c ""
-  "svmacro.sty" 1693833396 11130 4b794773d2af162c6bce826ca35f8be2 ""
-  "worksheet2.tex" 1694013058 1916 109e920a64bf412aba297fea8c57f235 ""
+  "svmacro.sty" 1724107209 10893 29441a4538dee1287691b843abdfa474 ""
+  "worksheet2.tex" 1724861748 1261 d7eacfcee382cc97aac270b5c12c1278 ""
   (generated)
   "aux/worksheet2.aux"
   "aux/worksheet2.bcf"
