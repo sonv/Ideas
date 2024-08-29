@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber aux/hw1"] 1693386607 "aux/hw1.bcf" "aux/hw1.bbl" "aux/hw1" 1724889415 0
+["biber aux/hw1"] 1693386607 "aux/hw1.bcf" "aux/hw1.bbl" "aux/hw1" 1724889700 0
   "./bibliography.bib" 1693386571 494123 c55468f33388c1a8ba1d4df75770e3e1 ""
-  "aux/hw1.bcf" 1724889414 107804 d349672fc1a66a708cd6eeba3e6b72f9 "pdflatex"
+  "aux/hw1.bcf" 1724889699 107804 d349672fc1a66a708cd6eeba3e6b72f9 "pdflatex"
   (generated)
   "aux/hw1.bbl"
   "aux/hw1.blg"
   (rewritten before read)
-["pdflatex"] 1724889413 "hw1.tex" "hw1.pdf" "hw1" 1724889415 0
+["pdflatex"] 1724889698 "hw1.tex" "hw1.pdf" "hw1" 1724889700 0
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1202520719 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1202520719 2840 216e6e45ad352e2456e1149f28885bee ""
@@ -168,11 +168,11 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1686223737 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1686223718 7883462 1a8fb0f02fac2fe5f797dc5da193bacd ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "aux/hw1.aux" 1724889414 800 b4afc3b83766d4fd2bce4cc907a4ccce "pdflatex"
+  "aux/hw1.aux" 1724889699 800 b4afc3b83766d4fd2bce4cc907a4ccce "pdflatex"
   "aux/hw1.bbl" 1693386644 466 ee04f40f768daeed26442158e95aba61 "biber aux/hw1"
-  "aux/hw1.out" 1724889414 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "aux/hw1.run.xml" 1724889414 2306 fbbb018203b7e31488d412d5e0cd2c79 "pdflatex"
-  "hw1.tex" 1724889412 4262 0cc62052beabe4abf73383b5a9e7fafb ""
+  "aux/hw1.out" 1724889699 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "aux/hw1.run.xml" 1724889699 2306 fbbb018203b7e31488d412d5e0cd2c79 "pdflatex"
+  "hw1.tex" 1724889693 4270 150388a540a3762006bdfc60ce91de18 ""
   "marktext.sty" 1693386571 6164 fc189a847afe57b4afab4fd3a388a28c ""
   "svmacro.sty" 1698848264 11121 8ab91d4820adeb4f2bba50671c0ffb11 ""
   (generated)
