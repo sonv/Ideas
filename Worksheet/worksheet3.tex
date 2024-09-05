@@ -21,68 +21,70 @@
 
 \maketitle
 
-\section{Statement}
-\begin{problem}
-    Classify the following as statements or non-statemetns:
-    \begin{enumerate}
-        \item I had a hearty laugh at the joke!
-        \item He had a fever of $102^o$ but still completed his task.
-        \item Why would anyone want to do this?
-        \item If you go to the city, you will find what you are seeking.
-        \item I am so happy today!
-        \item $x > x-1.$
-        \item For all integers $x$, $x+2$ is even.
-    \end{enumerate}
-\end{problem}
+\begin{question}
+	\begin{enumerate}
+		\item What is the definition of $a \mid b$ (read ``$a$ divides $b$'')?
+		      \vspace{2cm}
+		\item What is the division algorithm? (Just state it)
+		      \vspace{2cm}
+		\item When is it that $a\nmid b$?
+		      \vspace{2cm}
+	\end{enumerate}
+\end{question}
 
-\begin{problem}
-    Classify whether the following statements are propositions.
-    \begin{enumerate}
-        \item The Sun is a star.
-        \item Every prime number is odd.
-        \item The Moon is a star.
-        \item Every even number
-        \item If 4 is a prime, then FUV is the best university in the world.
-        \item  ``$P \implies Q$'' has the same meaning as ``$\neg P \vee Q$''.
-    \end{enumerate}
-\end{problem}
+\begin{question}
+	\begin{enumerate}
+		\item   $\gcd(-5,25) = $
+		      \vspace{2cm}
+		\item $\gcd(-3, 7) = $
+		      \vspace{2cm}
+	\end{enumerate}
+\end{question}
 
-\section{Logical equivalence}
+\begin{question}
+	Open overleaf and try type in the following and observe the differences.
 
-\begin{definition}
-    Let $P$ and $Q$ be logical formulae.
-    We say that $P$ and $Q$ are logically equivalent and write $P\equiv Q$
-    if $Q$ can be derived from $P$ and $P$ can be derived from $Q$.
-\end{definition}
+	\begin{enumerate}
+		\item
+		      \begin{verbatim}
+    The Pythagorean Theorem says $a^2 + b^2 = c^2$
+                \end{verbatim}
+		      \begin{verbatim} 
+    The Pythagorean Theorem says $$ a^2 + b^2 = c^2$$ 
+            \end{verbatim}
+		\item \begin{verbatim}
+    $a | b$ 
+    $a \mid b $
+    $a \not\mid b$
+    $a \nmid b$
+                \end{verbatim}
+		\item \begin{verbatim}
+    $gcd(a,b) $
+    $\gcd(a,b)$
+            \end{verbatim}
+	\end{enumerate}
+\end{question}
 
-\begin{problem}
-    Show that
-        $$ P \wedge (Q \vee R) \equiv (P \wedge Q)\vee (P \wedge R) \,,$$
-        where $P, Q, R$ are propositional variables.
-\end{problem}
+\begin{question}
+	\begin{enumerate}
+		\item What is Bezout's identity? Give 2 or 3 examples of Bezout's identity.
+		      \vspace{2cm}
+		\item Does Bezout's identity work for the pair $(-3, 6)$? How about $(-5, -7)$?
+		      \vspace{2cm}
+		\item How about a triple? $ (18, 3, -9) $?
+		      \vspace{2cm}
+		\item Quadruple? $( 12, 24, -20, 4)$?
+		      \vspace{2cm}
+		\item Is there a pattern?
+	\end{enumerate}
+\end{question}
 
-It turns out that the following is true.
-\begin{theorem}
-    Two propositional formulae are logically equivalent if and only if their truth values
-are the same under any assignment of truth values to their constituent propositional
-variables.
-\end{theorem}
-Even though the proof of this theorem is beyond the scope of this class, we can use
-this to our advantage to check whether $P$ and $Q$ are logically equivalent by
-just looking at their truth tables.
-
-
-\begin{theorem}
-    Two propositional formulae are logically equivalent if and only if they have the 
-    same truth table.
-\end{theorem}
-
-\begin{problem}
-    Check the theorem above by redo Problem 1.2.6 and Problem 2.2
-\end{problem}
+\begin{question}
+	Discuss the proof of Bezout's identity.
+\end{question}
 
 
-\printbibliography 
+\printbibliography
 %\bibliography{refs}
 %\bibliographystyle{halpha-abbrv}
 

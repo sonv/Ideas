@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber aux/worksheet3"] 1694442767 "aux/worksheet3.bcf" "aux/worksheet3.bbl" "aux/worksheet3" 1694452537 0
+["biber aux/worksheet3"] 1694442767 "aux/worksheet3.bcf" "aux/worksheet3.bbl" "aux/worksheet3" 1725494634 0
   "./bibliography.bib" 1693833396 494123 c55468f33388c1a8ba1d4df75770e3e1 ""
-  "aux/worksheet3.bcf" 1694452537 107804 d349672fc1a66a708cd6eeba3e6b72f9 "pdflatex"
+  "aux/worksheet3.bcf" 1725494633 107804 d349672fc1a66a708cd6eeba3e6b72f9 "pdflatex"
   (generated)
   "aux/worksheet3.bbl"
   "aux/worksheet3.blg"
   (rewritten before read)
-["pdflatex"] 1694452535 "worksheet3.tex" "worksheet3.pdf" "worksheet3" 1694452537 0
+["pdflatex"] 1725494632 "worksheet3.tex" "worksheet3.pdf" "worksheet3" 1725494634 0
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1202520719 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1202520719 2840 216e6e45ad352e2456e1149f28885bee ""
@@ -25,6 +25,7 @@
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmr9.tfm" 1254269338 12084 b7f5e4c003de6f57f07c7e9fee73a37c ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm" 1254269338 17148 9556e1b5f936b77a796f68d2d559ba99 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmri12.tfm" 1254269338 17144 271aaf9ebb339934b04110dc5211fba4 ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmtt12.tfm" 1254269338 1368 6a60e6a5e029141041d64d339b87e533 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/lmbsy10.tfm" 1148093231 1300 2df9da0fc09d4a8c772b3dd386a47c6a ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/lmbsy5.tfm" 1148093231 1304 2ff0a255ae754422adbc0e6519ed2658 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/lmbsy7.tfm" 1148093231 1304 535e0954c1961c817723e44bc6a9662c ""
@@ -58,15 +59,16 @@
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm" 1229303445 688 37338d6ab346c2f1466b29e195316aa4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm" 1229303445 684 3a51bd4fd9600428d5264cf25f04bb9a ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/rsfs/rsfs7.tfm" 1229303445 692 1b6510779f0f05e9cbf03e0f6c8361e6 ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb" 1255129361 116908 1fca96723793882c2e0160350c192fc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi12.pfb" 1254269338 30696 2654571912f9cd384da9f7cb8a60c568 ""
-  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi8.pfb" 1254269338 30635 833ec815d446ec453a4913fc26d24cbc ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb" 1255129361 119235 f35b44530a1d90eb90fe15d9cba67ea0 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb" 1255129361 113634 f99c44d58bae0863375faf0e1d74d612 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr9.pfb" 1255129361 121065 50bbfa703ce7e11638752ef5a6d120c7 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb" 1255129361 112593 fda2373ba4420af33949610de4c28fe8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri12.pfb" 1255129361 109265 32320cb6133d4d76bf83e27b5eb4009b ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb" 1254269338 27863 09ce3735688ffde955e72da27c95b61a ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt12.pfb" 1255129361 110323 92daea7ca7b4120bd2b54b047c93be27 ""
   "/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2023/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/usr/local/texlive/2023/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1576625341 40635 c40361e206be584d448876bba8a64a3b ""
@@ -143,6 +145,7 @@
   "/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omxlmex.fd" 1616454256 568 a5494d810f2680caf10205cd1226c76c ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/lm/ot1lmr.fd" 1616454256 1882 28c08db1407ebff35a658fd141753d16 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmr.fd" 1616454256 1867 996fe743d88a01aca041ed22cc10e1bb ""
+  "/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmtt.fd" 1616454256 2682 555da1faa2e266801e4b221d01a42cb5 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/logreq/logreq.def" 1284153563 1620 fb1c32b818f2058eca187e5c41dfae77 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/logreq/logreq.sty" 1284153563 6187 b27afc771af565d3a9ff1ca7d16d0d46 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/mathtools/mathtools.sty" 1656621545 62269 5c1837a5bc5db4c0d255eedc225ca44b ""
@@ -167,13 +170,13 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1686223737 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1686223718 7883462 1a8fb0f02fac2fe5f797dc5da193bacd ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "aux/worksheet3.aux" 1694452537 1037 94bb043b47fed64a7b954240037e52eb "pdflatex"
+  "aux/worksheet3.aux" 1725494633 807 c7030f2b903e2615d61e879bbdf11f50 "pdflatex"
   "aux/worksheet3.bbl" 1694442777 466 ee04f40f768daeed26442158e95aba61 "biber aux/worksheet3"
-  "aux/worksheet3.out" 1694452537 265 27bbd6e34f4a5a44dba661771247cc77 "pdflatex"
-  "aux/worksheet3.run.xml" 1694452537 2355 40c5a039d58708a31e9a30dad7dc19d6 "pdflatex"
+  "aux/worksheet3.out" 1725494633 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "aux/worksheet3.run.xml" 1725494633 2355 40c5a039d58708a31e9a30dad7dc19d6 "pdflatex"
   "marktext.sty" 1693833396 6164 fc189a847afe57b4afab4fd3a388a28c ""
-  "svmacro.sty" 1693833396 11130 4b794773d2af162c6bce826ca35f8be2 ""
-  "worksheet3.tex" 1694452535 2657 79a1c0171ecac852fdf280c5dfa04167 ""
+  "svmacro.sty" 1724107209 10893 29441a4538dee1287691b843abdfa474 ""
+  "worksheet3.tex" 1725494629 2133 49a3a6897f92af8ce148c208ba593e66 ""
   (generated)
   "aux/worksheet3.aux"
   "aux/worksheet3.bcf"
