@@ -22,86 +22,50 @@
 \maketitle
 
 
-\section{Logical equivalence}
+\section{Modular Arithmetic}
 
-\begin{definition}
-    Let $P$ and $Q$ be logical formulae.
-    We say that $P$ and $Q$ are logically equivalent and write $P\equiv Q$
-    if $Q$ can be derived from $P$ and $P$ can be derived from $Q$.
-\end{definition}
-
-\begin{problem}
-    Show that
-        $$ P \wedge (Q \vee R) \equiv (P \wedge Q)\vee (P \wedge R) \,,$$
-        where $P, Q, R$ are propositional variables.
-\end{problem}
-
-It turns out that the following is true.
-\begin{theorem}
-    Two propositional formulae are logically equivalent if and only if their truth values
-are the same under any assignment of truth values to their constituent propositional
-variables.
-\end{theorem}
-
-\section{Truth table}
+\begin{question}
+	What is \emph{congruent modulo}?
+	Discuss about ways of representing this concept?
+\end{question}
 
 
-\begin{theorem}[De Morgan's laws for logical operators]
-   Let $P, Q$ be propositional variables. Then,
-   \begin{enumerate}
-       \item $\neg (P \vee Q) \equiv (\neg P) \wedge (\neg Q) $,
-       \item $\neg (P \wedge Q) \equiv (\neg P) \vee (\neg Q) $ .
-   \end{enumerate}
-\end{theorem}
+\begin{question}
+	Let $a,b,c,d$ and $m$ be integers so that $a \equiv b (\mod m)$ and
+	$c \equiv d (\mod m)$.
+	Prove that
+	\begin{enumerate}
+		\item $a + c \equiv b + d (\mod m)$
+		\item $a + c \equiv b + d (\mod m)$
+		\item $a \cdot c \equiv b \cdot d (\mod m)$
+	\end{enumerate}
+\end{question}
 
-\begin{theorem}[Distributive laws]
-    Let $P, Q, R$ be propositional variables. Then,
-    \begin{enumerate}
-        \item $P\wedge (Q\vee R) \equiv (P \wedge Q) \vee (P \wedge R)$,
-        \item $P \vee (Q\wedge R) \equiv (P \vee Q) \wedge (P \vee R)$.
-    \end{enumerate}
-\end{theorem}
+\begin{question}
+	Give definition of prime and composite numbers.
+\end{question}
 
-\begin{theorem}[Absorption laws]
-   Let $P, Q$ be propositional variables. Then,
-    \begin{enumerate}
-        \item $P \vee (P \wedge Q) \equiv P$,
-        \item $P \wedge (P \vee Q) \equiv P$.
-    \end{enumerate}
-\end{theorem}
+\begin{question}
+	Let $a,b,c$ be integers and $p$ be a prime number.
+	Prove the following
+	\begin{enumerate}
+		\item If $p\nmid a$, then $\gcd(p,a) = 1$
+		\item If $a \mid bc$ and $\gcd(a,b) = 1$, then $a \mid c$
+		\item If $p \mid bc$, then $p \mid b$ or $p \mid c$
+	\end{enumerate}
+\end{question}
 
+\begin{question}[Modular cancellation law]
+	Let $a,b, k$ and $m$ be integers.
+	Prove that if $ak \equiv bk (\mod m)$ and $\gcd(k,m) = 1$, then
+	$$a \equiv b (\mod m).$$
+\end{question}
 
-\begin{problem}
-    Prove the theorems above by truth tables.
-\end{problem}
+\begin{question}
+	Discuss about Fermat's little theorem:
 
-There are a few other laws that are useful to know.
-\begin{theorem}[Tautology laws]
-    \begin{enumerate}
-        \item $P \wedge$ a tautology $\equiv P$
-        \item $P \vee$ a tautology $\equiv$ tautology
-        \item $\neg$ (a tautology) is a contradiction.
-    \end{enumerate}
-\end{theorem}
-
-\begin{theorem}[Contradiction laws]
-    \begin{enumerate}
-        \item $P \wedge$ contradiction  $\equiv$ contradiction.
-        \item $P \vee$ contradiction  $\equiv P$ 
-        \item $\neg$ (a contradiction) is a tautology.
-    \end{enumerate}
-\end{theorem}
-\begin{problem}[Problem 9 in section 1.2]
-    Use truth table to determine which of these statements are tautologies,
-which are contradictions, and which are neither:
-\begin{enumerate}
-    \item $(P \vee Q)\wedge (\neg P \vee \neg Q)$
-    \item $(P \vee Q) \wedge (\neg P \wedge \neg Q)$
-    \item $(P \vee Q) \vee (\neg P \vee \neg Q)$
-    \item $[P \wedge (Q \vee \neg R)] \vee (\neg P \vee R)$.
-\end{enumerate}
-\end{problem}
-
-
+	If $a$ is an integer and $p$ is a prime so that $p\nmid a$. Then,
+	$$ a^{p-1} \equiv 1 (\mod p).$$
+\end{question}
 
 \end{document}
