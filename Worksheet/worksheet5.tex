@@ -21,132 +21,63 @@
 
 \maketitle
 
-\section{Set}
-
-\begin{definition}
-    A \emph{set} is a collection of objects.
-\end{definition}
-Set of objects $x$ satisfying some property $P(x)$ is denoted by
-\begin{equation}
-    \label{e:set}
-\set[\big]{ x  \st P(x)} \,.
-\end{equation}
-
-Denote
+Important notations:
 \begin{enumerate}
-    \item The set of all integers to be $\Z$
-    \item The set of all natural numbers to be $\N$
-    \item the set of all rational numbers to be $\Q$
+	\item $\wedge$ stands for ``and''
+	\item $\vee$ stands for ``or''
 \end{enumerate}
 
+\begin{question}
+	What is a set? What is the set-builder notation?
+\end{question}
 
-\begin{problem}
-    From high school knowledge, try to describe $\Q$ in terms of $\Z$ using set notation~\eqref{e:set}.
-\end{problem}
+\vspace{5cm}
 
+\begin{question}
+	Write the descriptions of
+	\begin{enumerate}
+		\item Natural numbers
+		      \vspace{3cm}
+		\item Rational numbers
+		      \vspace{3cm}
+		\item Real numbers
+		      \vspace{3cm}
+		\item $3\times 3$ real matrices
+		      \vspace{3cm}
+		\item Points on the circle of radius $r$
+	\end{enumerate}
+\end{question}
 
-\begin{problem}
-    What's the difference between a logical formula and a propositional formula?
-\end{problem}
+\begin{question}
+	What does it mean for $A\subseteq B$?
+\end{question}
+\vspace{5cm}
 
-\begin{definition}[Notations]
-    The following are standard notations
-    \begin{enumerate}
-        \item   $x\in X$ represents ``$x$ belongs to set $X$''.
-        \item $x\not\in X$ represents ``$x$ does not belong to set $X$''.
-    \end{enumerate}
-\end{definition}
+\begin{question}
+	Prove that
+	\begin{equation*}
+		\left\{ x\in \N: 10 \mid n  \right\}
+		\subseteq
+		\left\{ x\in \N: 2 \mid n  \right\}
+	\end{equation*}
+\end{question}
+\vspace{5cm}
 
-Typically, a set is written by a capitalized letter, unless it is 
-a special set such as $\Z, \N, \Q$.
+\begin{question}
+	Prove that the empty set is a subset of every set.
+\end{question}
+\vspace{5cm}
 
-
-\section{Logical formula}
- 
-Last time, we talked briefly about universal quantifier and existential quantifier.
-
-\begin{definition}[\bf The universal quantifier $\forall$]
-    If $p(x)$ is a logical formula with free variable with free variable $x$ with domain $X$,
-    then $\forall x\in X, p(x)$ is the logical formula defined according to the following rules:
-    \begin{itemize}
-        \item If $p(x)$ can be derrived from the assumption that $x$ is an arbitrary element of $X$,
-            then $\forall x\in X, p(x)$ is true;
-        \item If $a\in X$ and  $\forall x \in X, p(x)$ is true, then $p(a)$ is true.
-    \end{itemize}
-\end{definition}
-
-\begin{definition}[\bf The existential quantifier $\exists$]
-    If $p(x)$ is a logical formula with free variable $x$ with domain $X$, then 
-    $\exists x\in X, p(x)$ is the logical formula defined according to the following rules:
-    \begin{itemize}
-        \item If $a\in X$ and $p(a)$ is true, then $\exists x \in X, p(x)$ is true;
-        \item If $\exists x\in X, p(x)$ is true, and $q$ can be derived from the assumption
-            that $p(a)$ is true for some fixed $a \in X$, then $q$ is true.
-    \end{itemize}
-\end{definition}
-
-
-\begin{problem}
-    In your own words, re-interpret the definitions of the quantifiers.
-\end{problem}
-
+\begin{question}
+	Prove that
+	\begin{equation*}
+		\left\{ n\in \Z : 12\mid n   \right\}
+		=
+		\left\{ n\in \Z : 3\mid n \; \wedge \; 4 \mid n   \right\}
+	\end{equation*}
+\end{question}
 
 
-
-
-\begin{problem}
-    Represent the following sentences in logical formula form. 
-    Some sentences need to be rephrased so that things are clear to identify variables and predicates.
-    \begin{enumerate}
-        \item $x-y$ is rational.
-        \item Every even natural number $n\geq 2$ is divisible by $k$.
-        \item There is an integer that is divisible by every integer.
-        \item There is no greatest odd integer.
-        \item Between any two distinct rational numbers is a third distinct rational number.
-        \item If any integer has a rational square root, then that root is an integer.
-    \end{enumerate}
-\end{problem}
-
-\begin{problem}
-    Translate the following into English.
-    \begin{equation*}
-        \forall a \in \R, (a \geq 0 \implies \exists b \in \R, a=b^2) \,.
-    \end{equation*}
-\end{problem}
-
-\begin{problem}
-    Let $P$ be the set of all prime numbers.
-    \begin{enumerate}
-        \item Translate the following logical formulas into English.
-   \begin{enumerate}
-       \item $\forall n \in P, (n> 2 \implies (\exists k \in \Z, n = 2k+ 1))$.
-       \item $\neg \exists n \in P, (n> 2 \wedge ( \exists k \in \Z, n = 2k))$.
-   \end{enumerate}
-\item Are they true? How would you go on to prove them?
-\item Are both statements talk about the same thing?
-    \end{enumerate}
-\end{problem}
-
-\begin{problem}
-    From the previous problem,
-    find equivalent statements to the following
-    \begin{equation*}
-       \neg (\exists x \in X, P(x)) \,,
-    \end{equation*}
-and
-    \begin{equation*}
-       \neg ( \forall x \in X, P(x)) \,.
-    \end{equation*}
-\end{problem}
-
-Hint: re-call the following from Worksheet 4
-\begin{theorem}[De Morgan's laws for logical operators]
-   Let $P, Q$ be propositional variables. Then,
-   \begin{enumerate}
-       \item $\neg (P \vee Q) \equiv (\neg P) \wedge (\neg Q) $,
-       \item $\neg (P \wedge Q) \equiv (\neg P) \vee (\neg Q) $ .
-   \end{enumerate}
-\end{theorem}
 
 
 \end{document}

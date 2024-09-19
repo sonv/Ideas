@@ -21,87 +21,122 @@
 
 \maketitle
 
+Notations:
+
+\begin{enumerate}
+	\item $\R$ is the set of all real numbers
+	\item $\N$ is the set of all natural numbers
+	\item $\Z$ is the set of integers
+	\item $\emptyset = \set{}$ is the empty set
+	\item $(a,b) = \set{ x\in \R : a<x<b}$
+	\item $[a,b) = \set{ x\in \R : a\leq x<b}$
+	\item $(a,b] = \set{ x\in \R : a< x\leq b}$
+	\item $[a,b] = \set{ x\in \R : a\leq x\leq b}$
+\end{enumerate}
 
 \begin{problem}
-    \begin{enumerate}
-        \item Prove that $\Q\subseteq \R$.
-        \item Prove that $\R \not\subseteq \Q$.
-    \end{enumerate}
+What are the following?
+\begin{enumerate}
+	\item Union:
+	      \vspace{3cm}
+	\item Intersection:
+	      \vspace{3cm}
+	\item Subtraction:
+	      \vspace{3cm}
+	\item Complement:
+	      \vspace{3cm}
+\end{enumerate}
 \end{problem}
 
 \begin{problem}
-    Prove that, 
-   \begin{equation*}
-   \set[\big]{ x \in \R \st x^2 \leq 1 } = [-1,1] \,.
-   \end{equation*}
+\begin{enumerate}
+	\item Prove that $\Q\subseteq \R$.
+	      \vspace{5cm}
+	\item Prove that $\R \not\subseteq \Q$.
+	      \vspace{5cm}
+\end{enumerate}
 \end{problem}
 
 \begin{problem}
-    Prove that for any two sets $X$ and $Y$, 
-    \begin{equation*}
-        X\cap Y \subseteq X \cup Y \,.
-    \end{equation*}
+Prove that,
+\begin{equation*}
+	\set[\big]{ x \in \R \st x^2 \leq 1 } = [-1,1] \,.
+\end{equation*}
+\vspace{5cm}
 \end{problem}
 
 \begin{problem}
-    Prove that 
-    \begin{equation*}
-        \bigcap_{n\geq 1} \left[ 0, 1+ \frac{1}{n} \right) = [0,1] \,.
-    \end{equation*}
+Prove that for any two sets $X$ and $Y$,
+\begin{equation*}
+	X\cap Y \subseteq X \cup Y \,.
+\end{equation*}
+\vspace{5cm}
 \end{problem}
 
 \begin{problem}
-    Prove that $A \setminus (B \setminus C) \subseteq (A \setminus B) \cup C$.
+Prove that
+\begin{equation*}
+	\bigcap_{n\geq 1} \left[ 0, 1+ \frac{1}{n} \right) = [0,1] \,.
+\end{equation*}
+\vspace{5cm}
 \end{problem}
-
-Here's a theorem that we will discuss more in depth later.
-
-\begin{theorem}
-    For all natural numbers $n$ and $m$, if $m > 0$, then there are natural numbers $q$ and $r$ such that $n = mq + r$ and $r < m$. 
-(The numbers $q$ and $r$ are called the quotient and remainder when $n$ is
-divided by $m$.)
-\end{theorem}
 
 \begin{problem}
-    Prove that for every integer, the remainder when $x^2$ is divided by 4 is either 0 or 1.
+Prove that $A \setminus (B \setminus C) \subseteq (A \setminus B) \cup C$.
+\vspace{5cm}
 \end{problem}
+
+
+\begin{problem}
+Prove that for every integer, the remainder when $x^2$ is divided by 4 is either 0 or 1.
+\end{problem}
+\vspace{5cm}
 
 \begin{definition}
-    Let $X$ be a set. The \emph{power set} of $X$, written $\mathcal{P}(X)$, is the set of all subsets of $X$.
+	Let $X$ be a set. The \emph{power set} of $X$, written $\mathcal{P}(X)$, is the set of all subsets of $X$.
 
-    For example, $$\mathcal{P}(\set{1,2}) = \set{ \emptyset, \set{1}, \set{2}, \set{1,2}}\,.$$ 
+	$$\mathcal{P}(X) = \set{ A: A \subseteq  X }.$$
+
+	For example, $$\mathcal{P}(\set{1,2}) = \set{ \emptyset, \set{1}, \set{2}, \set{1,2}}\,.$$
 \end{definition}
 
 \begin{problem}
-    Write out elements of
-    \begin{enumerate}
-        \item  $\mathcal{P}(\set{1,2,3})$,
-        \item $\mathcal{P}(\emptyset)$,
-        \item $\mathcal{P}(\mathcal{P}(\emptyset))$,
-        \item $\mathcal{P}(\mathcal{P}(\mathcal{P}(\emptyset)))$.
-    \end{enumerate}
+Write out elements of
+\begin{enumerate}
+	\item  $\mathcal{P}(\set{1,2,3})$,
+	\item $\mathcal{P}(\emptyset)$,
+	\item $\mathcal{P}(\mathcal{P}(\emptyset))$,
+	\item $\mathcal{P}(\mathcal{P}(\mathcal{P}(\emptyset)))$.
+\end{enumerate}
 \end{problem}
+\vspace{5cm}
 
-The following problem is to help you clear some of the common confusion between 
+The following problem is to help you clear some of the common confusion between
 the use of $\in$ and $\subseteq$ in power set.
 
 \begin{problem}
-    True or false and prove your claim.
+True or false and prove your claim.
 
-    \begin{enumerate}
-        \item $\mathcal{P}(\emptyset) \in \mathcal{P}(\mathcal{P}(\emptyset))$
-        \item $\emptyset \in \set{\set{\emptyset}}$
-        \item $\set{\emptyset} \in \set{\set{\emptyset}}$
-        \item $\mathcal{P}(\mathcal{P}(\emptyset)) \in \set{\emptyset, \set{\emptyset, \set{\emptyset}}}$
-    \end{enumerate}
+\begin{enumerate}
+	\item $\mathcal{P}(\emptyset) \in \mathcal{P}(\mathcal{P}(\emptyset))$
+	      \vspace{5cm}
+	\item $\emptyset \in \set{\set{\emptyset}}$
+	      \vspace{5cm}
+	\item $\set{\emptyset} \in \set{\set{\emptyset}}$
+	      \vspace{5cm}
+	\item $\mathcal{P}(\mathcal{P}(\emptyset)) \in \set{\emptyset, \set{\emptyset, \set{\emptyset}}}$
+	      \vspace{5cm}
+\end{enumerate}
 \end{problem}
 
 \begin{problem}
-    True or False and prove your claim.
-    \begin{enumerate}
-        \item $\mathcal{P}(X\cup Y) = \mathcal{P}(X) \cup \mathcal{P}(Y)$,
-        \item $\mathcal{P}(X\cap Y) = \mathcal{P}(X) \cap \mathcal{P}(Y)$.
-    \end{enumerate}
+True or False and prove your claim.
+\begin{enumerate}
+	\item $\mathcal{P}(X\cup Y) = \mathcal{P}(X) \cup \mathcal{P}(Y)$,
+	      \vspace{5cm}
+	\item $\mathcal{P}(X\cap Y) = \mathcal{P}(X) \cap \mathcal{P}(Y)$.
+	      \vspace{5cm}
+\end{enumerate}
 \end{problem}
 
 
