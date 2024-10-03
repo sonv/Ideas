@@ -1,10 +1,10 @@
 # Fdb version 3
-["biber aux/hw3"] 1727927830 "aux/hw3.bcf" "aux/hw3.bbl" "aux/hw3" 1727969426
-  "aux/hw3.bcf" 1727969426 106736 13c6d6c8ec4fd316430904a3ad5c86d1 "pdflatex"
+["biber aux/hw3"] 1727927830 "aux/hw3.bcf" "aux/hw3.bbl" "aux/hw3" 1727970748
+  "aux/hw3.bcf" 1727970748 106736 13c6d6c8ec4fd316430904a3ad5c86d1 "pdflatex"
   (generated)
   "aux/hw3.bbl"
   "aux/hw3.blg"
-["pdflatex"] 1727969426 "hw3.tex" "hw3.pdf" "hw3" 1727969426
+["pdflatex"] 1727970748 "hw3.tex" "hw3.pdf" "hw3" 1727970748
   "/etc/texmf/web2c/texmf.cnf" 1719500087 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -167,11 +167,11 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1719521897 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1719521921 2801473 1f1f7ce45a89887b9416b9039054d561 ""
-  "aux/hw3.aux" 1727969426 932 01885f24f7b1888625ed9931832cddc8 "pdflatex"
+  "aux/hw3.aux" 1727970748 932 f31030f063a9f8d806d65570bd656319 "pdflatex"
   "aux/hw3.bbl" 1727927830 466 ee04f40f768daeed26442158e95aba61 "biber aux/hw3"
-  "aux/hw3.out" 1727969426 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "aux/hw3.run.xml" 1727969426 2306 03d3e1ddada268cb9507d83fb95fe71d "pdflatex"
-  "hw3.tex" 1727969425 5158 9aa7dd17345e4e8545ab320b0a96824f ""
+  "aux/hw3.out" 1727970748 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "aux/hw3.run.xml" 1727970748 2306 03d3e1ddada268cb9507d83fb95fe71d "pdflatex"
+  "hw3.tex" 1727970747 5473 22034a77e07102bcadca9f40fd5ba31c ""
   "marktext.sty" 1723798231 6164 fc189a847afe57b4afab4fd3a388a28c ""
   "svmacro.sty" 1723798231 11121 8ab91d4820adeb4f2bba50671c0ffb11 ""
   (generated)

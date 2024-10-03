@@ -64,11 +64,20 @@ Prove
 		\item First we need to show $ ( A \cap B)^c \subseteq A^c \cup B^c $.
 
 		      Let $x \in (A \cap B)^c$.
-		      This means $ x \not\in A \cap B$, i.e,
-		      $x \not \in A$ and $x \not \in B$.
-		      Therefore, $x\in A^c$ and $x \in B^c$.
-		      So, $x \in A^c$ and therefore, $x \in A^c \cup B^c$.
-		      Therefore, $ ( A \cap B)^c \subseteq A^c \cup B^c $.
+		      This means $ x \not\in A \cap B$.
+		      There are 3 cases.
+
+		      Case 1. $x \in A$ and $x \not\in B$.
+		      Then, $x \in B^c \subseteq A^c \cup B^c$.
+
+		      Case 2. $x \in B$ and $x \not \in A$.
+		      Then $x \in A^c\subseteq A^c \cup B^c$.
+
+		      Case 3. $x$ does not belong to either $A$ or $B$, i.e., $x \not\in A\cup B$.
+		      Then, $x\in (A \cup B)^c = A^c \cap B^c\subseteq A^c \cup B^c$ (by the first De Morgan's law in the book, Theorem 3.16).
+
+		      In all cases, $x \in A^c \cap B^c$.
+		      So, $ ( A \cap B)^c \subseteq A^c \cup B^c $.
 		      \\
 		\item Then we need to show $ ( A \cap B)^c \supseteq A^c \cup B^c $.
 
