@@ -2,10 +2,13 @@
 \providecommand\hyper@newdestlabel[2]{}
 \providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
 \HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
 \global\let\oldnewlabel\newlabel
 \gdef\newlabel#1#2{\newlabelxx{#1}#2}
 \gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
 \AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
 \let\newlabel\oldnewlabel
 \fi}
 \fi}
@@ -23,12 +26,12 @@
 \@writefile{toc}{\contentsline {subsection}{\tocsubsection {}{}{b) Clarity and Delivery (2/5)}}{2}{section*.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\tocsection {}{}{II. Written Report}}{2}{section*.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\tocsubsection {}{}{a) Mathematical Content (4/10)}}{2}{section*.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\tocsubsection {}{}{b) Clarity of Mathematical Exposition (3/10)}}{2}{section*.6}\protected@file@percent }
 \newlabel{tocindent-1}{0pt}
 \newlabel{tocindent0}{17.25pt}
 \newlabel{tocindent1}{20.88881pt}
 \newlabel{tocindent2}{0pt}
 \newlabel{tocindent3}{0pt}
+\@writefile{toc}{\contentsline {subsection}{\tocsubsection {}{}{b) Clarity of Mathematical Exposition (3/10)}}{3}{section*.6}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\tocsubsection {}{}{c) Style (3/10)}}{3}{section*.7}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\tocsection {}{5}{Advice}}{3}{section.5}\protected@file@percent }
 \abx@aux@read@bbl@mdfivesum{EE04F40F768DAEED26442158E95ABA61}
