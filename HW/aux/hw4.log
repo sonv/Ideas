@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.8)  25 SEP 2023 12:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.8)  8 OCT 2024 14:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -772,9 +772,9 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 
-LaTeX Warning: Empty bibliography on input line 52.
+LaTeX Warning: Empty bibliography on input line 57.
 
-[1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] (aux/hw4.aux)
+[1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}] (aux/hw4.aux)
 Package rerunfilecheck Info: File `hw4.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'hw4.run.xml'.
@@ -782,18 +782,18 @@ Package logreq Info: Writing requests to 'hw4.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21502 strings out of 476025
- 369611 string characters out of 5790018
- 1855388 words of memory out of 5000000
- 41436 multiletter control sequences out of 15000+600000
- 581035 words of font info for 120 fonts, out of 8000000 for 9000
+ 21519 strings out of 476025
+ 369800 string characters out of 5790018
+ 1858388 words of memory out of 5000000
+ 41438 multiletter control sequences out of 15000+600000
+ 585862 words of font info for 126 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  90i,5n,90p,1000b,801s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on aux/hw4.pdf (1 page, 133841 bytes).
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
+Output written on aux/hw4.pdf (1 page, 160889 bytes).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
- 3 named destinations out of 1000 (max. 500000)
- 24577 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 88 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
+ 6 named destinations out of 1000 (max. 500000)
+ 26625 words of extra memory for PDF output out of 29859 (max. 10000000)
 

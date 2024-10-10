@@ -1,13 +1,14 @@
 # Fdb version 4
-["biber aux/hw4"] 1695621062 "aux/hw4.bcf" "aux/hw4.bbl" "aux/hw4" 1695621581 0
+["biber aux/hw4"] 1695621062 "aux/hw4.bcf" "aux/hw4.bbl" "aux/hw4" 1728374134 0
   "./bibliography.bib" 1693386571 494123 c55468f33388c1a8ba1d4df75770e3e1 ""
-  "aux/hw4.bcf" 1695621581 107804 d349672fc1a66a708cd6eeba3e6b72f9 "pdflatex"
+  "aux/hw4.bcf" 1728374134 107804 d349672fc1a66a708cd6eeba3e6b72f9 "pdflatex"
   (generated)
   "aux/hw4.bbl"
   "aux/hw4.blg"
   (rewritten before read)
-["pdflatex"] 1695621580 "hw4.tex" "hw4.pdf" "hw4" 1695621581 0
+["pdflatex"] 1728374133 "hw4.tex" "hw4.pdf" "hw4" 1728374134 0
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1202520719 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1202520719 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1202520719 2840 216e6e45ad352e2456e1149f28885bee ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc" 1202520719 2327 9d6df24f9c4f7368395224341a95523a ""
@@ -25,6 +26,7 @@
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm" 1254269338 12064 a35db870f0b76c338d749c56dc030ef5 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmr9.tfm" 1254269338 12084 b7f5e4c003de6f57f07c7e9fee73a37c ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm" 1254269338 17148 9556e1b5f936b77a796f68d2d559ba99 ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmri12.tfm" 1254269338 17144 271aaf9ebb339934b04110dc5211fba4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/lmbsy10.tfm" 1148093231 1300 2df9da0fc09d4a8c772b3dd386a47c6a ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/lmbsy5.tfm" 1148093231 1304 2ff0a255ae754422adbc0e6519ed2658 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/lmbsy7.tfm" 1148093231 1304 535e0954c1961c817723e44bc6a9662c ""
@@ -59,12 +61,16 @@
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm" 1229303445 684 3a51bd4fd9600428d5264cf25f04bb9a ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/rsfs/rsfs7.tfm" 1229303445 692 1b6510779f0f05e9cbf03e0f6c8361e6 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb" 1255129361 116908 1fca96723793882c2e0160350c192fc8 ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmex10.pfb" 1254269338 23055 2e5b42921de910eaa97b85df04ca4891 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi12.pfb" 1254269338 30696 2654571912f9cd384da9f7cb8a60c568 ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi6.pfb" 1254269338 31113 04b711c9a4c7f8cb4ed784c6fc4cc1c5 ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi8.pfb" 1254269338 30635 833ec815d446ec453a4913fc26d24cbc ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb" 1255129361 119235 f35b44530a1d90eb90fe15d9cba67ea0 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb" 1255129361 113634 f99c44d58bae0863375faf0e1d74d612 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr8.pfb" 1255129361 122174 a7a08406857c9530a0320a2517f60370 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr9.pfb" 1255129361 121065 50bbfa703ce7e11638752ef5a6d120c7 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb" 1255129361 112593 fda2373ba4420af33949610de4c28fe8 ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri12.pfb" 1255129361 109265 32320cb6133d4d76bf83e27b5eb4009b ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb" 1254269338 27863 09ce3735688ffde955e72da27c95b61a ""
   "/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2023/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -165,13 +171,13 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1686223737 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1686223718 7883462 1a8fb0f02fac2fe5f797dc5da193bacd ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "aux/hw4.aux" 1695621581 800 94f398dae8b3b2f478d51885154ed07e "pdflatex"
+  "aux/hw4.aux" 1728374134 800 94f398dae8b3b2f478d51885154ed07e "pdflatex"
   "aux/hw4.bbl" 1695621100 466 ee04f40f768daeed26442158e95aba61 "biber aux/hw4"
-  "aux/hw4.out" 1695621580 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "aux/hw4.run.xml" 1695621581 2306 74a7de7f85e7fed52fdcbda2839b770a "pdflatex"
-  "hw4.tex" 1695621579 1249 a7231c3354b67ad9c2c8ea92c1b9cb5d ""
+  "aux/hw4.out" 1728374134 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "aux/hw4.run.xml" 1728374134 2306 74a7de7f85e7fed52fdcbda2839b770a "pdflatex"
+  "hw4.tex" 1728374133 1511 a3834fa7e9f0929fd4745278f243531b ""
   "marktext.sty" 1693386571 6164 fc189a847afe57b4afab4fd3a388a28c ""
-  "svmacro.sty" 1693386571 11130 4b794773d2af162c6bce826ca35f8be2 ""
+  "svmacro.sty" 1698848264 11121 8ab91d4820adeb4f2bba50671c0ffb11 ""
   (generated)
   "aux/hw4.aux"
   "aux/hw4.bcf"

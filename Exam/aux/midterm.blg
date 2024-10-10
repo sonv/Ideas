@@ -1,9 +1,9 @@
-[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'aux/midterm.blg'
-[29] biber:340> INFO - === Wed Sep 25, 2024, 20:50:08
-[34] Biber.pm:418> INFO - Reading 'aux/midterm.bcf'
-[58] Biber.pm:972> INFO - Found 0 citekeys in bib section 0
-[63] bbl.pm:654> INFO - Writing 'aux/midterm.bbl' with encoding 'UTF-8'
-[63] bbl.pm:757> INFO - Output to aux/midterm.bbl
-[63] Biber.pm:130> WARN - The file 'aux/midterm.bcf' does not contain any citations!
-[63] Biber.pm:132> INFO - WARNINGS: 1
+[29] biber-darwin:340> INFO - === Thu Sep 26, 2024, 06:30:17
+[37] Biber.pm:419> INFO - Reading 'aux/midterm.bcf'
+[71] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[78] bbl.pm:660> INFO - Writing 'aux/midterm.bbl' with encoding 'UTF-8'
+[78] bbl.pm:763> INFO - Output to aux/midterm.bbl
+[79] Biber.pm:131> WARN - The file 'aux/midterm.bcf' does not contain any citations!
+[79] Biber.pm:133> INFO - WARNINGS: 1

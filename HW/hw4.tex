@@ -12,7 +12,7 @@
 
 %% Title 
 \title{ MATH 102: Homework 4}
-\author{Due date: Tuesday, Oct 3}
+\author{Due date: Thursday, Oct 24}
 
 %\author{Co-author}
 %\address{  }
@@ -26,30 +26,35 @@
 
 Note that you need to turn in \LaTeX version of this homework.
 
-We briefly mentioned truth sets in class.
-Here's the definition from the textbook.
-\begin{definition}
-    The truth set of a statement $P(x)$ is the set of all values of $x$
-that make the statement $P(x)$ true. In other words, it is the set defined by using
-the statement $P(x)$ as an elementhood test:
-Truth set of $P(x) = {x | P(x)}$.
-\end{definition}
+\begin{problem}
+In class on Oct 8, we discussed about inflation and present value.
+In short, if someone gives you $F$ amount of dollars every year
+and the inflation rate is $r$, then the present value of $N$ year
+of this fixed income would be
+\begin{equation*}
+	PV = F + \frac{F}{1 + r} + \dots + \frac{F}{(1 + r)^N} \,.
+\end{equation*}
 
-In Velleman:
-
-Section 1.3: 4, 5, 6, 8.
-
-Section 2.1: 3, 4, 6.
-
-(For the problems in Section 2.1 ``Universe of discourse'' is the same with ``Domain of disclosure'' mentioned in class)
-
-
-
-
-
+\begin{enumerate}
+	\item Use induction to prove that after $N$ year,
+	      \begin{equation*}
+		      PV = F \left(\frac{ 1 + r - \frac{1}{(1+r)^{N}} }{r} \right)
+	      \end{equation*}
+	\item Apply this to the situation when $F = \$1$ and $r = 5\%$ (I made a mistake in
+	      class about this)
+	\item What happen if you were to live forever? How much would you buy a stock if
+	      it pays you $\$1$ per year from now to eternity?
+\end{enumerate}
 
 
-\printbibliography 
+\end{problem}
+
+
+
+
+
+
+\printbibliography
 %\bibliography{refs}
 %\bibliographystyle{halpha-abbrv}
 
