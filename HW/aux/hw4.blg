@@ -1,9 +1,9 @@
-[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'aux/hw4.blg'
-[30] biber-darwin:340> INFO - === Mon Sep 25, 2023, 12:51:40
-[40] Biber.pm:419> INFO - Reading 'aux/hw4.bcf'
-[73] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[81] bbl.pm:660> INFO - Writing 'aux/hw4.bbl' with encoding 'UTF-8'
-[81] bbl.pm:763> INFO - Output to aux/hw4.bbl
-[81] Biber.pm:131> WARN - The file 'aux/hw4.bcf' does not contain any citations!
-[81] Biber.pm:133> INFO - WARNINGS: 1
+[29] biber:340> INFO - === Thu Oct 10, 2024, 21:33:37
+[35] Biber.pm:418> INFO - Reading 'aux/hw4.bcf'
+[58] Biber.pm:972> INFO - Found 0 citekeys in bib section 0
+[63] bbl.pm:654> INFO - Writing 'aux/hw4.bbl' with encoding 'UTF-8'
+[63] bbl.pm:757> INFO - Output to aux/hw4.bbl
+[63] Biber.pm:130> WARN - The file 'aux/hw4.bcf' does not contain any citations!
+[63] Biber.pm:132> INFO - WARNINGS: 1
