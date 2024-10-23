@@ -47,6 +47,33 @@ of this fixed income would be
 	      it pays you $\$1$ per year from now to eternity?
 \end{enumerate}
 
+\begin{proof}
+	We shall proceed by induction.
+	Step 1: Base case. For $N =1$, we have
+	$$ F = F \frac{ 1 + r - 1}{r}.$$
+
+	Step 2: Induction hypothesis. Suppose that the statement is true for $N = k$, i.e.,
+	$$ F + \dots + \frac{F}{(1+r)^k} = F\left( \frac{ 1 + r - \frac{1}{(1+r)^k}}{r} \right)$$
+
+	Step 3: Inductive step. We need to show that the statement is true for $N = k+1$.
+	To do this, we consider
+	\begin{align*}
+		 & F + \dots + \frac{F}{(1+r)^k} + \frac{F}{(1+r)^{k+1}}                          \\
+		 & = F\left( \frac{ 1 + r - \frac{1}{(1+r)^k}}{r} \right) + \frac{F}{(1+r)^{k+1}} \\
+		 & = \frac{ F\left(1 + r - \frac{1}{(1+r)^k} \right) + \frac{rF}{(1+r)^{k+1}}}{r} \\
+		 & = F\frac{ 1 + r - \frac{1}{(1+r)^k}  + \frac{r}{(1+r)^{k+1}}}{r}               \\
+		 & = F\frac{ 1 + r + \frac{-1-r + r}{(1+r)^{k+1}} }{r}                            \\
+		 & = F\frac{ 1 + r - \frac{1}{(1+r)^{k+1}} }{r}                                   \\
+	\end{align*}
+	as desired.
+
+	Step 4: Conclusion. From all of the above steps, we have shown by induction that
+	\begin{align*}
+		 & F + \frac{F}{1 + r} + \dots + \frac{F}{(1 + r)^N}         \\
+		 & = F \left(\frac{ 1 + r - \frac{1}{(1+r)^{N}} }{r} \right)
+	\end{align*}
+	for every $N \in \N$.
+\end{proof}
 
 \end{problem}
 
@@ -56,8 +83,126 @@ Try: 4.4, 4.5, 4.7, 4.21, 4.23
 
 Grade: 4.4.f, 4.5.a,b, 4.7, 4.21.b, 4.23.a
 
+\begin{problem}[4.4.f]
+We shall proceed by induction.
+
+Step 1: Base Case.
+For \( n = 1 \), we check whether the equation holds:
+\[
+	1 \cdot 1! = 1
+\]
+
+Step 2: Inductive Hypothesis.
+Assume that the statement holds for some \( n = k \), i.e.,
+\[
+	1 \cdot 1! + 2 \cdot 2! + \cdots + k \cdot k! = (k+1)! - 1
+\]
+
+Step 3: Inductive Step.
+We need to show that the statement also holds for \( n = k + 1 \). Starting from the inductive hypothesis, we need to prove:
+\[
+	1 \cdot 1! + 2 \cdot 2! + \cdots + (k+1) \cdot (k+1)! = (k+2)! - 1
+\]
+
+Using the inductive hypothesis, we can write the left-hand side as:
+\[
+	\left(1 \cdot 1! + 2 \cdot 2! + \cdots + k \cdot k!\right) + (k+1) \cdot (k+1)!
+\]
+Substitute the inductive hypothesis:
+\[
+	(k+1)! - 1 + (k+1) \cdot (k+1)!
+\]
+
+Factor out \( (k+1)! \):
+\[
+	(k+1)! \left(1 + (k+1)\right) - 1
+\]
+\[
+	(k+1)! \cdot (k+2) - 1
+\]
+\[
+	(k+2)! - 1
+\]
+
+Thus, the statement holds for \( n = k+1 \).
+
+Step 4: Conclusion.
+By induction, the formula
+\[
+	1 \cdot 1! + 2 \cdot 2! + \cdots + n \cdot n! = (n+1)! - 1
+\]
+is true for all \( n \in \N \).
+\end{problem}
+
+\begin{problem}[4.5.a]
+We proceed by induction.
+
+Step 1: Base Case.
+For $n = 1$, we check if the inequality holds:
+\[
+	n + 2 = 1 + 2 = 3
+\]
+\[
+	4n^2 = 4(1)^2 = 4
+\]
+Clearly, $3 < 4$, so the inequality holds for $n = 1$.
+
+Step 2: Induction hypothesis.
+Now, assume the inequality holds for some $n = k$, i.e.,
+\[
+	k + 2 < 4k^2
+\]
 
 
+Step 3: Inductive step.
+We need to show that the inequality holds for $n = k + 1$. That is, we want to prove:
+\[
+	(k + 1) + 2 < 4(k + 1)^2 \,.
+\]
+
+We have
+\begin{equation*}
+	k + 3  = (k+2) +1 < 4k^2 + 1 < 4k^2 + 8k + 4 = 4(k+1)^2 \,.
+\end{equation*}
+Thus, the inequality holds for $n=k+1$.
+
+Step 4: Conclusion.
+By induction, the inequality $n + 2 < 4n^2$ holds for all $n \in \N$.
+
+\end{problem}
+
+\begin{problem}[4.5.b]
+We proceed by induction.
+
+Step 1: Base case.
+For $n = 1$,
+$$ \frac{1}{\sqrt 1} \leq 2 \sqrt 1 - 1 \,.$$
+
+Step 2: Induction hypothesis.
+Suppose the inequality holds for $n = k$, i.e.,
+$$ \frac{1}{\sqrt{1}} + \dots + \frac{1}{\sqrt k} \leq 2 \sqrt k - 1 \,. $$
+
+
+Step 3: Inductive step.
+We need to show that the inequality holds for $n = k+1$.
+To do this, consider
+\begin{align*}
+	 & \frac{1}{\sqrt{1}} + \dots + \frac{1}{\sqrt k} + \frac{1}{\sqrt{k+1}} \\
+	 & \leq 2 \sqrt{k} - 1 + \frac{1}{\sqrt{k+1}}                            \\
+	 & = \frac{ 2 \sqrt{k(k+1)} - \sqrt{k+1} +1}{\sqrt{k+1}}                 \\
+	 & \leq \frac{ 2 (k+1) - \sqrt{k+1}}{\sqrt{k+1}}                         \\
+	 & = 2 \sqrt{k+1} -1 \,.
+\end{align*}
+
+Step 4: Conclusion.
+By induction,
+it is true that
+$$ \frac{1}{\sqrt{1}} + \dots + \frac{1}{\sqrt n} \leq 2 \sqrt n - 1 \,,$$
+for every $n\in \N$.
+
+
+
+\end{problem}
 
 
 %\bibliography{refs}
