@@ -1,10 +1,10 @@
 # Fdb version 3
-["biber aux/hw4"] 1728570816 "aux/hw4.bcf" "aux/hw4.bbl" "aux/hw4" 1729696024
-  "aux/hw4.bcf" 1729696024 106736 13c6d6c8ec4fd316430904a3ad5c86d1 "pdflatex"
+["biber aux/hw4"] 1728570816 "aux/hw4.bcf" "aux/hw4.bbl" "aux/hw4" 1729819279
+  "aux/hw4.bcf" 1729819279 106736 13c6d6c8ec4fd316430904a3ad5c86d1 "pdflatex"
   (generated)
   "aux/hw4.bbl"
   "aux/hw4.blg"
-["pdflatex"] 1729696024 "hw4.tex" "hw4.pdf" "hw4" 1729696024
+["pdflatex"] 1729819279 "hw4.tex" "hw4.pdf" "hw4" 1729819279
   "/etc/texmf/web2c/texmf.cnf" 1719500087 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -117,6 +117,7 @@
   "/usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm" 1254938640 12088 d750ac78274fa7c9f73ba09914c04f8a ""
   "/usr/share/texmf/fonts/tfm/public/lm/ec-lmr10.tfm" 1254938640 12056 7e13df7fe4cbce21b072ba7c4f4deb6e ""
   "/usr/share/texmf/fonts/tfm/public/lm/ec-lmr12.tfm" 1254938640 12092 7b1546e2d096cfd5dcbd4049b0b1ec2e ""
+  "/usr/share/texmf/fonts/tfm/public/lm/ec-lmr6.tfm" 1254938640 12048 c1068d0f4772be9b0ec447692e1d6d82 ""
   "/usr/share/texmf/fonts/tfm/public/lm/ec-lmr8.tfm" 1254938640 12064 a35db870f0b76c338d749c56dc030ef5 ""
   "/usr/share/texmf/fonts/tfm/public/lm/ec-lmr9.tfm" 1254938640 12084 b7f5e4c003de6f57f07c7e9fee73a37c ""
   "/usr/share/texmf/fonts/tfm/public/lm/ec-lmri10.tfm" 1254938640 17148 9556e1b5f936b77a796f68d2d559ba99 ""
@@ -174,11 +175,11 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1719521897 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1719521921 2801473 1f1f7ce45a89887b9416b9039054d561 ""
-  "aux/hw4.aux" 1729696024 1078 b886d269614d7f89cfb7f9b552bcc10e "pdflatex"
+  "aux/hw4.aux" 1729819279 1078 4c52ce1f0cbc67796032154c607e2a82 "pdflatex"
   "aux/hw4.bbl" 1728570817 466 ee04f40f768daeed26442158e95aba61 "biber aux/hw4"
-  "aux/hw4.out" 1729696024 246 bb3b1cf1caeec6abb6cdbda06bd57d55 "pdflatex"
-  "aux/hw4.run.xml" 1729696024 2306 74a7de7f85e7fed52fdcbda2839b770a "pdflatex"
-  "hw4.tex" 1729696023 6300 f58379e34e6ad50eea720e113961e237 ""
+  "aux/hw4.out" 1729819279 246 bb3b1cf1caeec6abb6cdbda06bd57d55 "pdflatex"
+  "aux/hw4.run.xml" 1729819279 2306 74a7de7f85e7fed52fdcbda2839b770a "pdflatex"
+  "hw4.tex" 1729819278 8698 3b7720fd46b76a3a1a05d99e2cc1e5da ""
   "marktext.sty" 1723798231 6164 fc189a847afe57b4afab4fd3a388a28c ""
   "svmacro.sty" 1723798231 11121 8ab91d4820adeb4f2bba50671c0ffb11 ""
   (generated)

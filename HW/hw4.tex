@@ -234,6 +234,104 @@ for $n \geq 0$.
 \end{problem}
 
 
+\begin{problem}[4.21b]
+We proceed by strong induction.
+
+Step 1: Base case $n = 2$.
+It is true that $2 = 2$.
+
+Step 2: Induction hypothesis.
+Suppose the statement is true for every number $i$ such that $2 \leq i \leq k$, i.e.,
+$i$ has a unique factorization
+\begin{equation*}
+	i = p_{i,1} p_{i,2}... p_{i,l} \,.
+\end{equation*}
+
+
+
+Step 3: Inductive step.
+We need to show that the statement is true for $k + 1$.
+To do this,
+we suppose that there are two ways to factorize $k+1$, i.e.,
+\begin{equation*}
+	k+1 = q_1q_2\dots q_l = r_1 r_2 \dots r_m \,,
+\end{equation*}
+by Lemma 2.17 (chapter 2), we see that
+$q_1$ must divide some $r_i$. It doesn't matter the order so we may assume $r_i = r_1$.
+However, because both $q_1$ and $r_1$ are primes, it follows that $q_1 = r_1$.
+Therefore, we may cancel these two numbers and get
+\begin{equation*}
+	q_2 q_3 \dots q_l = r_1 r_2 \dots r_m \,.
+\end{equation*}
+But this is a number less than $k$ (because $q_1 = r_1 \geq 2$)
+and has two differnt prime factorizations. This violates the
+induction hypothesis.
+So it must be true that $k+1$ has a unique prime factorization.
+
+Step 4: Conclusion. By induction, it is true that every prime number
+can be uniquely factorized into primes.
+\end{problem}
+
+\begin{problem}[4.23a]
+We proceed by strong induction.
+
+Step 1: {Base Cases.}
+
+\noindent For \( n = 1 \):
+\[
+	a_1 = 1 = 2(1) - 1
+\]
+Thus, the formula holds for \( n = 1 \).
+
+\noindent For \( n = 2 \):
+\[
+	a_2 = 3 = 2(2) - 1
+\]
+Thus, the formula holds for \( n = 2 \).
+
+\vspace{10pt}
+
+Step 2: Induction hypothesis. Assume the formula holds for all \( k \leq n \), that is, assume:
+\[
+	a_k = 2k - 1 \quad \text{for all } k \leq n
+\]
+
+
+Step 3: Inductive step.
+We need to prove that the formula holds for \( a_{n+1} \), i.e., \( a_{n+1} = 2(n+1) - 1 \).
+
+Using the recursive relation \( a_{n+1} = 2a_n - a_{n-1} \), and substituting the inductive hypotheses \( a_n = 2n - 1 \) and \( a_{n-1} = 2(n-1) - 1 \), we get:
+\[
+	a_{n+1} = 2(2n - 1) - \left(2(n-1) - 1\right)
+\]
+Simplifying:
+\[
+	a_{n+1} = 2(2n - 1) - (2n - 3)
+\]
+\[
+	a_{n+1} = (4n - 2) - (2n - 3)
+\]
+\[
+	a_{n+1} = 4n - 2 - 2n + 3
+\]
+\[
+	a_{n+1} = 2n + 1
+\]
+which is equal to:
+\[
+	a_{n+1} = 2(n+1) - 1
+\]
+Thus, the formula holds for \( a_{n+1} \).
+
+\vspace{10pt}
+
+Step 4: Conclusion. By the principle of strong induction, we have proven that \( a_n = 2n - 1 \) for all \( n \in \mathbb{N} \).
+\end{problem}
+
+
+
+
+
 %\bibliography{refs}
 %\bibliographystyle{halpha-abbrv}
 
