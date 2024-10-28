@@ -15,93 +15,116 @@
 \title{ MATH 102: Ideas  of Math }
 \author{ Worksheet 10 }
 
-\date{Nov 8, 2023}
+\date{Oct 29, 2024}
+
 
 \begin{document}
 
 \maketitle
 
-\section{Concepts}
-
-    \begin{definition}[Injective functions]
-        Let $f:A\to B$ be a function.
-        $f$ is said to be \emph{injective} (or \emph{one-to-one})
-        if 
-        \begin{equation*}
-            \forall a_1, a_2 \in A, f(a_1) = f(a_2) \implies a_1 = a_2 \,.
-        \end{equation*}
-        An injective function is called an \emph{injection}.
-    \end{definition}
-
-
-    \begin{definition}[Surjective functions]
-        Let $f:A\to B$ be a function.
-        $f$ is said to be \emph{surjective} (or \emph{onto}) if
-        \begin{equation*}
-            \forall b\in B \exists a \in A, f(a) = b \,.
-        \end{equation*}
-        A surjective function is called a \emph{surjection}.
-    \end{definition}
-
-    \begin{definition}[Bijective function]
-        A function $f$ is \emph{bijective} if 
-        it is both injective and surjective.
-
-        A bijective function is called a \emph{bijection}.
-    \end{definition}
-
-    \begin{definition}
-        Let $A$ be a set. A function $f:A \to A$ is called an identity function if $f(a) =a$.
-
-        An identity function on a set $A$ is denoted by $\text{id}_A$.
-    \end{definition}
+\begin{definition}[Open sentence]
+	Open sentence, which are sentences or mathematical
+	expressions which
+	\begin{enumerate}
+		\item do not have a truth value,
+		\item depend on some unknown, like a variable $x$ or an arbitrary function $f$ , and
+		\item when the unknown is specified, then the open sentence becomes a statement (and so has a truth value).
+		      Their truth value depends on which value of $x$ or $f$ one chooses.
+	\end{enumerate}
+\end{definition}
 
 
-    \begin{definition}
-        Let $f:A\to B$ and $g:B\to C$ be functions.
-       The composition of $g$ and $f$, denoted by $g\circ f: A\to C$, is defined
-       to be
-       $$(g\circ f)(a) = g(f(a))\,,$$
-       for all $a\in A$.
-    \end{definition}
-\section{Problems}
+\begin{definition}[Principle of Explosion]
+	From a contradiction, one can derive anything.
+\end{definition}
+
+\begin{figure}[ht]
+	\begin{center}
+		\includegraphics[width=0.7\textwidth]{explo.png}
+	\end{center}
+\end{figure}
+
 
 \begin{problem}
-    Let $f:\R\to \R$ and $g:\R \to [0,\infty)$ be such that
-    $f(x) = 2+ 5x$, $g(x) = x^2 +3$.
-    Find
-    \begin{enumerate}
-        \item Domain and codomain of $g\circ f$,
-        \item A formula for $g\circ f$.
-    \end{enumerate}
+From the above principle, write the truth table for $P \implies Q$.
 \end{problem}
+\vspace{5cm}
+
+\begin{definition}
+	The \emph{converse} of $P \implies Q$ is
+	$$Q \implies P \,. $$
+\end{definition}
 
 \begin{problem}
-    Let $A = \mathbb{R} \setminus \{1\}$, and let $f: A \rightarrow A$ be defined as follows: $f(x) = \frac{x+1}{x-1}$.
-
-    \begin{enumerate}[a.]
-        \item  Show that $f$ is one-to-one and onto.
-        \item Show that $f \circ f = \text{id}_A$.
-    \end{enumerate}
-
+If $P \implies Q$ is true, is it true $Q \implies P$?
 \end{problem}
+
+\vspace{5cm}
+
+
+
+
+
+\begin{definition}
+	Two statements are said to be \emph{logically equivalent} if
+	they have the same truth values.
+
+	We denote it by
+	\begin{equation*}
+		P \iff Q \,.
+	\end{equation*}
+\end{definition}
 
 \begin{problem}
-    Let $A = \mathcal{P}(\mathbb{R})$. Define $f: \mathbb{R} \rightarrow A$ by the formula $f(x) = \{y \in \mathbb{R} \,|\, y^2 < x\}$.
-
-    \begin{enumerate}[a.]
-        \item Find $f(2)$.
-        \item Is $f$ one-to-one? Is it onto?
-    \end{enumerate}
-
+Relate equivalence symbol ``$\iff$'' and implication symbol ``$\implies$''.
 \end{problem}
+\vspace{5cm}
+
+
+
+
+
 
 \begin{problem}
-    Suppose $f: A \rightarrow B$ and $g: B \rightarrow C$. 
-    \begin{enumerate}
-        \item If $f$ and $g$ are both one-to-one, then so is $g \circ f$.
-        \item If $f$ and $g$ are both onto, then so is $g \circ f$.
-    \end{enumerate}
+De Morgan's law for logical statements.
+Let $P$ and $Q$ be statements.
+Use the truth table to show that for any statement $P$ and $Q$:
 
+\begin{equation*}
+	\sim (P \wedge Q ) \iff \sim P \; \vee \sim Q
+\end{equation*}
+
+and
+
+\begin{equation*}
+	\sim (P \vee Q) \iff \sim P \; \wedge \sim Q
+\end{equation*}
 \end{problem}
+
+\vspace{5cm}
+
+\begin{problem}
+Show that $P \implies Q$ is equivalent to
+$\sim P \; \vee Q$.
+\end{problem}
+
+\vspace{5cm}
+
+
+\begin{problem}
+Tommy was telling you what he ate yesterday afternoon. He tells you, “I had either popcorn or raisins. Also, if I had cucumber sandwiches, then I had soda. But I didn't drink soda or tea.” Of course you know that Tommy is the world's worst liar, and everything he says is false. What did Tommy eat?
+
+Justify your answer by writing all of Tommy's statements using sentence variables $ P,Q,R,S,T$
+, taking their negations, and using these to deduce what Tommy actually ate.
+\end{problem}
+
+\newpage
+
+\begin{problem}
+You meet two inhabitants $A$ and $B$ on an island.
+$A$ says, “Exactly one of us is lying.”
+and $B$ says “At least one of us is telling the truth.”.
+Who, (if anyone) is telling the truth?
+\end{problem}
+
 \end{document}
