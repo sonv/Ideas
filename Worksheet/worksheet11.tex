@@ -13,82 +13,122 @@
 
 %% Title 
 \title{ MATH 102: Ideas  of Math }
-\author{ Worksheet 11 }
+\author{ Worksheet 11 \\ adapted from \url{https://www.math.toronto.edu/lshorser/Summer2017/PUMPII-Quantifiers-Complete.pdf} }
 
-\date{Nov 14, 2023}
+\date{Oct 31, 2024}
 
 \begin{document}
 
 \maketitle
 
-\section{Concepts}
+\section{Review}
+\begin{problem}
+Consider the example in the book:
+
+\begin{enumerate}
+	\item Good food is not cheap.
+	\item Cheap food is not good.
+\end{enumerate}
+Do the two sentences mean the same?
+\end{problem}
+
+\begin{problem}
+Watch
+\url{https://www.youtube.com/watch?v=fQ3Md3CZxks}
+
+What's going on?
+Sketch the truth table to describe the situation in the video.
+\end{problem}
+
+
+\begin{problem}[name of the problem]
+Watch
+\url{https://www.youtube.com/watch?v=zqSlij2Idgg}
+
+What's going on?
+Sketch the truth table to describe the situation in the video.
+\end{problem}
+
+
+\begin{problem}[name of the problem]
+Watch
+\url{https://www.youtube.com/watch?v=juFsA25b9EY}
+
+What's going on?
+Sketch the truth table to describe the situation in the video.
+\end{problem}
+
+\begin{problem}[name of the problem]
+Watch
+\url{https://www.youtube.com/watch?v=BUqMNVnELzE&list=PLMpofmkxKHBJfta_JzekLbWGHUSLUJoLt}
+
+What's going on?
+Sketch the truth table to describe the situation in the video.
+\end{problem}
+
+\section{Quantifiers}
+
+Open sentences are sometimes technically called predicates.
+Because open sentences doesn't have a truth value as they may have unknowns, we denote them as something that look
+like a function $S(x)$.
+
+For example, we may use $S(n)$ to denote the sentence ``$n$ is even.''
+
+Then, $S(1)$ is false and $S(10)$ is true.
 
 \begin{definition}
-    Let \( f: X \rightarrow Y \) be a function. A \emph{left inverse} for \( f \) is a function \( g: Y \rightarrow X \) such that \( g \circ f = \text{id}_X \).
+	In logic, quantifiers are very important. The most important among them are:
+	\begin{enumerate}
+		\item Universal quantifier: $\forall$, means ``for all'', ``for every'', ``for each''
+		\item Existential quantifier: $\exists$, means ``there exists'', ``there is at least one''
+	\end{enumerate}
 \end{definition}
 
-\begin{definition}
-    Let \( f: X \rightarrow Y \) be a function. A \emph{right inverse}  for \( f \) is a function \( g: Y \rightarrow X \) such that \( f \circ g = \text{id}_Y \).
+
+\begin{problem}
+Translate the logical expression into English and determine their truth values.
+
+\begin{enumerate}
+	\item $\forall x \in \Z, 2 \mid  x \implies x \mid 4$
+	      \vspace{3cm}
+	\item $\forall x\in \Z, 4 \mid x \implies 2 \mid x$
+	      \vspace{3cm}
+	\item $\exists x \in \N: x< -2$
+	      \vspace{3cm}
+	\item $\forall x \in \Z, \forall y \Z, x-y = y -x $
+	      \vspace{3cm}
+	\item $\forall x \in \R, \forall y \in \R, xy = yx$
+	      \vspace{3cm}
+	\item $\forall x\in \R, \forall y \in R, x + y = 1$
+	      \vspace{3cm}
+	\item $\exists x\in \R, \forall y \in R, x + y = 1$
+	      \vspace{3cm}
+	\item $\forall x\in \R, \exists y \in R, x + y = 1$
+	      \vspace{3cm}
+\end{enumerate}
+\end{problem}
+
+\begin{definition}[Negation with quantifiers]
+	What do you think the following would be equivalent with?
+	\begin{enumerate}
+		\item $\sim \left( \forall x \in A, S(x)  \right)$
+		      \vspace{3cm}
+		\item $\sim \left( \exists x \in A, S(x)  \right)$
+		      \vspace{3cm}
+	\end{enumerate}
 \end{definition}
-
-\begin{definition}
-    Let $f: x\rightarrow Y$ be a function.
-    An \emph{inverse} (or two-sided inverse) of $f$ is a function $g: Y\to X$ that is both left and right inverse.
-\end{definition}
-
-\begin{theorem}[Fundatmental theorem of arithmetic]
-    Let $a \in \mathbb{N}$ be a nonzero number that is bigger than 1. There exist primes $p_1, \ldots, p_k \in \mathbb{N}$ such that
-\[ a = p_1 \cdot \ldots \cdot p_k \]
-Moreover, this expression is essentially unique: if $a = q_1 \cdot \ldots \cdot q_l$ is another expression of $a$ as a product of primes, then $k = l$ and, re-ordering the $q_i$ if necessary, for each $i$,  $q_i = p_i$.
-\end{theorem}
-
-
-\section{Problems}
-
+\newpage
 
 \begin{problem}
-    \begin{enumerate}
-        \item Suppose $X$ is non-empty. Show that function $f:X\to Y$ has a left inverse if and only if it is injective.
-        \item Show that a function $f:X \to Y$ has a right inverse if and only if it is surjective.
-    \end{enumerate}
+Negate all the statements in the previous problem.
 \end{problem}
+
+\newpage
 
 \begin{problem}
-    Let $e:\N \times \N \to \N$ be a function defined by
-    \begin{equation*}
-        e(m,n) = 2^m 3^n \,.
-    \end{equation*}
-    \begin{enumerate}
-        \item Show that $e$ is injective.
-        \item Find a left inverse for $e$.
-    \end{enumerate}
+True or False?
+
+If everyone loves my baby and my baby loves only me, then I am my own baby.
 \end{problem}
-
-\begin{problem}
-    Let $f:\R \to [0,\infty)$ be a function defined by 
-    \begin{equation*}
-        f(x) = x^2 \,.
-    \end{equation*}
-    \begin{enumerate}
-        \item Show that $f$ is surjective.
-        \item Find a right inverse for $f$.
-    \end{enumerate}
-\end{problem}
-
-\begin{problem}
-    Let $D \subseteq \Q$ be the set of \emph{dyadic rational numbers}, that is
-    \begin{equation*}
-        D =\left\{x \in \Q \vert \exists a \in \Z, \exists n\in \N \cup \{ 0 \}, x = \frac{a}{2^n} \right\} \,.
-    \end{equation*}
-    Let $k \in \N$ and define $f:D\to D$ by
-    \begin{equation*}
-        f(x) = \frac{x}{2^k} \,.
-    \end{equation*}
-    Show that $f$ is bijective.
-\end{problem}
-
-
-
-
 
 \end{document}
