@@ -15,65 +15,75 @@
 \title{ MATH 102: Ideas  of Math }
 \author{ Worksheet 12 }
 
-\date{Nov 204, 2023}
+\date{Nov 04, 2024}
 
 \begin{document}
 
 \maketitle
+Things to remember from previous worksheets:
 
-\section{Concepts}
-
-
-\begin{theorem}[The Induction Principle]
-Suppose that we have a sequence of statements $P(n)$ labeled by the natural numbers $1,2,\dots$ such that we know that 
 \begin{enumerate}
-    \item $P(1)$ is true, and
-    \item $\big( P(1) \wedge P(2) \wedge \cdots \wedge P(n) \big) \Rightarrow P(n+1)$.
+	\item $P \implies Q$ is equivalent to $\sim P \, \vee Q$.
 \end{enumerate}
-  Then all the statements $P(1), P(2), \dots$ are true.
-\end{theorem}
-We will not discuss the proof of this theorem. However, curious minds can find the proof
-in Section 4.2 of Newstead.
 
-\begin{proof}[Structure of induction proof]
-    Induction proofs typically have the following structure:
+
+\begin{definition}[Negation with quantifiers]
+	What do you think the following would be equivalent with?
+	\begin{enumerate}
+		\item $\sim \left( \forall x \in A, S(x)  \right)$
+		      \vspace{3cm}
+		\item $\sim \left( \exists x \in A, S(x)  \right)$
+		      \vspace{3cm}
+	\end{enumerate}
+\end{definition}
+\newpage
+
+\begin{problem}
+Negate all the statements.
+
 \begin{enumerate}
-\item Identify the statements $P(n)$.
-\item Step 2 is also called \emph{base of induction}: prove $P(0)$ or $P(1)$ (sometimes it doesn't make sense to talk about $P(0)$).
-\item Assume that all $P(k)$ with $k\leq n$ are true -- this is called the \emph{induction hypothesis}. Now perform the \emph{step of induction}: prove that $P(n+1)$ is true.
-\item Finally, conclude by the Principle of Induction that all $P(n)$ are true.
+	\item $\forall x \in \Z, 2 \mid  x \implies x \mid 4$
+	      \vspace{3cm}
+	\item $\forall x\in \Z, 4 \mid x \implies 2 \mid x$
+	      \vspace{3cm}
+	\item $\exists x \in \N: x< -2$
+	      \vspace{3cm}
+	\item $\forall x \in \Z, \forall y \Z, x-y = y -x $
+	      \vspace{3cm}
+	\item $\forall x \in \R, \forall y \in \R, xy = yx$
+	      \vspace{3cm}
+	\item $\forall x\in \R, \forall y \in R, x + y = 1$
+	      \vspace{3cm}
+	\item $\exists x\in \R, \forall y \in R, x + y = 1$
+	      \vspace{3cm}
+	\item $\forall x\in \R, \exists y \in R, x + y = 1$
+	      \vspace{3cm}
 \end{enumerate}
-\end{proof}
-
-
-\section{Problems}
-
-\begin{problem}
-    Prove that 
-    \begin{equation*}
-        1+2+\dots + n = \frac{n(n+1)}{2} \,.
-    \end{equation*}
 \end{problem}
 
 \begin{problem}
-    Prove that
-    for all natural number $n$,
-    $n^3 - n$ is divisible by 3.
+Translate each of the following into symbolic sentences, negate, and translate the nagation to English.
+
+\begin{enumerate}
+	\item Every natural number, when squared, remains a natural number.
+	      \vspace{3cm}
+	\item Every real number has a cube root in the reals.
+	      \vspace{3cm}
+	\item Not every integer has a square root in the reals.
+	      \vspace{3cm}
+	\item There exists a smallest natural number.
+	      \vspace{3cm}
+	\item There exists a largest negative number.
+	      \vspace{3cm}
+	\item Every real number, when multiplied by zero, equals 0.
+	      \vspace{3cm}
+\end{enumerate}
 \end{problem}
+
 
 \begin{problem}
-    Prove by induction that
-    for all $n \in \N$,
-    \begin{equation*}
-        2^0 + 2^1 + 2^3 + \dots+ 2^n = 2^{n+1}-1 \,.
-    \end{equation*}
+
 \end{problem}
-
-\begin{problem}
-    For all $n \geq 4$, we have $3n < 2^n$.
-\end{problem}
-
-
 
 
 

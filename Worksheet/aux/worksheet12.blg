@@ -1,9 +1,9 @@
-[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'aux/worksheet12.blg'
-[28] biber-darwin:340> INFO - === Mon Nov 20, 2023, 15:06:10
-[34] Biber.pm:419> INFO - Reading 'aux/worksheet12.bcf'
-[65] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[72] bbl.pm:660> INFO - Writing 'aux/worksheet12.bbl' with encoding 'UTF-8'
-[72] bbl.pm:763> INFO - Output to aux/worksheet12.bbl
-[72] Biber.pm:131> WARN - The file 'aux/worksheet12.bcf' does not contain any citations!
-[72] Biber.pm:133> INFO - WARNINGS: 1
+[28] biber:340> INFO - === Mon Nov  4, 2024, 21:28:44
+[33] Biber.pm:418> INFO - Reading 'aux/worksheet12.bcf'
+[56] Biber.pm:972> INFO - Found 0 citekeys in bib section 0
+[61] bbl.pm:654> INFO - Writing 'aux/worksheet12.bbl' with encoding 'UTF-8'
+[61] bbl.pm:757> INFO - Output to aux/worksheet12.bbl
+[61] Biber.pm:130> WARN - The file 'aux/worksheet12.bcf' does not contain any citations!
+[61] Biber.pm:132> INFO - WARNINGS: 1
