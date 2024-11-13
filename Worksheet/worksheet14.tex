@@ -15,31 +15,99 @@
 \title{ MATH 102: Ideas  of Math }
 \author{ Worksheet 14 }
 
-\date{dec 6, 2023}
+\date{Nov 14, 2024}
 
 \begin{document}
 
 \maketitle
-Player 1 begins by writing a sequence of $X$'s and $O$'s in the top row of the grid below. Player 2 then writes either an $X$ or an $O$ in the first box on the bottom. Player 1 then writes a sequence of $X$'s and $O$'s in the second row of the grid. Player 2 writes an $X$ or $O$ in the second bottom box. The players continue until all boxes are filled. Player 1 wins if the sequence on the bottom exactly matches any of the sequences Player 1 has written in the grid. Player 2 wins otherwise.
 
-There is a grid below. Play the game a few times, then answer the following question:
- which player has a winning strategy, and why?
+\begin{definition}
+	Given a pair of sets $A$ and $B$, suppose that each element $x\in A$ is
+	associated to a unique element $f(x)$ of $B$.
+	Then $f$ is said to be a function from $A$ to $B$.
+	This is denoted by
+	\begin{equation*}
+		f: A\to B \,.
+	\end{equation*}
+	$A$ is called the \emph{domain} of $f$, $B$ is called the \emph{codomain}
+	of $f$.
+	The set $\set{ f(x): x\in A  }$ is called the \emph{range} of $f$.
+\end{definition}
 
-\vspace{.1in}
-\Huge \noindent
-\begin{tabular}{|c|c|c|c|c|}\hline
-\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ \\ \hline
-\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ \\ \hline
-\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ \\ \hline
-\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ \\ \hline
-\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ \\ \hline
-\end{tabular}
-\vspace{.25in}
+\begin{question}
+	What is the vertical line test?
+\end{question}
 
-\noindent
-\begin{tabular}{|c|c|c|c|c|}\hline
-\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ \\ \hline
-\end{tabular}
-\normalsize
+\vspace{5cm}
+
+\begin{definition}
+	A function $f:A \to B$ is \emph{injective} (of \emph{one-to-one}) if
+	$f(a_1) = f(a_2)$ implies $a_1 = a_2$.
+\end{definition}
+
+\begin{question}
+	Give a few examples of  injective function.
+\end{question}
+\vspace{5cm}
+
+\begin{question}
+	Give an equivalent definition of injectivity using contrapositivity.
+\end{question}
+
+\begin{definition}
+	A function $f:A \to B$ is \emph{surjective} (of \emph{onto}) if
+	for every $b\in B$, there exists some $a\in A$ such that $f(a) = b$.
+\end{definition}
+
+\begin{question}
+	Give a few examples of  injective function.
+\end{question}
+\vspace{5cm}
+
+\begin{definition}
+	A function is \emph{bijective} if it is both injective and surjective.
+\end{definition}
+
+\begin{question}
+	\begin{enumerate}
+		\item Write a strategy to prove injectivity.
+		      \vspace{7cm}
+		\item Write a strategy to prove surjectivity.
+		      \vspace{7cm}
+	\end{enumerate}
+\end{question}
+
+\begin{question}
+	Let $\mathbb{R}^+$ denote the nonnegative real numbers. Prove the following.
+
+	\begin{itemize}
+		\item[(a)] $f : \mathbb{R} \to \mathbb{R}$ where $f(x) = x^2$ is not injective, surjective or bijective.
+		      \vspace{5cm}
+		\item[(b)] $g : \mathbb{R}^+ \to \mathbb{R}$ where $g(x) = x^2$ is injective, but not surjective or bijective.
+		      \vspace{5cm}
+		\item[(c)] $h : \mathbb{R} \to \mathbb{R}^+$ where $h(x) = x^2$ is surjective, but not injective or bijective.
+		      \vspace{5cm}
+		\item[(d)] $k : \mathbb{R}^+ \to \mathbb{R}^+$ where $k(x) = x^2$ is injective, surjective and bijective.
+		      \vspace{5cm}
+	\end{itemize}
+\end{question}
+
+
+\begin{definition}
+	Let $A, B$ be sets. A Cartesian product of $A$ and $B$, denoted by $A\times B$
+	is the set of all ordered pair $(x,y)$, where $x\in A$ and $y \in B$.
+	\begin{equation*}
+		A\times B = \set{ (x,y) : x\in A, y\in B}\,.
+	\end{equation*}
+\end{definition}
+
+\begin{question}
+	Prove the function $f:\Z\times \Z \to \Z\times \Z$
+	where
+	$f(x,y) = (x+2y, 2x+3y)$
+	is a bijection.
+\end{question}
+
+
 
 \end{document}
