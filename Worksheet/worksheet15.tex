@@ -13,33 +13,59 @@
 
 %% Title 
 \title{ MATH 102: Ideas  of Math }
-\author{ Worksheet 14 }
+\author{ Worksheet 15 }
 
-\date{dec 6, 2023}
+\date{Nov 18, 2024}
 
 \begin{document}
 
 \maketitle
-Player 1 begins by writing a sequence of $X$'s and $O$'s in the top row of the grid below. Player 2 then writes either an $X$ or an $O$ in the first box on the bottom. Player 1 then writes a sequence of $X$'s and $O$'s in the second row of the grid. Player 2 writes an $X$ or $O$ in the second bottom box. The players continue until all boxes are filled. Player 1 wins if the sequence on the bottom exactly matches any of the sequences Player 1 has written in the grid. Player 2 wins otherwise.
 
-There is a grid below. Play the game a few times, then answer the following question:
- which player has a winning strategy, and why?
+\begin{problem}
+Suppose $A$ and $B$ are sets with finite number of elements
+and $f:A\to B$ is a function.
+Can you compare the sizes of $A$ and $B$ based on
+injectivity and surjectivity?
+\end{problem}
 
-\vspace{.1in}
-\Huge \noindent
-\begin{tabular}{|c|c|c|c|c|}\hline
-\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ \\ \hline
-\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ \\ \hline
-\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ \\ \hline
-\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ \\ \hline
-\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ \\ \hline
-\end{tabular}
-\vspace{.25in}
+\vspace{7cm}
 
-\noindent
-\begin{tabular}{|c|c|c|c|c|}\hline
-\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ &\ \ \ \ \ \ \ \ \ \ \\ \hline
-\end{tabular}
-\normalsize
+
+\begin{definition}
+	Let $A,B$, and $C$ bet sets, $g: A\to B$ and $f:B\to C$.
+	Then the \emph{composition} function $f\circ g:A\to C$ is defined
+	by:
+	\begin{equation*}
+		(f \circ g) (a) = f(g(a)) \,.
+	\end{equation*}
+\end{definition}
+
+
+\begin{theorem}
+	Suppose $A,B$ and $C$ are sets.
+	If $g:A\to B$ and $f:B\to C$ are injective.
+	Then,
+	$f\circ g: A\to C$ is injective.
+\end{theorem}
+
+\vspace{7cm}
+
+\begin{theorem}
+	Suppose $A,B$ and $C$ are sets.
+	If $g:A\to B$ and $f:B\to C$ are surjective.
+	Then,
+	$f\circ g: A\to C$ is surjective.
+\end{theorem}
+
+\vspace{7cm}
+
+\begin{theorem}
+	Suppose $A,B$ and $C$ are sets.
+	If $g:A\to B$ and $f:B\to C$ are bijective.
+	Then,
+	$f\circ g: A\to C$ is bijective.
+\end{theorem}
+
+\vspace{7cm}
 
 \end{document}
