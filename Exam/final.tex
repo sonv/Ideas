@@ -1,153 +1,113 @@
-\documentclass[]{exam}  % use the 'answer' option to compile solutions
-\usepackage{subfiles}
+\documentclass[12pt]{amsart}
+\usepackage{amsaddr}
 \usepackage{marktext} 
+%% Remove draft for real article, put twocolumn for two columns
 \usepackage{svmacro}
 \usepackage[utf8]{inputenc}
-\usepackage{lastpage}
-\usepackage[american,siunitx]{circuitikz}
-\sisetup{detect-all}
-\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
 
-\newtheorem{problem}{Problem}
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
 
-\newcommand{\mb}[1]{\mathbf{#1}} %mathbf
+%% Title 
+\title{ MATH 102: FINAL }
+\author{Name:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ ID: \_  \_  \_   \_  \_  \_  \_  \_ 
+}
+
+%\author{Co-author}
+%\address{  }
+%\email {  }
+%
+\date{Dec 3, 2023}
+
 \begin{document}
-	\title{MATH 101 Calculus\\ Final Exam}
-	\date{December 12th, 2023}
-	
-	\begin{center}
-		\Large
-		{\bfseries\makeatletter\@title\makeatother}
-		
-		\bigskip
-		
-		Fulbright University Vietnam
-		
-		\makeatletter\@date\makeatother
-		
-%		\ifanswer
-		\vspace{1pc}
-		
-%		{\sffamily\bfseries SOLUTIONS}
-		
-		\vspace{1pc}
-%		\else
-		\vfill
-		
-		\begin{tabular}{rp{10cm}}
-			Student Full Name: & \hrulefill \\[1pc]
-			Student ID: & \hrulefill \\[1pc]
-%			Number of extra pages: & \hrulefill 
-		\end{tabular}
-		
-		\vfill
-%		\fi
-		
-%		\bigsize
-		\begin{tabular}{| >{\bfseries}c | c | c | }
-			\hline
-			Question & \bfseries Maximal Points &\bfseries Your Points\\
-			\hline
-			\hline
-			% You need to fill this table in yourself, sadly.
-			1 &  25 &\\ \hline
-			2 &  25 &\\ \hline
-			3 &  25 &\\ \hline
-			4 &  25 &\\ \hline
-			\hline
-			Total & 100 & \\
-			\hline
-		\end{tabular}
-		
-	\end{center}
-	
-%	\ifanswer\else
-	
-	\vfill
-	
-	\textbf{Instructions:}
-	
-	\begin{enumerate}
-		\item You have \textbf{eighty (80) minutes} to complete the exam.  
-		\item This exam contains 4 problems. Some pages are intentionally left blank for you to write your solutions. If you run out of space you can use the backs of the pages, but please indicate clearly on the front pages that you have done so.
-		
-%		\item There are 4 problems
-		
-		\item Phones are not allowed. Please turn off your phones during the exam.
-            If you need to use the restroom, please turn in your phones before leaving the room.
-		
-		\item \textbf{Show and justify your work unless indicated otherwise.}
 
-		\item Please sign the Honor Code statement below.
-	\end{enumerate}
-	
-	\fbox{\parbox{\textwidth}{
-			In recognition of and in the spirit of the Fulbright University Vietnam Honor Code, I certify that I will neither give nor receive unpermitted aid on this examination.
-			
-			\vspace{1cm}
-			
-			\hspace*{\fill}
-			Signature: \quad \rule{10cm}{0.5pt}
-			\hspace*{\fill}
-			
-			\bigskip
-	}}
+\maketitle
 
 
-    \newpage
-\begin{problem}
-    Suppose that $A = \{1,2,3\}$, $B = \{4,5\}$, $C = \{6,7,8\}$, $R = \{(1,7), (3,6), (3,7)\}$, and $S = \{(4,7), (4,8), (5,6)\}$. Note that $R$ is a relation from $A$ to $C$, and $S$ is a relation from $B$ to $C$. 
+There are 3 problems.
 
-    \begin{enumerate}
-        \item Represent the relations via Venn diagrams and arrows.
-        \item Write down in the set notation the following relation: 
-         $S^{-1} \circ R$.
-    \end{enumerate}
-    \newpage
+Make sure you justify all your work for complete credit.
 
-\end{problem}
+\vspace{1cm}
 
-    \begin{problem}
-        True or False? Give some reason for your answers.
-        \begin{enumerate}
-            \item $\emptyset \in \set{\set{ \emptyset}}$
-            \item $\set{\emptyset} \in \set{\set{\emptyset}}$
-            \item $\cP(\emptyset) \in \cP(\cP(\emptyset))$
-            \item $\cP(\cP (\emptyset )) \in \set{\emptyset, \set{\emptyset, \set{\emptyset}}}$
-        \end{enumerate}
-    \end{problem}
+SUBMITTED PROBLEMS: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
-    \newpage
-    \begin{problem}
-        Prove by induction that $\forall n \in \N$, we have
-        \begin{equation*}
-            1^2 + 2^2 + \dots + n^2 = \frac{1}{6} n (n + 1)(2n + 1) \,.
-        \end{equation*}
-    \end{problem}
+\vspace{3cm}
+\section*{Rules}
+
+\begin{itemize}[leftmargin=*]
+	\item You have 80  minutes to complete your work..
+	\item Closed books.
+	\item No use of internet, textbooks, computer algebra systems, calculators.
+	\item No collaboration.
+	\item 1 person per bathroom break. When you go to the bathroom, turn in your cellphone and exam until return.
+\end{itemize}
+
+\begin{center}
+	Good luck!
+\end{center}
+
+\newpage
+
+\section*{Questions}
+
+\begin{enumerate}[label=\arabic*.,itemsep=10pt, leftmargin=*]
+
+	\item \textit{[60 points.]}
+	      Translate the following into symbols, then negate the symbolic sentence, and translate the negation back to English.
+	      \begin{enumerate}
+		      \item Every natural number, when squared, remains a natural number.
+		            \vspace{5cm}
+		      \item Every real number has a cube root in the reals.
+		            \vspace{5cm}
+		      \item Not every integer has a square root in the reals.
+		            \vspace{5cm}
+		      \item There exists a smallest natural number.
+		            \vspace{5cm}
+		      \item There exists a largest negative integer.
+		            \vspace{5cm}
+		      \item Every real number, when multiplied by zero, equals zero.
+	      \end{enumerate}
+
+	      \newpage
+
+	      \item\textit{[40 points.]}
+	      \begin{enumerate}
+		      \item \textit{[10 points.]}
+		            Give a definition of function.
+		            \vspace{7cm}
+
+		      \item \textit{[10 points.]}
+		            Give a definition of bijective function.
+		            \vspace{7cm}
+		      \item \textit{[10 points.]}
+		            Give an example of a bijective function with both domain and co-domain to be $\R$.
+		            \vspace{7cm}
+
+		      \item \textit{[10 points.]}
+		            Prove that the function you gave in the previous part is a bijection.
+		            \vspace{7cm}
 
 
-    \newpage
+	      \end{enumerate}
 
-    \begin{problem}
-        \begin{enumerate}
-            \item Let $f:A \to B$ and $g:B\to C$ be functions.
-        Prove that if $f$ and $g$ are both injective, then so is $g\circ f$.
-            \item let $f:(0,\infty) \to (0,\infty)$ and $g:(0,\infty) \to (0,\infty)$
-                be defined as
-                \begin{equation*}
-                    f(x) = x^3  \,,
-                \end{equation*}
-                and
-                \begin{equation*}
-                    g(x) = \frac{1}{x} \,.
-                \end{equation*}
-                \begin{enumerate}
-                    \item Find a formula for $g \circ f$.
-                    \item Is $g \circ f$ injective and why?
-                \end{enumerate}
-        \end{enumerate}
-    \end{problem}
+	      \newpage
 
+	\item \textit{[20 points.]} Prove by contradiction that if $A\cap C \subseteq B$ and $a \in C$, then
+	      $a \not\in A \backslash B$.
+	      \newpage
+
+
+\end{enumerate}
+
+
+
+\printbibliography
+%\bibliography{refs}
+%\bibliographystyle{halpha-abbrv}
 
 
 \end{document}
